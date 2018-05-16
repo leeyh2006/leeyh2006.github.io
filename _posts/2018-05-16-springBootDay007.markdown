@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SpringBoot day 007 정리
+title: [SpringBoot day 007]day 007 정리
 date: 2018-05-16 00:00:00 +0300
-description: 스프링 부트 day 007 정리 # Add post description (optional)
+description:  day 007 정리 # Add post description (optional)
 img: # Add image post (optional)
 tags: [SpringBoot] # add tag
 ---
@@ -14,6 +14,7 @@ tags: [SpringBoot] # add tag
 ###### 23.5 Application Events and Listeners
 spring App이 동작되기 전에 events와 Listeners을 정의 할수 있다.
 ```{java
+{% highlight ruby %}
 MyLisener.java
 
 public class MyListener implements ApplicationListener<ApplicationStartedEvent> {
@@ -22,6 +23,7 @@ public class MyListener implements ApplicationListener<ApplicationStartedEvent> 
         System.out.println("APPLICATION STARTED");
     }
 }
+{% endhighlight %}
 ```
 ApplicationListenr 클래스에 이벤트 타입을 지정해주고
 ex) *ApplicationStartingEvent*, *ApplicationEnvironmentPreparedEvent*,*ApplicationPreparedEvent* 등등 ..
