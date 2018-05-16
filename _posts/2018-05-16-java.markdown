@@ -6,12 +6,8 @@ description:
 tags: [리눅스] # add tag
 ---
 
-
-
-{% highlight ruby %}
 ```{.java}
     public static void main(String []ar){
         System.out.println("hello");
     }
 ```
-{% endhighlight %}
