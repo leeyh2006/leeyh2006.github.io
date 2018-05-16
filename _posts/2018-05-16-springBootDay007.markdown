@@ -15,7 +15,6 @@ tags: [SpringBoot] # add tag
 spring App이 동작되기 전에 events와 Listeners을 정의 할수 있다.
 
 ```{java
-{% highlight ruby %}
 MyLisener.java
 
 public class MyListener implements ApplicationListener<ApplicationStartedEvent> {
@@ -24,7 +23,7 @@ public class MyListener implements ApplicationListener<ApplicationStartedEvent> 
         System.out.println("APPLICATION STARTED");
     }
 }
-{% endhighlight %}
+
 
 ```
 
