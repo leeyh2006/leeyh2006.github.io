@@ -14,7 +14,7 @@ tags: [SpringBoot] # add tag
 ## 23.5 Application Events and Listeners
 spring App이 동작되기 전에 events와 Listeners을 정의 할수 있다.
 
-```{java
+```java
 MyLisener.java
 
 public class MyListener implements ApplicationListener<ApplicationStartedEvent> {
@@ -30,8 +30,7 @@ public class MyListener implements ApplicationListener<ApplicationStartedEvent> 
 
 ApplicationListenr 클래스에 이벤트 타입을 지정해주고
 ex) *ApplicationStartingEvent*, *ApplicationEnvironmentPreparedEvent*,*ApplicationPreparedEvent* 등등 ..
-```{java
-  Application.java 
+```java  Application.java 
     
    /@EnableAutoConfiguration  spring boot에서 제공하는 annotation  
    //@Configuration
@@ -73,8 +72,7 @@ ex) *ApplicationStartingEvent*, *ApplicationEnvironmentPreparedEvent*,*Applicati
  
 @Value("$name") 으로 주입 받아 사용할 수 있다.
 
-```{java
-    @Value("${name}")
+```java  @Value("${name}")
     String name
     
     public String getMessage(){
