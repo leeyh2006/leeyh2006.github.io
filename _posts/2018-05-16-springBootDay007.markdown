@@ -33,14 +33,13 @@ ex) *ApplicationStartingEvent*, *ApplicationEnvironmentPreparedEvent*,*Applicati
 ```java  
     Application.java 
     
-   /@EnableAutoConfiguration  spring boot에서 제공하는 annotation  
+   //@EnableAutoConfiguration  spring boot에서 제공하는 annotation  
    //@Configuration
    //@ComponentScan  con 밑에  있는 클래스를 참조해서  bean으로 등록할 수 있는 건 등록함
    //    이걸로 @Configuration 을 픽업하게 만들어라
-   //    
    
    @RestController
-   @SpringBootApplication  @EnableAutoConfiguration , @Configuration 모아놓은것 
+   @SpringBootApplication  @EnableAutoConfiguration , @Configuration //모아놓은것 
     public class Application {
         //주입 받고
         @Autowired
@@ -73,7 +72,8 @@ ex) *ApplicationStartingEvent*, *ApplicationEnvironmentPreparedEvent*,*Applicati
  
 @Value("$name") 으로 주입 받아 사용할 수 있다.
 
-```java  @Value("${name}")
+```java  
+    @Value("${name}")
     String name
     
     public String getMessage(){
