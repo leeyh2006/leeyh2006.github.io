@@ -64,8 +64,10 @@ ex) *ApplicationStartingEvent*, *ApplicationEnvironmentPreparedEvent*,*Applicati
 ![excuteResult]({{site.baseurl}}/assets/img/day007/day007Result.JPG)  
 
 ## 24. Externalized Configuration
-> Spring boot configuration 우선순위  
-
+> Spring boot configuration 우선순위 그리고 properties 의 placeholder 사용 방법 
+ex) 1. @Value ("${name}") -Value 어노테이션을 사용하는방법
+    2. @ConfigurationProperties("name") - 다음 포스팅에서 기술
+    3. Environment 클래스 사용 - 다음 포스팅에서 기술
 
 기본적으로 boot는 applciation.properties 파일을 통하여 argument를 정의 해놓으면   
 ![application.propeties]({{site.baseurl}}/assets/img/day007/day007applicationProperties.jpg) 
