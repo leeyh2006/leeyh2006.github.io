@@ -44,9 +44,10 @@ application.yml
 *---* 구분자로 하나의 yml 파일에 여러개 의 YAML 선언가능
 키 값 밑에  *-* 을 통해서 list로 표현 가능
 
->JAVA Bean 설정 방법
+>JAVA Bean 설정 방법  
+
 1. @ConfigurationProperties(*Prefixr 값*) (Third-party Configuration 설정 방법)  
-직접 application 클래스에서 빈으로 등록하여 사용
+직접 application 클래스에서 빈으로 등록하여 사용  
 ```java  
    /* Application.class */
     @Autowired
@@ -82,7 +83,7 @@ application.yml
                private Map<Integer, String> key1 = new HashMap<>();
         }
 ```
-2.그냥 @Component로 등록하여 사용 (외부파일이 아닌경우)
+2.그냥 @Component로 등록하여 사용 (외부파일이 아닌경우)  
 ```java  
     /* YongProperties.class */
     @Component
@@ -113,7 +114,7 @@ application.yml
 ```
 
 [24.7.5 @ConfigurationProperties Validation](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#boot-features-external-config-validation)  
-@ConfigurationProperties는 validation 기능도 설정 가능
+@ConfigurationProperties는 validation 기능도 설정 가능  
 
 ```java  
      @Data
