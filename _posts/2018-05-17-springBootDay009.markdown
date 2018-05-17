@@ -16,11 +16,13 @@ springBoot reference [Application Property Files](https://docs.spring.io/spring-
 >YAML File  
 
 ![propertiesList]({{site.baseurl}}/assets/img/day009/YAMLfile.JPG)   
->application.properties
+>application.properties   
+
+
 ```properties  
   yong.name=yong
-  yong.yongList[0].descr = script
-  yong.yongList[0].name = yong2
+  yong.yongList.descr = script
+  yong.yongList.name = yong2
 ```
 
 >application.yml  
@@ -40,11 +42,12 @@ application.yml
   key: 
       - key1 : value1
       - key2 : value2
-``` 
+```   
 *---* 구분자로 하나의 yml 파일에 여러개 의 YAML 선언가능
-키 값 밑에  *-* 을 통해서 list로 표현 가능
+키 값 밑에  *-* 을 통해서 list로 표현 가능   
 
->JAVA Bean 설정 방법  
+>JAVA Bean 설정 방법    
+
 
 1. @ConfigurationProperties(*Prefixr 값*) (Third-party Configuration 설정 방법)  
 직접 application 클래스에서 빈으로 등록하여 사용  
