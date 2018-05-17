@@ -3,13 +3,13 @@ layout: post
 title: SpringBoot day007 정리
 date: 2018-05-16 00:00:00 +0300
 description:  day 007 정리 # Add post description (optional)
-img: # Add image post (optional)
+img: springBootLogo.JPG # Add image post (optional)
 tags: [SpringBoot] # add tag
 ---
 > 백기선님 강의와 SpringBoot reference를 기반으로 정리하였습니다.
 
 프로젝트리스트  
-![Intellij LIst]({{site.baseurl}}/assets/img/spinrBootDay007intellijList.JPG)
+![Intellij LIst]({{site.baseurl}}/assets/img/day007/spinrBootDay007intellijList.JPG)
 
 ## 23.5 Application Events and Listeners
 spring App이 동작되기 전에 events와 Listeners을 정의 할수 있다.
@@ -62,14 +62,14 @@ ex) *ApplicationStartingEvent*, *ApplicationEnvironmentPreparedEvent*,*Applicati
 ```
     
 #### 실행결과 창
-![excuteResult]({{site.baseurl}}/assets/img/day007Result.JPG)  
+![excuteResult]({{site.baseurl}}/assets/img/day007/day007Result.JPG)  
 
 ## 24. Externalized Configuration
 > Spring boot configuration 우선순위  
 
 
 기본적으로 boot는 applciation.properties 파일을 통하여 argument를 정의 해놓으면   
-![application.propeties]({{site.baseurl}}/assets/img/day007applicationProperties.jpg) 
+![application.propeties]({{site.baseurl}}/assets/img/day007/day007applicationProperties.jpg) 
  
 @Value("$name") 으로 주입 받아 사용할 수 있다.
 
