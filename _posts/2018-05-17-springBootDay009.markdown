@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SpringBoot day009 정리
-date: 2018-05-17 00:00:00 +0300
+date: {{ site.time | date: '%y' }}
 description:  day 009 정리 # Add post description (optional)
 img: springBootLogo.JPG # Add image post (optional)
 tags: [SpringBoot] # add tag
