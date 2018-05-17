@@ -81,12 +81,12 @@ ex) *ApplicationStartingEvent*, *ApplicationEnvironmentPreparedEvent*,*Applicati
         return name;
     }
 ```
-또한 java -jar 옵션으로 패키지 파일을 실행할 때도 사용할 수 있다.
+또한 java -jar 옵션으로 패키지 파일을 실행할 때도 사용할 수 있다.  
 ex) java -jar springBootDay005-1.0-SNAPSHOT.jar.original *--name=YONGHEE* 
 
 >application.properties  
 
-key 값을 다른 key의 value 값에 변수로 사용할 수 있음 .
+key 값을 다른 key의 value 값에 변수로 사용할 수 있음 .  
 ex) foo = ${random.uuid}
 name =123 ${foo}
 meyonghee.name = ${name:YONGHEE}
