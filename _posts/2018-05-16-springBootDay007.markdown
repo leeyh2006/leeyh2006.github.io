@@ -63,3 +63,31 @@ ex) *ApplicationStartingEvent*, *ApplicationEnvironmentPreparedEvent*,*Applicati
     
 #### 실행결과 창
 ![excuteResult]({{site.baseurl}}/assets/img/day007Result.JPG)  
+
+##### 24. Externalized Configuration
+> Spring boot configuration 우선순위  
+
+
+기본적으로 boot는 applciation.properties 파일을 통하여 argument를 정의 해놓으면   
+![application.propeties]({{site.baseurl}}/assets/img/day007applicationProperties.jpg) 
+ 
+@Value("$name") 으로 주입 받아 사용할 수 있다.
+
+```{java
+    @Value("${name}")
+    String name
+    
+    public String getMessage(){
+        return name;
+    }
+```
+또한 java -jar 옵션으로 패키지 파일을 실행할 때도 사용할 수 있다.
+ex) java -jar springBootDay005-1.0-SNAPSHOT.jar.original *--name=YONGHEE* 
+
+>application.properties  
+
+key 값을 다른 key의 value 값에 변수로 사용할 수 있음 .
+ex) foo = ${random.uuid}
+name =123 ${foo}
+meyonghee.name = ${name:YONGHEE}
+
