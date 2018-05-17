@@ -11,7 +11,7 @@ tags: [SpringBoot] # add tag
 프로젝트리스트  
 ![Intellij LIst]({{site.baseurl}}/assets/img/spinrBootDay007intellijList.JPG)
 
-###### 23.5 Application Events and Listeners
+## 23.5 Application Events and Listeners
 spring App이 동작되기 전에 events와 Listeners을 정의 할수 있다.
 
 ```{java
@@ -64,7 +64,7 @@ ex) *ApplicationStartingEvent*, *ApplicationEnvironmentPreparedEvent*,*Applicati
 #### 실행결과 창
 ![excuteResult]({{site.baseurl}}/assets/img/day007Result.JPG)  
 
-##### 24. Externalized Configuration
+## 24. Externalized Configuration
 > Spring boot configuration 우선순위  
 
 
