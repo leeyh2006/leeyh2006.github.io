@@ -53,13 +53,14 @@ application.yml
 직접 application 클래스에서 빈으로 등록하여 사용  
 ```java  
    /* Application.class */
-    @Autowired
-    Environment environment;
+ 
    
     @SpringBootApplication
     @RestController
     public class Application{
-    
+        @Autowired
+        Environment environment;
+        
         @Bean
         @ConfigurationProperties("key") // Bean으로 외부 YAML 파일을 주입받아 사용 
         public YongProperties yongProperties(){
