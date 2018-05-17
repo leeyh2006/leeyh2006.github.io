@@ -6,7 +6,7 @@ description:  day 009 정리 # Add post description (optional)
 img: springBootLogo.JPG # Add image post (optional)
 tags: [SpringBoot] # add tag
 ---
-
+[TOC]
 ## YAML 작성법
 spring.user.password default에서만 사용 가능
 negeated 제외된
