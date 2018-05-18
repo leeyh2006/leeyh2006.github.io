@@ -2,7 +2,7 @@
 layout: post
 title: SpringBoot day007 정리
 date: 2018-05-16 00:00:00 +0300
-description:  day 007 정리 # Add post description (optional)
+description:  day 007,008 정리 # Add post description (optional)
 img: springBootLogo.JPG # Add image post (optional)
 tags: [SpringBoot] # add tag
 ---
