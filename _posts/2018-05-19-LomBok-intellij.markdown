@@ -3,7 +3,7 @@ title: intellij lombok 설정
 date: 2018-05-19 00:00:00 +0300
 description:  intellij lombok 설정 정리 # Add post description (optional)
 img: # Add image post (optional)
-tags: [SpringBoot] # add tag
+tags: [intellij Setting] # add tag
 ---
 ### intellij lombok 설정
 #### lombok plugin 설치  
