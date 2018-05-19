@@ -1,3 +1,4 @@
+---
 layout: post
 title: intellij lombok 설정
 date: 2018-05-19 00:00:00 +0300
