@@ -11,14 +11,14 @@ tags: [intellij Setting] # add tag
 ctrl +shift +s -> plugin -> lombok plugin -> install ->restart 
 ![lombokPlugin]({{site.baseurl}}/assets/img/lombok/lombokSetting.JPG)     
 
-![lombokPluginRestart]({{site.baseurl}}/assets/img/lombok/lombokPlugin.JPG)  
+![lombokPluginRestart]({{site.baseurl}}/assets/img/lombok/lombokPlguin.JPG)  
 
 #### lombok 설정
 
 ctrl + shift+ s -> Build, Execution ,DevelopMent -> complier -> Annotation Processor
 EnableAnnotaion process (체크)
 
-![settingLombokintellij]({{site.baseurl}}/asstes/img/lombok/settingLombokintellij.JPG)
+![settingLombokintellij]({{site.baseurl}}/assets/img/lombok/settingLombokintellij.JPG)
 
 #### pom.xml dependency 추가
 [Maven Repository lomBok depency](https://mvnrepository.com/artifact/org.projectlombok/lombok)
