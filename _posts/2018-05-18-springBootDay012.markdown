@@ -70,9 +70,9 @@ webjar(프론트엔드 라이브러리를 jar파일형식으로 패키징 해놓
       spring boot는 자동적으로 static 리소들이 맵핑이된다
       그런데 static 리소스들을 localhost:8080/경로 형식으로 말고 localhost:8080/static/경로 로 사용하고싶으면
        
-      application.properties 파일에서 spring.mvc.static-path-pattern=/static/** 를 추가해서 사용하면된다 
+      application.properties 파일에서 spring.mvc.static-path-pattern=/static/** 를 추가해서 사용하면된다   
       
-      [/resources/static/index.html]
+      */resources/static/index.html*  
        ![indexPath]({{site.baseurl}}/assets/img/day012/indexP.JPG)   
  7. favicon 지원
  8. ConfigurableWebBindingInitializer bean 자동 사용
