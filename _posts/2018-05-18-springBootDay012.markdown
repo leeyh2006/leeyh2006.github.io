@@ -48,7 +48,8 @@ webjar(프론트엔드 라이브러리를 jar파일형식으로 패키징 해놓
      
     ```html 
        <script type="text/javascript" src="webjars/jquery/jquery.min.js"/>
-    ```
+    ```     
+    
  3. Converter, GenericConverter, Formatter bean 자동 설정
  4. HttpMessageConverters 지원
      ```java
@@ -95,10 +96,3 @@ jackson을 사용해서 serialize and deserialize 를 할 수 있는데
 스프링 부트는 @JsonComponent를 제공함
 .
 
-->jar패키징 할때는 사용하지 마세요 
-
-(pom.xml)버전에 상관없이 로케이트를 주려면 webjars-locator-core 를 추가해주면된다
-spring boot는 suffix 기능을 껐다 ex) "GET /projects/spring-boot.json"   
-이런 매칭이오면 @GetMapping("/projects/spring-boot") 에 맵핑이 안된다 .
-
-![spring project Initializer](https://start.spring.io/)
