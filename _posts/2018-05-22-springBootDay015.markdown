@@ -60,7 +60,7 @@ spring boot는 suffix 기능을 껐다 ex) "GET /projects/spring-boot.json"
 */error* path를 지원하는데 기본적으로 커스텀 에러 페이지가 없으면 스프링 부트에 내장되어 있는 whiteLabel error 페이지를 표시한다.  
 이러한 설정을 바꾸고 싶으면 정적 리소스 경로에 error 페이지를 추가해 주면 된다.  
 ![errorPath]({{site.baseurl}}/assets/img/day015/errorPath.JPG)  
-![public.error.path]({{site.baseurl}}/assets/img/day015/staticErrorPath.JPG)
+![public.error.path]({{site.baseurl}}/assets/img/day015/staticErrorPath.JPG)  
   [404.html]  
     ```html  
           <!DOCTYPE html>
