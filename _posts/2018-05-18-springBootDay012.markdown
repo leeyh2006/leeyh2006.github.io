@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SpringBoot day012,013 정리
+title: SpringBoot day012,013,014 정리
 date: 2018-05-17 00:00:00 +0300
-description:  day012,013  정리 # Add post description (optional)
+description:  day012,013,014  정리 # Add post description (optional)
 img: springBootLogo.JPG # Add image post (optional)
 tags: [SpringBoot] # add tag
 ---
@@ -77,28 +77,28 @@ webjar(프론트엔드 라이브러리를 jar파일형식으로 패키징 해놓
  7. favicon 지원
  8. ConfigurableWebBindingInitializer bean 자동 사용
  
+ 
+--------
+위에 기능들을 유지하고 추가 설정 방법
 
-
-
-wevmvc 기본설정 목록
-설정을 추가하는 법
-WebConfig 클래스 만들어서 method 오버라이딩 쓰면 됌
-
-converter 추가하는것
+```java  
+  @Configuration 사용 
+  public class WebConfig implements WebMvcConfigrue{
+        /**
+        *  WebMvcConfigure의 기능들을  ovride 해서 설정 하고 사용 
+        
+        */ 
+  }
+```
 
 jackson을 사용해서 serialize and deserialize 를 할 수 있는데
 스프링 부트는 @JsonComponent를 제공함
-
-
 .
 
 ->jar패키징 할때는 사용하지 마세요 
 
-
 (pom.xml)버전에 상관없이 로케이트를 주려면 webjars-locator-core 를 추가해주면된다
-
 spring boot는 suffix 기능을 껐다 ex) "GET /projects/spring-boot.json"   
 이런 매칭이오면 @GetMapping("/projects/spring-boot") 에 맵핑이 안된다 .
-
 
 ![spring project Initializer](https://start.spring.io/)
