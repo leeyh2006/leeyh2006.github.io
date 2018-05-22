@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3393505-7de9-4b8c-a901-a372004117c1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/_posts/2018-05-18-springBootDay012.markdown" afterPath="$PROJECT_DIR$/_posts/2018-05-18-springBootDay012.markdown" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -87,10 +86,10 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-05-18-springBootDay012.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="253">
-                <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <first_editor relative-caret-position="396">
+                <caret line="72" column="79" lean-forward="false" selection-start-line="72" selection-start-column="79" selection-end-line="72" selection-end-column="79" />
                 <folding>
-                  <marker date="1526957199721" expanded="true" signature="2177:2374" ph="/.../" />
+                  <marker date="1526959268795" expanded="true" signature="2177:2374" ph="/.../" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -288,13 +287,13 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\dev\angular-file-upload\leeyh2006.github.io\_posts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\dev\angular-file-upload\leeyh2006.github.io\assets\css" />
       <recent name="D:\dev\angular-file-upload\leeyh2006.github.io\assets\img\day007" />
       <recent name="D:\dev\angular-file-upload\leeyh2006.github.io\assets\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\angular-file-upload\leeyh2006.github.io\_posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -408,12 +407,12 @@
       <workItem from="1526435994326" duration="36160000" />
       <workItem from="1526603023798" duration="775000" />
       <workItem from="1526603860165" duration="59000" />
-      <workItem from="1526604008233" duration="19101000" />
+      <workItem from="1526604008233" duration="20304000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56095000" />
+    <option name="totallyTimeSpent" value="57298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-9" width="1938" height="1048" extended-state="6" />
@@ -828,10 +827,10 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-05-18-springBootDay012.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="253">
-            <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <first_editor relative-caret-position="396">
+            <caret line="72" column="79" lean-forward="false" selection-start-line="72" selection-start-column="79" selection-end-line="72" selection-end-column="79" />
             <folding>
-              <marker date="1526957199721" expanded="true" signature="2177:2374" ph="/.../" />
+              <marker date="1526959268795" expanded="true" signature="2177:2374" ph="/.../" />
             </folding>
           </first_editor>
           <second_editor />

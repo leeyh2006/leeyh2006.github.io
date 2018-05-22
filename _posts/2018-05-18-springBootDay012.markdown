@@ -62,7 +62,18 @@ webjar(프론트엔드 라이브러리를 jar파일형식으로 패키징 해놓
      ```
  5. MessageCodesResolve 자동 등록
  6. 정적 index.html 지원
- 
+    - static Content
+      -spring mvc에서는 기본적으로 /static 에서 핸들링 하고 있는데
+      webMvcConfiguer에서 addResourceHandlers에서 핸들링해서 써라
+      
+      static resource를 기본적으로 resource 폴더 밑에 static directory를 생성해주면 
+      spring boot는 자동적으로 static 리소들이 맵핑이된다
+      그런데 static 리소스들을 localhost:8080/경로 형식으로 말고 localhost:8080/static/경로 로 사용하고싶으면
+       
+      application.properties 파일에서 spring.mvc.static-path-pattern=/static/** 를 추가해서 사용하면된다 
+      
+      [/resources/static/index.html]
+       ![indexPath]({{site.baseurl}}/assets/img/day012/indexP.JPG)   
  7. favicon 지원
  8. ConfigurableWebBindingInitializer bean 자동 사용
  
@@ -79,15 +90,7 @@ jackson을 사용해서 serialize and deserialize 를 할 수 있는데
 스프링 부트는 @JsonComponent를 제공함
 
 
-static Content
--spring mvc에서는 기본적으로 /static 에서 핸들링 하고 있는데
-webMvcConfiguer에서 addResourceHandlers에서 핸들링해서 써라
-
-static resource를 기본적으로 resource 폴더 밑에 static directory를 생성해주면 
-spring boot는 자동적으로 static 리소들이 맵핑이된다
-그런데 static 리소스들을 localhost:8080/경로 형식으로 말고 localhost:8080/static/경로 로 사용하고싶으면
- 
-application.properties 파일에서 spring.mvc.static-path-pattern=/static/** 를 추가해서 사용하면된다 .
+.
 
 ->jar패키징 할때는 사용하지 마세요 
 
