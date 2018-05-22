@@ -9,7 +9,7 @@ tags: [SpringBoot] # add tag
 
 [27.1.1 Spring MVC Auto-configuration](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#boot-features-spring-mvc-auto-configuration)   
 스프링 *default* 설정은 다음과 같다 
-#### 1. ContentNegotiatingViewResolver 와  BeanNameViewResolver 포함.  
+ 1. ContentNegotiatingViewResolver 와  BeanNameViewResolver 포함.  
     - ContentNegotiatingViewResolver ?  요청 url MediaType에 따라 응답결과를 다르게 처리할수 있도록 도와주는 역할
     - BeannameViewResolver view의 이름을 찾을 때 bean의 이름으로 찾게 해주는 역할 
        ```java  
@@ -22,7 +22,7 @@ tags: [SpringBoot] # add tag
                return "main"; //메인이라는 view이름으로된 bean을 찾아서 view를 Bean이 제공하는 컨텐츠로 제공 
            }  
        ```
-#### 2. 정적 리소스에 webJar파일 지원 
+ 2. 정적 리소스에 webJar파일 지원 
     [webJars.org](https://www.webjars.org/)  
     - webJars란 ?   
 webjar(프론트엔드 라이브러리를 jar파일형식으로 패키징 해놓은것)형식으로 패키지가 되어있으면 그 jarfile 안에서 그 리소스를 제공  
@@ -49,8 +49,8 @@ webjar(프론트엔드 라이브러리를 jar파일형식으로 패키징 해놓
     ```html 
        <script type="text/javascript" src="webjars/jquery/jquery.min.js"/>
     ```
-#### 3. Converter, GenericConverter, Formatter bean 자동 설정
-#### 4. HttpMessageConverters 지원
+ 3. Converter, GenericConverter, Formatter bean 자동 설정
+ 4. HttpMessageConverters 지원
      ```java
         /**
          * 요청에 json 이 들어온다(webJars)
@@ -60,11 +60,11 @@ webjar(프론트엔드 라이브러리를 jar파일형식으로 패키징 해놓
              * }
          */
      ```
-#### 5. MessageCodesResolve 자동 등록
-#### 6. 정적 index.html 지원
+ 5. MessageCodesResolve 자동 등록
+ 6. 정적 index.html 지원
  
-#### 7. favicon 지원
-#### 8. ConfigurableWebBindingInitializer bean 자동 사용
+ 7. favicon 지원
+ 8. ConfigurableWebBindingInitializer bean 자동 사용
  
 
 
