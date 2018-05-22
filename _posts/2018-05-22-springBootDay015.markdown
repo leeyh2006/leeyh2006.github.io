@@ -47,8 +47,8 @@ spring boot는 suffix 기능을 껐다 ex) "GET /projects/spring-boot.json"
         <h1>Welcome ${name}!</h1>
         </body>
         </html>
-    ```
-    ![WelcomYong]({{site.baseurl}}/assets/img/day015/ftlWelcome.JPG)
+    ```  
+    ![WelcomYong]({{site.baseurl}}/assets/img/day015/fltWelcome.JPG)
 이와 같이 원하는 템플릿을 pom.xml 에 dependency로 추가하여 사용할 수 있다. (Groovy,Thymeleaf,Mustache .. )
 ---------
 
