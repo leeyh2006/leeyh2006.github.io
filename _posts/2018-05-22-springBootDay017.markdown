@@ -77,4 +77,32 @@ Converter를 이용하여 데이터를 바인당 하는 방법이 총 3가지가
            }
        }
     ```
-    
+
+Exception 사용법
+
+@ControllerAdvice
+
+
+Spring HATEOAS - 내가 지금 보내는 이 본문과 관련된 링크들을 같이 보내는 것 
+ {
+    "name" : "Alic",
+    "links": [{
+        "href":"http://localhost:8080/customer/1"
+        
+       ]
+       
+       
+CORS란 ? 
+원래 저희가 만들었던 ,컨트롤러들의 핸들러가 있을때 이러한것을 요청 할 수 있는애가 누구냐 같은 도메인에서 요청한 애들만 쓸수 있는데
+cross Domain은 다른 도메인도 얘를 요청할 수 있도록 허용해 주는것
+보통 API 를 그 API를 호출하는 쪽의 ORIGIN이 다르면 보통은 호출을 못한다 근데 그걸 우회 하는 방법은 Iframe으로 만들어서 하거나 jsonp 로 하는것
+
+근데 그걸 공식적으로 지우너하는게 WC3에서 cors 
+
+나의 Orgin :http://example.com 을 보내고
+
+서버는 Access-Control-Allow-origin : http://example.com 나의 응답을 요청하는 도메인은 이러한 도메인이야 
+모든 domain에서 요청하는 것을 다 받겠다  -> Access-Control-Allow-origin: *
+
+부트에서는 @CrossOrigin 으로 사용
+global cors 를 설정할 수 있다. (https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#boot-features-cors)

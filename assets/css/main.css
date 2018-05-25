@@ -438,6 +438,7 @@ template {
 }
 
 .highlight {
+  font-size: small;
   background-color: #faf9f9;
   -webkit-border-radius: 3px;
           border-radius: 3px;
