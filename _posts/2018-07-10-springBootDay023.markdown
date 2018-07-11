@@ -47,7 +47,9 @@ BookController.java
 > RouterFunction 방식     
 
 BookHandler.java  
-- 여러개의 값을 리턴하고 싶은 경우 FLux.just로 설정 
+- 여러개의 값을 리턴하고 싶은 경우 FLux.just로 설정   
+
+
 ```java  
 //이거를 bean 에다가 넣을수 있음 Application class 참조
 @Controller
