@@ -1,33 +1,24 @@
 ---
 layout: post
-title: SpringBoot day19,20 정리
+title: SpringBoot day23 정리
 date: 2018-05-25 00:00:00 +0300
-description:  SpringBoot day019,20 정리  # Add post description (optional)
+description:  SpringBoot day23 정리   # Add post description (optional)
 img: springBootLogo.JPG # Add image post (optional)
 tags: [SpringBoot] # add tag
 ---
-### TEST 하기
-테스텡 목적 ? - 의존성 주입의 장점으로서 내 코드를 유닛테스트에 더 쉽게 만들수 있다는 목적
-###mockMvc 사용법
+###Reactive Programming 이란 ?
+> 복수개의 서비스로 이루어진 분산 시스템이 정상 상황 뿐만 아니라 장애 상황에서도 일관된 동작을 보장해주는 시스템   
+> asynchronous , non-blocking reactive 개발에 사용된다.  
+> 서비스 간 호출이 많은 마이크로서비스 아키텍처에 적합
+> servelet API 가 불 필요함 
 
 
-MOCK : WebApplicationContext 로딩함 . SeverletApI가 Classpath에 없으면 웹이 아닌 ApplicationContext를 만듬 
-RANDOM_PORT : ServletWebServerApplicationContext 를 만들고 진짜 서블릿 환경을 제공 
-DEFINED_PORT : ServletWebServerApplicationContext 를 만들고 진짜 서블릿 환경을 제공하고 define하는 port를 띄운다 
-[pom.xml]
-```xml 
-   <dependency>
-     <groupId>org.springframework.boot</groupId>
-     <artifactId>spring-boot-starter-test</artifactId>
-     <scope>test</scope>
-    </dependency>     
-```
-<scope>이  테스트이면 이 의존성은 test할때 밖에 사용 못함 .  
+### 개발 방식
+> 기존의 @MVC 방식 (@Controller , @RestController, @RequestMapping)
+> 새로운 함수형 모델 (RouterFunction , HandlerFunction)
 
-Detecting Test Configuration 스프링 부트에서 알아서 찾아줌 .
 
-#### Test Configuration 제외시키기  
-만약 Component scanning을 하고 있다면 , 
+### Example
+maven 설정에서 `spring-boot-starter-web` 과 `spring-boot-start-webflux`가 동시에 존재할 시 스프링부트는 Spring MVC로 인식한다 .
 
-#### test running Server 동작하는 서버에서 테스팅 하기
-
+> @MVC 방식
