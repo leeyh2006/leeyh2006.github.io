@@ -61,3 +61,23 @@ String.format 을 사용하면 서식이 지정된 문자열을 출력하지 않
 
 String message = String.format("hello ,%s. next year ,you'llbe %d. \n" ,name ,age);
 
+> 기본 타입의 래퍼 클래스   
+
+제네릭 클래스에는 기본타입을 타입파라미터로 사용할 수 없음
+-> 래퍼클래스로 사용해야됨 (Integer, Byte, Short ,Long , Float ,Double,Boolean)
+
+
+> 배열 알고리즘   
+
+배열에는 parallelSort 메서드를 사용할 수 있음.
+-> 대상 배열이 클 때 작업을 여러 프로세서로 나눠서 수행 
+
+> 가변 인자    
+
+`...`
+ex) public static double average(double... values)
+원하는 만큼에 인자를 메소드에게 전달할 수 있도록 도와줌 
+-> values 는 배열처럼 사용
+*** 가변 파라미터는 반드시 메서드의 마지막 파라미터여야 함.
+
+ex) public static double max(double first ,double...rest) { ... }
