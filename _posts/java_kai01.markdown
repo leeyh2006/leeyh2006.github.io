@@ -1,9 +1,8 @@
 ---
 layout: post
-title: 자바 카이호스트만 정리 01
+title: 자바 카이호스트만 정리 01장
 date: 2018-12-11 00:00:00 +0300
-description:  day 007,008 정리 # Add post description (optional)
-img: springBootLogo.JPG # Add image post (optional)
+description:  카이호스트만 1장 정리 # Add post description (optional)
 tags: [JAVA] # add tag
 ---
 
