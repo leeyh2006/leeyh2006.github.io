@@ -128,4 +128,83 @@ names.stream()에 String 객체가 담겨 있으므로컴파일러는 Employee::
 - event, 데이터수신 ..등등 이 일어날 때 코드 실행
 - 필요할 때만 코드 실행
 
+#### 함수형 인터페이스 구현
+이미지를 색채 패턴으로 채운다고 해보자 .사용자가 각 픽셀에 사용할 색을 넘겨주는 함수를 작성해야 한다. 그런데 (int, int) -> Color 매핑에 해당하는 표준 타입은 없다. 
+이런 상황에서 새로운 인터페이스를 정의 해야한다.
+```java   
+@FunctionalInterface
+public interface PixelFunction{
+    Color apply(int x, int y);
+}
 
+BufferedImage createImage(int width, int height, PixelFunction f){
+    BuffredImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+    
+    for(int x = 0; x<width ;x++){
+        for( int y= 0; y< height; y++){
+            Color color = f.apply(x,y);
+            image.setRGB(x,y,color.getRGB());
+            }
+        }
+            return image;
+}
+            
+
+BufferdImage frenchFlag = createImage(150,100, (x,y) -> x < 50 ? Color.BLUE : x<100? Color.WHITE : Color.RED);
+   
+```
+
+#### 고차 함수
+함수형 프로그래밍 언어에서는 함수가 일차 구성원 이다.   
+따라서 메서드에 숫자를 전달하고 ,숫자를 생성하는 메서드를 만들 수 있는 것처럼 함수를 인자와 반환 값으로 사용할 수 있다.   
+함수를 처리하거나 반환하는 함수를 고차 함수라고 한다 .
+
+#### 함수를 반환하는 메서드
+어떨 때는 문자열의 배열을 오름차순으로 정렬하고, 또 어떨 떄는 내림차순으로 정렬한다고 해보자.
+다음과 같이 메서드를 작성할 수 있는데 ,이 메서드는 각 상황에 맞는 비교자를 만들어낸다.
+```java   
+    public static Comparator<String> compareInDirection(int direction)
+    {
+        return (x,y) -> direction * x.compareTo(y);
+    }
+```
+compareInDirection(1) 호출은 오름차순 비교자를 compareInDirection(-1) 호출은 내림차순 비교자를 돌려준다.   
+이렇게 받은 비교자는 비교자 인터페이스를 인자로 받는 메서드에 전달 할 수 있따.
+ex) Arrays.sort(friends , compareInDirection(01));
+
+
+#### 함수를 수정하는 메서드
+```java   
+    public static Comparator<String> reverse(Comparator<String> comp){
+        return (x,y) -> comp.compare(y,x);
+        
+    }
+```
+
+
+#### 지역 클래스
+메서드 안에 클래스를 정의할 수 있다. 이렇게 메서드안에 정의한 클래스를 지역클래스라고 한다.
+흔히 어떤 클래스가 인터페이스 하나를 구현하고 ,메서드를 호출하는 쪽이 클래스에는 관심이 없고 인터페이스에만 관심이 있을 때 이렇게 한다.
+
+ex)
+```java   
+    public static IntSequence randomInst(int low, int high)
+    /* 
+        IntSequence가 인터페이스이므로 randomInst 메서드는 이 인터페이스를 구현하는 어떤 클래스의 객체를 반환해야한다. 호출자는 구현 클래스에는 관심이 없다.
+    */
+    
+    private static Random generator = new Random();
+    
+    public static IntSequence randomInst(int low, int high){
+        class RandomSequence implements IntSequence {
+            public int next() {return low +generator.nextInt(high -low +1); }
+            pulbic boolean hasNext() { return true;}
+            }
+          
+          return new RandomSequence();
+          }  
+    
+```
+지역클래스는 메서드 바깥에서 접근할 수 없으므로 public 이나 private로 선얺 할 수 없다.
+
+클래스를 지역 클래스로 만들면 두 가지 이점이 있다. 첫번쨰는 클래스 이름이 메서드의 유효범위 안으로 숨는다. 두번쨰는 람다 표현식의 변수와 마찬가지로 지역 클래스의 메서드에서 지역 클래스를 감싸고 있는 유효 범위에 속한 변수에 접근할 수 있다.
