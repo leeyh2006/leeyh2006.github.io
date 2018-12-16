@@ -15,3 +15,117 @@ tags: [JAVA] # add tag
 - 람다 표현식은 함수형 인터페이스로 변환됨.
 - 메서드 참조와 생성자 참조는 메서드와 생성자를 호출하지 않고 참조한다.
 - 람다 표현식과 지역 내부 클래스로 사실상 최종 변수에 접근 가능 .
+
+#### 인터페이스 타입으로 변환 
+변수를 인터페이스 타입으로 선언할 수 있찌만 ,타입이 인터페이스 자체인 객체는 만들수 없다 . 모든 객체는 클래스의 인스턴스여야 한다.
+```java   
+    public interface A {
+        void test();
+       
+    }
+    
+    public static void main(String []args){
+            A a = new A(); => (X)
+    
+    } 
+```
+
+#### 타입 변환과 instanceof 연산자
+```java   
+IntSequence sequence = ...;
+DigitSequence digits = (DigitSequence) sequence;
+System.out.println(digist.rest());
+// rest()는 IntSequence의 메서드가 아님 rest()는 DigitSequence의 메서드이므로 타입을 변환해야됨
+
+```
+타입변환에 예외를 피하려면 instance of 연산자로 객체가 원하는 타입인지 먼저 검사 해야됨
+```java   
+    if(seqeunce instance of DigitSequence){
+        DigitSequence digits = (DigitSequence) sequence ;
+        
+    }
+```
+
+#### 인터페이스 확장
+인터페이스는 또 다른 인터페이스를 확장해서 원래 있던 메서드외의 추가 메서드를 제공할 수있음   
+```java   
+    public interface Closeable{
+        void close();
+    }
+    
+    public interface Channel extends Closeable{
+        boolean isOpen();
+    }
+    
+    // Channel 인터페이스를 구현하는 클래스는 반드시 두 메서드를 모두 구현해야 함
+     
+```
+
+#### 여러 인터페이스 구현
+```java   
+    public class A implements IntSequence , Closeable{
+        ...
+    }
+```
+
+#### 람다 표현식
+표현식이 간결하고 함수를 파라미터로 받을 수 있다는 장점이 있음.
+```java   
+    (String first,String second) -> first.length() - second.length();
+    
+```
+#### 함수형 인터페이스
+람다 표현식은 Runnable이나 Comparator 처럼 액션을 표현하는 인터페이스와 호환된다.   
+추상메서드가 한 개만 포함된 인터페이스에만 사용할 수 있음 . 이러한 인터페이스를 함수형 인터페이스라고 함   
+ex) Arrays.sort 메서드를 살펴보면
+```java   
+Arrays.sort(words, (first, second) -> first.length() - second.length());
+
+```
+내부에서 Arrays.sort 메서드의 두 번째 파라미터 변수는 Comparator<String>을 구현하는 클래스의 객체를 받음 .
+
+#### 메서드 참조
+대소문자 구분 없이 문자열을 정렬한다고 해보자.
+```java   
+    Arrays.sort(strings,(x,y) -> x.compareToIgnoreCase(y)); 
+    -> Arrays.sort(strings, String::compareToIgnoreCase); 로 변환 가능 
+```
+
+:: 연산자는 메서드 이름과 클래스를 분리하거나 , 메서드 이름과 객체의 이름을 분리함 .
+1. 클래스::인스턴스메서드
+2. 클래스::정적메서드
+3. 객체::인스턴스메서드
+
+첫 번쨰 형태에서는 첫 번째 파라미터가 메서드의 수신자가 되고, 나머지 파라미터는 해당 메서드로 전달된다 .   
+String::compareToIgnoreCase는 (x,y)->x.compareToIgnoreCase(y) 와 같음
+두 번째 형태에서는 모든 파라미터가 정적 메서드로 전달됨 . 
+Objects::isNull == x-> Objects.isNull(x)
+세 번째 형태에서는 주어진 객체에서 메서드가 호출되며 파라미터는 인스턴스 메서드로 전달된다.
+System.out::println  x -> System.out.println(x) 와같음
+
+메서드 참조에서 this 파라미터를  캡처할 수 있음 .  
+ex) this::equals === x -> this.equals(x)와 같음
+
+
+#### 생성자 참조
+생성자 참조는 메서드의 이름이 new라는 점만 제외하면 메서드 참조와 같음   
+ex) Employee::new    
+
+문자열의 리스트가 있다고 해보자   
+List<String> names = ...;   
+
+이름별로 하나씩 대응하는 직원의 리스트를 원한다고 해보자 . 스트림을 사용하면 루프없이도 이 작업을 처리할 수 있다.   
+Stream<Employee> stream = names.stream().map(Employee::new);
+
+names.stream()에 String 객체가 담겨 있으므로컴파일러는 Employee::new가 Employee(String) 생성자를 가리킨다는 사실
+   
+   
+#### 지연 실행 구현하기
+람다를 사용하는 핵심 목적은 지연 실행이다. 어떤 코드를 지금 당장 실행하고 싶다면 람다를 사용하지 않는다. 코드를 나중에 실행하는 이유
+- 별도의 스레드에서 코드 실행
+- 코드를 여러번 실행
+- 알고리즘의 올바른 지점에서 코드실행 
+- event, 데이터수신 ..등등 이 일어날 때 코드 실행
+- 필요할 때만 코드 실행
+
+
