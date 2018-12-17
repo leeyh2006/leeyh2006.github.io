@@ -22,6 +22,13 @@ tags: [JAVA] # add tag
 #### What is Abstract Class and Method?
 - Incomplete Class 
 - abstract Keyword   
-ex) public abstract Class ..
 - abstract Class can have a variable and constructor unlike interface.
 - Not Object
+
+
+#### Object class is Super Class
+- toString() ,equals() ,hashCode() , getClass() ,clone() ,finalize() ,wait,notify ,notifyAll 
+
+#### Enum
+- Constructor must declare not public but private.
+- 
