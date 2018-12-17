@@ -14,4 +14,38 @@ tags: [JAVA] # add tag
 - log Handler
 - log conf
 
-#### 
+#### unchecked Exception and checked Exception
+- All of exception are subclass of throwable class;
+ Object   
+  +--- Throwable   
+        +--- Exception   
+        |     +--- RuntimeException  
+        |     +--- ...   
+        |
+        +--- Error   
+              +--- ...   
+- unchecked Exception is subclass of RuntimeException
+- All of exception are checked exception except RuntimeException 
+
+#### declare checked Exception
+```java   
+    public void write(Object obj, String filenmae) throws IOException, ReflectiveOpreationException
+```
+
+#### try-catch
+```java   
+    try{
+        statement..
+    } catch (ExceptionClass ex){
+        handler..
+    }
+```
+- when occur exception , execute statement and move handler
+
+#### try-with-resource
+#### finally
+- organize resources
+
+#### Logger
+- Logger logger = Logger.getLogger("com.mycompany.app");
+
