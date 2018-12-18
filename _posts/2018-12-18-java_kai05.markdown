@@ -46,6 +46,18 @@ tags: [JAVA] # add tag
 #### finally
 - organize resources
 
+#### Objects.requireNonNull Method
+- check null to parameter in convenient
+
+```java   
+    public void process(String directions){
+        this.directions = Objects.requireNonNUll(directions);
+        ...
+        }
+```
+if directions Null,occur NullPointerException   
+and designate String for Exception
+ex) Objects.requireNonNull(directions, "directions must not be null" )
 #### Logger
 - Logger logger = Logger.getLogger("com.mycompany.app");
 
