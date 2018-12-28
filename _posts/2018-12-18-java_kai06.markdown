@@ -5,3 +5,13 @@ date: 2018-12-18 11:47:00 +0300
 description:  카이호스트만 6장 정리 # Add post description (optional)
 tags: [JAVA] # add tag
 ---
+### Part 6 Critical point (Generic Programing)
+
+- A generic class is one that has one or more type parameters.
+- A generic method is one that has type parameters.
+- immutable type
+- Wild Card ? 
+- class and method deleted when compile
+
+
+### 

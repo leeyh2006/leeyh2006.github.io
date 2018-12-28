@@ -1,0 +1,19 @@
+---
+layout: post
+title: 자바 카이호스트만 정리 08장
+date: 2018-12-28 11:47:00 +0300
+description:  카이호스트만 8장 정리 # Add post description (optional)
+tags: [JAVA] # add tag
+---
+### Part 8 Critical point (Stream)
+- stream is better than iterator
+- generator stream from Collection, Arrays ..
+- select element for filter , transform to element for map
+- result for count,max,min,findFirst,findAny 
+- Optional
+- process safely null value;
+- stream result collect for Collection, String , mpa
+- parell Stream
+
+
+### 
