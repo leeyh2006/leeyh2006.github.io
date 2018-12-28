@@ -38,5 +38,6 @@ tags: [JAVA] # add tag
 - peek() -> 원본과 동일한 요소가 포함된 다른 스트림을 돌려준다.
 
 ### result of stream(reduction)
-- Optional type (null check)
 - max(),min,findFirst(),findAny(),anyMatch()
+
+### Optional<T> 
