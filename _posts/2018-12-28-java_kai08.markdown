@@ -5,15 +5,38 @@ date: 2018-12-28 11:47:00 +0300
 description:  카이호스트만 8장 정리 # Add post description (optional)
 tags: [JAVA] # add tag
 ---
-### Part 8 Critical point (Stream)
+### Part 8 Critical point (Steam)
 - stream is better than iterator
 - generator stream from Collection, Arrays ..
 - select element for filter , transform to element for map
 - result for count,max,min,findFirst,findAny 
 - Optional
 - process safely null value;
-- stream result collect for Collection, String , mpa
-- parell Stream
+- stream result collect for Collection, String , map
+- Parallel Stream
 
+### Stream vs Collection
+- Stream does not save element. element generated when necessary
+- Stream make not a change.
+- Stream delay operation.
+- Stream support Map/Reduce model.
 
-### 
+### Stream generation
+- if array ? use Stream.of -> Stream<String> words = Stream.of(array)   
+   Stream.of(values...)
+- Part of Arrays -> Arrays.stream(array,from,to);   
+  empty element of Stream -> Stream.empty();
+  
+### filter,map,flatMap
+- flatMap is each element of array or~   map is element
+
+### extract subStream and concat Stream
+- stream.limit(n) ,stream.skip(n)
+
+### etc
+- sorted(),distinct()
+- peek() -> 원본과 동일한 요소가 포함된 다른 스트림을 돌려준다.
+
+### result of stream(reduction)
+- Optional type (null check)
+- max(),min,findFirst(),findAny(),anyMatch()

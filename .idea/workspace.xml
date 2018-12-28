@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3393505-7de9-4b8c-a901-a372004117c1" name="Default" comment="카이호스트만 1 장 정리">
-      <change afterPath="$PROJECT_DIR$/_posts/2018-12-28-java_kai08.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-12-18-java_kai06.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-12-18-java_kai06.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-12-28-java_kai08.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-12-28-java_kai08.markdown" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,8 +90,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-12-28-java_kai08.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="285">
-                <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <first_editor relative-caret-position="324">
+                <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
               </first_editor>
               <second_editor />
             </state>
@@ -200,8 +199,8 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1186" />
-    <option name="width" value="742" />
+    <option name="x" value="1143" />
+    <option name="width" value="783" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
@@ -232,7 +231,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545928572236" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545968457762" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/yong" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -323,7 +322,7 @@
       <workItem from="1545262282184" duration="599000" />
       <workItem from="1545713780822" duration="1802000" />
       <workItem from="1545926847217" duration="236000" />
-      <workItem from="1545927106312" duration="1464000" />
+      <workItem from="1545927106312" duration="5713000" />
     </task>
     <task id="LOCAL-00001" summary="카이호스트만 1 장 정리">
       <created>1544530017623</created>
@@ -427,13 +426,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125591000" />
+    <option name="totallyTimeSpent" value="129840000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="949" y="0" width="593" height="830" extended-state="0" />
+    <frame x="915" y="0" width="626" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3257143" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24050634" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -449,8 +448,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32846716" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49714285" visible="true" weight="0.31710914" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50285715" side_tool="true" visible="true" weight="0.31710914" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4982079" visible="true" weight="0.31710914" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50179213" side_tool="true" visible="true" weight="0.31710914" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -809,8 +808,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-12-28-java_kai08.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="285">
-            <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <first_editor relative-caret-position="324">
+            <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
           </first_editor>
           <second_editor />
         </state>
