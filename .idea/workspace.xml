@@ -90,8 +90,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-12-28-java_kai08.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="305">
-                <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+              <first_editor relative-caret-position="225">
+                <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               </first_editor>
               <second_editor />
             </state>
@@ -156,6 +156,7 @@
       <find>.high</find>
       <find>.hig</find>
       <find>&gt;</find>
+      <find>pa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -231,7 +232,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545969463542" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546142383265" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/yong" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -322,7 +323,7 @@
       <workItem from="1545262282184" duration="599000" />
       <workItem from="1545713780822" duration="1802000" />
       <workItem from="1545926847217" duration="236000" />
-      <workItem from="1545927106312" duration="6872000" />
+      <workItem from="1545927106312" duration="9088000" />
     </task>
     <task id="LOCAL-00001" summary="카이호스트만 1 장 정리">
       <created>1544530017623</created>
@@ -426,7 +427,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130999000" />
+    <option name="totallyTimeSpent" value="133215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="915" y="0" width="626" height="830" extended-state="0" />
@@ -808,8 +809,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-12-28-java_kai08.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="305">
-            <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <first_editor relative-caret-position="225">
+            <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           </first_editor>
           <second_editor />
         </state>

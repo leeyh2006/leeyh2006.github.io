@@ -28,7 +28,8 @@ tags: [JAVA] # add tag
   empty element of Stream -> Stream.empty();
   
 ### filter,map,flatMap
-- flatMap is each element of array or~   map is element
+- flatMap is each element of array 
+- map is element
 
 ### extract subStream and concat Stream
 - stream.limit(n) ,stream.skip(n)
@@ -41,3 +42,17 @@ tags: [JAVA] # add tag
 - max(),min,findFirst(),findAny(),anyMatch()
 
 ### Optional<T> 
+
+
+### collect Method
+- collect a result to array, list, set, map.. ex(stream.collect(Collectors.toList());
+- joining method  ex) stream.collect(Collectors.joining(","));
+
+### result of Map
+- toMap(Collectors.toMap(key,value));
+
+### primitive type stream
+- wrapper class type (IntegerStream,DoubleStream,LongStream,....);
+
+
+### Parallel Stream
