@@ -26,6 +26,10 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
+        목차 리스트
+      </div>
+
+      <div class="col-lg-8 col-md-10 mx-auto">
 
         {{ content }}
 
@@ -33,7 +37,6 @@ layout: default
         {% for post in site.posts limit : 5 %}
 
         <article class="post-preview">
-          hello
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             <h2 class="post-title">{{ post.title }}</h2>
             {% if post.subtitle %}
