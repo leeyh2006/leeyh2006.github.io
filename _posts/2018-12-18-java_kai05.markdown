@@ -1,0 +1,63 @@
+---
+layout: post
+title: 자바 카이호스트만 정리 05장
+date: 2018-12-18 00:00:00 +0300
+description:  카이호스트만 5장 정리 # Add post description (optional)
+tags: [JAVA] # add tag
+---
+### Part 5 Critical Point
+- Compiler track the exception in java
+- try-catch
+- try-with-resources 
+- try/finally
+- logger
+- log Handler
+- log conf
+
+#### unchecked Exception and checked Exception
+- All of exception are subclass of throwable class;
+ Object   
+  +--- Throwable   
+        +--- Exception   
+        |     +--- RuntimeException  
+        |     +--- ...   
+        |
+        +--- Error   
+              +--- ...   
+- unchecked Exception is subclass of RuntimeException
+- All of exception are checked exception except RuntimeException 
+
+#### declare checked Exception
+```java   
+    public void write(Object obj, String filenmae) throws IOException, ReflectiveOpreationException
+```
+
+#### try-catch
+```java   
+    try{
+        statement..
+    } catch (ExceptionClass ex){
+        handler..
+    }
+```
+- when occur exception , execute statement and move handler
+
+#### try-with-resource
+#### finally
+- organize resources
+
+#### Objects.requireNonNull Method
+- check null to parameter in convenient
+
+```java   
+    public void process(String directions){
+        this.directions = Objects.requireNonNUll(directions);
+        ...
+        }
+```
+if directions Null,occur NullPointerException   
+and designate String for Exception
+ex) Objects.requireNonNull(directions, "directions must not be null" )
+#### Logger
+- Logger logger = Logger.getLogger("com.mycompany.app");
+
