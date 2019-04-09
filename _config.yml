@@ -2,8 +2,8 @@ title:             Hello , i m lee yong hee
 email:             your-email@example.com
 description:       A Blog Theme by Start Bootstrap
 author:            Start Bootstrap
-baseurl:           "https://leeyh2006.github.io/"
-url:               "http://leeyh2006.github.io"
+baseurl:           "/"
+url:               "https://leeyh2006.github.io"
 
 # Social Profiles
 twitter_username:  SBootstrap
