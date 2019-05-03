@@ -65,9 +65,10 @@
             <p>
                 - Skt tango Big data 운영  <br/>
                 - 사내 SNS openclib Service 개발 및 운영  </br>
-                - 3d 의안 과제 구현 및 운영 </br>
+                - 3D 의안 과제 구현 및 운영 </br>
                 - 질병 예측 서비스(healthUp Application) 서버 구축</br>
                 - Sos 누르미 application 서버 구축 및 운영 </br>
+                - Cabbage 의안 프로그램 react rebuilding </br>
             </p>
         </div>
     </div>
@@ -84,6 +85,7 @@
         <li>Spring Framework</li>
         <li>Spring Boot</li>
         <li>Hadoop</li>
+        <li>Kafka</li>
         <li>hive</li>
     </ul>
 </div>
@@ -99,16 +101,14 @@
                 </div>
                 <!-- End .project-image -->
                 <div class="project-info">
-                    <h3>[SK TANGO-D 개발 및 운영]</h3>
+                    <h4>[SK TANGO-D 개발 및 운영]</h4>
                     <p>
-                         다방면에서 수집된 데이터 통해 hadoop dataNode에 적재 하고 타 필요한 서비스에 데이터 제공 및 관리
-                        <br/>
-                        역할 : 서버 운영 및 개발
-                        <br/>
-                        기술 스택 : Java, hadoop, hive, linux
-                        <br/>
+                        <b>서비스 내용 : </b> hadoop cluster 로 구성된 Data Node 들의 상태를 관리하고 수집된 데이터를  etl을 통해 가공하고 제공<br/>
+                            <b>주 업무 : </b> 1. resource manager를 통해 Node들을 monitoring 하고, Grafana를 통해 hadoop job이 돌고 있는 환경에서 Vcore와 memory를 체크하여 pending 되는 현상을 추후에 방지. </br>
+                                              2. 개발 업무가 필요할 경우 데이터를 파싱하는 로직을 작성 하고 Java daemon을 배포 <br/>
+                                              3. hive query로 etl shell sciprt 작성<br/>
+                                              4. 운영에 필요한 배치 스케쥴러 crontab 작성<br/>
                     </p>
-                    <a href="#">View Project</a>
                 </div>
                 <!-- End .project-info -->
             </div>
