@@ -9,7 +9,7 @@ tags: [SpringBoot] # add tag
 > 백기선님 강의와 SpringBoot reference를 기반으로 정리하였습니다.
 
 프로젝트리스트  
-![Intellij LIst]({{site.baseurl}}/assets/img/day007/spinrBootDay007intellijList.JPG)
+![Intellij LIst]({{site.baseurl}}/assets/img/pdiary.jpg)
 
 ## 23.5 Application Events and Listeners
 spring App이 동작되기 전에 events와 Listeners을 정의 할수 있다.
