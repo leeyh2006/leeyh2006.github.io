@@ -1,0 +1,83 @@
+---
+layout: post
+title: 자바 카이호스트만 정리 01장
+date: 2018-12-11 00:00:00 +0300
+description:  카이호스트만 1장 정리 # Add post description (optional)
+tags: [JAVA] # add tag
+---
+
+#### 합법적이지만 정보의 손실을 줄 수 있는 변환
+int -> float    
+long -> float , double   
+ex ) float f = 123456789;   
+f 는 실제로 1.23456792E8 이 됨   
+
+타입 변환 대신 Math.toIntExact 메서드를 사용   
+-> long을 int로 변환 할 수 없을 떄 예외를 일으킴   
+
+### short Circuit Evaluation 이란     
+       
+첫번째 조건이 false 면 두번째 조건은 평가하지 않는다.   
+ex) n!=0 && s+(100-s) /n <50    
+
+만일 n이 0이라면 n으로 나누는 두 번째 조건은 절대로 평가되지 않음 . ->오류가 일어나지 않는다.   
+
+논리합 연산도 short circuit evaluation   
+피연산자 중 하나가 true면 바로 평가를 중단.   
+ex) n==0 || s +(100 - s) /n >= 50   
+뒤에 조건은 보지 않음   
+
+### BigInteger   
+
+기본 정수 타입이나 부동소수점 타입의 범위를 넘어 서는 경우 사용   
+ static method valueOf 는 long을 BigInteger로 변환   
+ex) BigInteger n = BigInteger.valueOf(876543219123456789L);   
+객체에서는 연산자를 사용할 수 없음 -> 메소드 호출해서 사용 (JAVA DOC 참고)   
+
+### 문자열   
+
+객체가 null 인지 검사하려면 == 연산자를 사용   
+null 과 빈 문자열(""")은 다름.-> 빈 문자열은 길이가 0인 문자열임 null은 아예 문자열이 아님.   
+
+문자열을 티러럴 문자열과 비교 할때는 확정된 문자열을 앞에 써서 비교하는게 좋다   
+ex ) if("test".equals(location));   
+-> location이 null 일때도 동작   
+
+대소문자를 구별하지 않고 두 문자열을 비교하려면 `eqaulsIgnoreCase` 메서드를 사용하면 됨   
+
+### 입력과 출력   
+
+입력 읽어오기 Scanner 사용   
+한줄씩 읽기 -> new Scanner(System.in).nextLine();   
+단어 한개 읽기 -> new Scanner(System.in).next();   
+
+Scanner 는 입력 터미널에 문자가 노출되는 반면 Console 클래스는 노출되지 않음 (비밀번호 입력 받을 경우)    
+ex) Console terminal = System.console();   
+char [] passwd = terminal.readPassword("password: ");   
+String.format 을 사용하면 서식이 지정된 문자열을 출력하지 않고 만들 수 있음   
+```java   
+String message = String.format("hello ,%s. next year ,you'llbe %d. \n" ,name ,age);
+```
+
+### 기본 타입의 래퍼 클래스   
+
+제네릭 클래스에는 기본타입을 타입파라미터로 사용할 수 없음   
+-> 래퍼클래스로 사용해야됨 (Integer, Byte, Short ,Long , Float ,Double,Boolean)
+
+
+### 배열 알고리즘   
+
+배열에는 parallelSort 메서드를 사용할 수 있음.   
+-> 대상 배열이 클 때 작업을 여러 프로세서로 나눠서 수행 
+
+### 가변 인자    
+
+ "..."
+ex) public static double average(double... values)
+원하는 만큼에 인자를 메소드에게 전달할 수 있도록 도와줌 
+-> values 는 배열처럼 사용
+*** 가변 파라미터는 반드시 메서드의 마지막 파라미터여야 함.
+```java   
+ex) public static double max(double first ,double...rest) { ... }
+
+```
