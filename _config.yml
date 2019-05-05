@@ -12,8 +12,8 @@ site-twitter: #if your site has a twitter account, enter it here
 author: Lee Yong Hee # add your name
 author-img: LeeYongHee.jpg # add your photo
 about-author: (주)오픈잇 (2017.11.01~ 현재)
-  -서비스 개발팀
-- Skills
+  서비스 개발팀
+  Skills
   JavaScript
   Node.js
   AngularJs
