@@ -1,10 +1,9 @@
 ---
 layout: post
-title: SpringBoot day007,008 정리
+title: skt tango-d project
 date: 2018-05-16 00:00:00 +0300
-description:  day 007,008 정리 # Add post description (optional)
-img: springBootLogo.JPG # Add image post (optional)
-tags: [SpringBoot] # add tag
+description:  skt tango 프로젝트 # Add post description (optional)
+img: tango.jpg # Add image post (optional)
 ---
 > 백기선님 강의와 SpringBoot reference를 기반으로 정리하였습니다.
 

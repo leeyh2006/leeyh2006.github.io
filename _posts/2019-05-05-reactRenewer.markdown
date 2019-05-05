@@ -1,11 +1,10 @@
 ---
 layout: post
-title: SpringBoot day007,008 정리
-date: 2018-05-16 00:00:00 +0300
-description:  day 007,008 정리 # Add post description (optional)
-img: springBootLogo.JPG # Add image post (optional)
-tags: [SpringBoot] # add tag
----
+title: 혈압다이어리 React rebuild
+date: 2019-05-05 00:00:00 +0300
+description:  React renewer # Add post description (optional)
+img: cabbage.jpg # Add image post (optional)
+ㄴ---
 > 백기선님 강의와 SpringBoot reference를 기반으로 정리하였습니다.
 
 프로젝트리스트  
