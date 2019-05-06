@@ -101,6 +101,7 @@ a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
+  font-size: 1.5rem;
   /* 2 */
 }
 
@@ -1130,7 +1131,7 @@ footer .copyright {
 }
 
 .post .post-thumbnail {
-  width: 30%;
+  width: 20%;
   max-width: 100%;
   min-height: 11rem;
   -webkit-background-size: cover;
