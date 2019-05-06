@@ -1,7 +1,13 @@
 ---
 layout: post
-title: Bp diary
+title: 혈압 다이어리 질병 예측 프로그램
 date: 2019-05-05 00:00:00 +0300
 description: bpdiary project# Add post description (optional)
 img: bpdiary.jpg # Add image post (optional)
 ---
+
+### 서비스 내용
+- Bpdiary App 내의 질병 예측 메뉴 중 자신의 혈압 및 콜레스트롤 수치를 입력하여 건강보험공단 코호트 DB를 활용하여 향후 자신이 고혈압,당뇨,동맥경화성 질환이 걸릴 확률을 예측하는 서비스.
+
+### 업무 내용
+1.  
