@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 혈압 다이어리 project
+title: Bp diary
 date: 2019-05-05 00:00:00 +0300
 description: bpdiary project# Add post description (optional)
 img: bpdiary.jpg # Add image post (optional)
