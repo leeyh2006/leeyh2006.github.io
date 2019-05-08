@@ -37,8 +37,8 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
     - 콜레스테롤 수치 및 혈압 수치가 정상치를 넘거나 고혈압 및 당뇨 위험성 수치에 도달하는 대상자
     - 위 대상자를 정상,높음,매우 높음으로 분류  
 - reduce (수정)  
- filter 된 대상자들을 성별,연령,흡연여부,비만,높은혈압 을 기준으 String key를 만들어 Group화
-        ```java     
+ filter 된 대상자들을 성별,연령,흡연여부,비만,높은혈압 을 기준으 String key를 만들어 Group을 만듬
+  ```java       
            public StaticCount GenerateKey(String st){
                 StaticCount key = new StringBuffer();
                     ...
@@ -46,7 +46,7 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
                 return key;
                 
            }
-        ```
+  ```
 #### 결과 값을 단말에 내려주기 위한 설계
 - PredictionResult DB Table 생성
 - 파일을 읽어들여 알고리즘이 수행되는 시간이 상당히 길었기 때문에(파일 사이즈가 너무 큼) 매번 API 요청마다 알고리즘을 수행하여 결과 값을 내려주는것은 비효율적이라는 생각이 듦

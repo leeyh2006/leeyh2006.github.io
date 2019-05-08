@@ -7,12 +7,12 @@ img: openclib.jpg # Add image post (optional)
 ---
 ### Stack : nodeJs,angularJs,electron
 ### 프로젝트 기간 (2018.08 ~ 2018.10)
-### 1. 서비스 내용
+### 서비스 내용
 - 사내 전사 자료 관리 및 전자 결재 서비스 PC 버전  
-![openclib1]({{site.baseurl}}/assets/img/openclib1.jpg)  
+![openclib1]({{site.baseurl}}/assets/img/openclib1.jpg)    
 
----------------------------------------
-### 2.담당 업무
+
+### 담당 업무  
 - 
 #### 
         
