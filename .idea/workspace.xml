@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3393505-7de9-4b8c-a901-a372004117c1" name="Default" comment="카이호스트만 1 장 정리">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/scss/_syntax.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/scss/_syntax.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/scss/_syntax.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
@@ -83,12 +82,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="194">
-                <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+              <first_editor relative-caret-position="251">
+                <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
               </first_editor>
               <second_editor />
             </state>
@@ -171,8 +170,8 @@
         <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/assets/css/scss/main.scss" />
         <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown" />
         <option value="$PROJECT_DIR$/assets/css/scss/_syntax.scss" />
+        <option value="$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown" />
       </list>
     </option>
   </component>
@@ -293,7 +292,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557321913643" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557322123948" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../leeyh2006.github.io - 복사본 (3)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -387,7 +386,7 @@
       <workItem from="1545926847217" duration="236000" />
       <workItem from="1545927106312" duration="11685000" />
       <workItem from="1554783045491" duration="434000" />
-      <workItem from="1557220566097" duration="24860000" />
+      <workItem from="1557220566097" duration="25066000" />
     </task>
     <task id="LOCAL-00001" summary="카이호스트만 1 장 정리">
       <created>1544530017623</created>
@@ -491,7 +490,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176592000" />
+    <option name="totallyTimeSpent" value="176798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1548" height="830" extended-state="0" />
@@ -749,16 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="194">
-            <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -797,6 +786,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="251">
+            <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
