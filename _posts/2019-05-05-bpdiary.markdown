@@ -13,13 +13,16 @@ img: bpdiary.jpg # Add image post (optional)
 ![bp2]({{site.baseurl}}/assets/img/bp2.jpg)
 ![bp3]({{site.baseurl}}/assets/img/bp3.jpg)   
 * * * 
+
+
 ### 2. 담당 업무
 코호트(건강 보험 공단) 데이터를 활용하여 고혈압,당뇨,동맥경화성 질환이 걸릴 확률을 계산하고 단말에 결과 값을 내려주는 API 추가 
   
-1. TXT Data Parsing  
+1. txt data parsing
 
 
-- 질병이 걸릴 확률을 예측하는 알고리즘 설계
+
+2. 질병이 걸릴 확률을 예측하는 알고리즘 설계
     1.  
     2. 
     

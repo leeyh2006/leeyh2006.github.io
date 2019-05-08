@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Openclib
+title: 오픈클립 서비스
 date: 2019-05-05 00:00:00 +0300
 description: openclib Project# Add post description (optional)
 img: project.jpg # Add image post (optional)
