@@ -33,12 +33,12 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
 
 #### 질병이 걸릴 확률을 예측하는 알고리즘 설계
 
-- **모집단 추출**
+- 모집단 추출
     - 2008~2013년 데이터 중 과거 병력(고혈압,당뇨 등등 ..)이 있던 사람들은 모집단에서 제거 (이미 병력이 있음)
-- **Filter 기준 정의**   
+- Filter 기준 정의   
     - 콜레스테롤 수치 및 혈압 수치가 정상치를 넘거나 고혈압 및 당뇨 위험성 수치에 도달하는 대상자
-    - 위 대상자를 정상,높음,매우 높음으로 분류
-    - **reduce** (수정)
+    - 위 대상자를 정상,높음,매우 높음으로 분류  
+    - reduce (수정)
         filter 된 대상자들을 성별,연령,흡연여부,비만,높은혈압 을 기준으 String key를 만들어 Group화
         ```java     
            public StaticCount GenerateKey(String st){
