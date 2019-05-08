@@ -12,13 +12,7 @@ site-twitter: #if your site has a twitter account, enter it here
 author: Lee Yong Hee # add your name
 author-img: LeeYongHee.jpg # add your photo
 about-author: (주)오픈잇 서비스 개발팀(2017.11.01~ 현재)
-about-desc-1: Skt tango Big data 운영
-about-desc-2: 사내 SNS openclib Service 개발 및 운영
-about-desc-3: 3D 의안 과제 구현 및 운영
-about-desc-4: 질병 예측 서비스(bpdiary Application) 서버 구축
-about-desc-5: Sos 누르미 application 서버 구축 및 운영
-about-desc-6: Cabbage 의안 프로그램 react rebuilding
-about-desc-7: 사내 jenkins infra 구축
+about-desc : 안녕하세요 개발을 사랑하는 개발자 이용희입니다.
 # add description
 social-twitter: # add your Twitter handle
 social-facebook: "facebook.com/yonghee.lee.9843" # add your Facebook handle

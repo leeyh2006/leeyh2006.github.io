@@ -4,16 +4,20 @@ title: 혈압 다이어리 질병 예측 프로그램 API 서버 개발
 date: 2019-05-05 00:00:00 +0300
 description: bpdiary project# Add post description (optional)
 img: bpdiary.jpg # Add image post (optional)
----
+--- 
+## Stack : Spring , mybatis 
 
 ### 1. 서비스 내용
-- Bpdiary App 내의 질병 예측 메뉴 중 자신의 혈압 및 콜레스트롤 수치를 입력하여 건강보험공단 코호트 DB를 활용하여 향후 자신이 고혈압,당뇨,동맥경화성 질환이 걸릴 확률을 예측하는 서비스.  
+- Bpdiary App 내의 질병 예측 메뉴 중 자신의 혈압 및 콜레스트롤 수치를 입력하여 향후 자신이 고혈압,당뇨,동맥경화성 질환이 걸릴 확률을 예측하는 서비스.  
 ![bp1]({{site.baseurl}}/assets/img/bp1.jpg)
 ![bp2]({{site.baseurl}}/assets/img/bp2.jpg)
 ![bp3]({{site.baseurl}}/assets/img/bp3.jpg)
+* * * 
 ### 2. 담당 업무
-- 코호트 txt 데이터 파싱
-    1. txt 데이터 첫 line 
-- 통계학을 통해 질병이 걸릴 확률을 예측하는 알고리즘 설계
+>   코호트(건강 보험 공단) 데이터를 활용하여 고혈압,당뇨,동맥경화성 질환이 걸릴 확률을 계산하고 단말에 결과 값을 내려주는 API 추가
+- 코호트 건강보험공단 txt 데이터 파싱
     1. 
+- 질병이 걸릴 확률을 예측하는 알고리즘 설계
+    1.  
+    2. 
     
