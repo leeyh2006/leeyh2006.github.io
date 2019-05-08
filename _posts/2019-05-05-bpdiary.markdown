@@ -30,6 +30,10 @@ img: bpdiary.jpg # Add image post (optional)
 
 2. 질병이 걸릴 확률을 예측하는 알고리즘 설계
     1.  Filter 기준 정의
-        1. 과거 병력이 
-    2. 
+        1. 과거 병력이 있던 사람들은 확률 집단에서 제거 (이미 병력이 있음)
+        2. 
+    2.   
+    
+3. 단말에 값을 내려주기 위한 Predict Table DB 설계  
+   1. 
     
