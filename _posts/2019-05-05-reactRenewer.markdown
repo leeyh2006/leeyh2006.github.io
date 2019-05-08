@@ -6,6 +6,7 @@ description:  React renewer # Add post description (optional)
 img: react.jpg # Add image post (optional)
 ---
 ### Stack : ReactJs, Node.js, mysql
+### 프로젝트 기간 (2019.04 ~ 현재)
 ### 서비스 내용
 ![cabbage1]({{site.baseurl}}/assets/img/cabbage1.jpg)  
 ----------------------------

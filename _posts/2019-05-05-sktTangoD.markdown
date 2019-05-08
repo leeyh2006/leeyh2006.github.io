@@ -6,7 +6,8 @@ description: SKT Tango 프로젝트 # Add post description (optional)
 img: tango.jpg # Add image post (optional)
 ---
 
-### SK TANGO-D(Metatron) 개발 및 운영 (2018.10 ~ 2019.04)
+### SK TANGO-D(Metatron) 개발 및 운영 
+### 프로젝트 기간 (2018.10 ~ 2019.04)
 ### 서비스 내용 
 - SK텔레콤의 통신,T맵 등 대용량 데이터들을 관리하고 가공하여 필요한 팀에게 데이터를 제공하는 서비스 
 
