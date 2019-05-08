@@ -24,7 +24,7 @@ img: bpdiary.jpg # Add image post (optional)
 #### Cohort 데이터 파싱 및 모델 정의  
 
 - cohort 데이터(2008~2015)는 txt파일로 각년도마다 건강검진데이터와 진료 데이터로 존재하였는데 , 이에 구분자 '|'를 추가하여 기준을 만듬. 
-```text  
+```java    
 ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|"I_II_TYPE"|"UN_COST"|"AMT"|"DD_MQTY_EXEC_FREQ"|"MDCN_EXEC_FREQ"|"DD_MQTY_FREQ"    
     200500000001|1|20051206|01|01|1|AA154|1|10740|10740|1|1|
 ```  
