@@ -8,8 +8,9 @@ img: react.jpg # Add image post (optional)
 ### Stack : ReactJs, Node.js, mysql
 ### 프로젝트 기간 (2019.04 ~ 현재)
 ### 서비스 내용
-![cabbage1]({{site.baseurl}}/assets/img/cabbage1.jpg)  
-----------------------------
+![cabbage1]({{site.baseurl}}/assets/img/cabbage1.jpg)    
+
+
 ### 담당업무
 ### React(FE)와 node.js(BE)를 택한 이유
 1. 
