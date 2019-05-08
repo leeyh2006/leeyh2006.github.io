@@ -5,10 +5,8 @@ date: 2019-05-05 00:00:00 +0300
 description: bpdiary project# Add post description (optional)
 img: bpdiary.jpg # Add image post (optional)
 --- 
-
----------------------------------------  
-
 ### Stack : Spring , mybatis 
+### 프로젝트 기간 (2018.04 ~ 2018.08)
 ### 1. 서비스 내용
 - **Bpdiary App 내의 질병 예측 메뉴 중 자신의 혈압 및 콜레스트롤 수치를 입력하여 향후 자신이 고혈압,당뇨,동맥경화성 질환이 걸릴 확률을 예측하는 서비스.**  
 ![bp1]({{site.baseurl}}/assets/img/bp1.jpg)
@@ -49,10 +47,7 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
                 
            }
         ```
-        
 #### 결과 값을 단말에 내려주기 위한 설계
 - PredictionResult DB Table 생성
-- 
 - 파일을 읽어들여 알고리즘이 수행되는 시간이 상당히 길었기 때문에(파일 사이즈가 너무 큼) 매번 API 요청마다 알고리즘을 수행하여 결과 값을 내려주는것은 비효율적이라는 생각이 듦
-- 
 
