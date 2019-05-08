@@ -7,13 +7,13 @@ img: bpdiary.jpg # Add image post (optional)
 ---
 
 ### 1. 서비스 내용
-- Bpdiary App 내의 질병 예측 메뉴 중 자신의 혈압 및 콜레스트롤 수치를 입력하여 건강보험공단 코호트 DB를 활용하여 향후 자신이 고혈압,당뇨,동맥경화성 질환이 걸릴 확률을 예측하는 서비스.
+- Bpdiary App 내의 질병 예측 메뉴 중 자신의 혈압 및 콜레스트롤 수치를 입력하여 건강보험공단 코호트 DB를 활용하여 향후 자신이 고혈압,당뇨,동맥경화성 질환이 걸릴 확률을 예측하는 서비스.  
 ![bp1]({{site.baseurl}}/assets/img/bp1.jpg)
 ![bp2]({{site.baseurl}}/assets/img/bp2.jpg)
 ![bp3]({{site.baseurl}}/assets/img/bp3.jpg)
 ### 2. 담당 업무
 - 코호트 txt 데이터 파싱
-    1. 2008년 ~ 2016년 건강검진 데이터 , 진료 기록 데이터에 대한 column의 기준이 없어 
+    1. txt 데이터 첫 line 
 - 통계학을 통해 질병이 걸릴 확률을 예측하는 알고리즘 설계
     1. 
     
