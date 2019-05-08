@@ -5,7 +5,11 @@ date: 2019-05-05 00:00:00 +0300
 description:  React renewer # Add post description (optional)
 img: react.jpg # Add image post (optional)
 ---
-
+### Stack : ReactJs, Node.js, mysql
+### 서비스 내용
+![cabbage1]({{site.baseurl}}/assets/img/cabbage1.jpg)  
+----------------------------
+### 담당업무
 ### React(FE)와 node.js(BE)를 택한 이유
 1. 
 
