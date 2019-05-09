@@ -78,7 +78,7 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
         
   ```  
   
-  > 결과 샘플
+ 결과 샘플
   ![bp4]({{site.baseurl}}/assets/img/bp4.jpg)
   ...
   ...
@@ -94,4 +94,6 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
 
 #### 프로젝트를 진행 하면서 ..
 - Java Daemon 을 배포해 Application을 실행 하는중 자꾸 프로세스가 행이걸려 에러 로그도 안찍히는 현상이 계속 발생했다. 이유를 한참동안 찾아 헤메던중  
-자바 프로세스가 올라가있는 메모리가 파일을 읽어 들일수 있는 메모리가 부족하여 자꾸 프로그램이 행이 걸리는 현상을 발견하였다.
+자바 프로세스가 올라가있는 메모리가 파일을 읽어 들일수 있는 메모리가 부족하여 자꾸 프로그램이 걸리는 현상일 수도 생각하여 자바 데몬 실행시 .
+
+- 소
