@@ -94,8 +94,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="411">
-                <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+              <first_editor relative-caret-position="107">
+                <caret line="82" selection-start-line="82" selection-end-line="82" />
               </first_editor>
               <second_editor />
             </state>
@@ -258,7 +258,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557421034863" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557421114586" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -353,7 +353,7 @@
       <workItem from="1545927106312" duration="11685000" />
       <workItem from="1554783045491" duration="434000" />
       <workItem from="1557220566097" duration="30034000" />
-      <workItem from="1557362457781" duration="15360000" />
+      <workItem from="1557362457781" duration="15464000" />
     </task>
     <task id="LOCAL-00001" summary="카이호스트만 1 장 정리">
       <created>1544530017623</created>
@@ -457,7 +457,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197126000" />
+    <option name="totallyTimeSpent" value="197230000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -755,8 +755,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="411">
-            <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+          <first_editor relative-caret-position="107">
+            <caret line="82" selection-start-line="82" selection-end-line="82" />
           </first_editor>
           <second_editor />
         </state>

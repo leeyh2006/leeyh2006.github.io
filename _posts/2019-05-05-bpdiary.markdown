@@ -78,11 +78,9 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
         
   ```  
   
- 결과 샘플
-  ![bp4]({{site.baseurl}}/assets/img/bp4.jpg)
-  ...
-  ...
-  
+  ![bp4]({{site.baseurl}}/assets/img/bp4.jpg)     
+  결과 샘플
+ 
 #### 2.2 CSV format 추출  
 - 위 결과 Format 을 토대로 나머지 연령 및 성별 Data도 파싱하여 Csv 파일로 추출. 
 #### 2.2.1 DB Migration
