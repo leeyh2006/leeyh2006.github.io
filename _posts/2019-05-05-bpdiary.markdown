@@ -5,7 +5,7 @@ date: 2019-05-05 00:00:00 +0300
 description: bpdiary project# Add post description (optional)
 img: bpdiary.jpg # Add image post (optional)
 --- 
-### Stack : Spring , mybatis 
+### Stack : Spring3 , mybatis 
 ### 프로젝트 기간 (2018.04 ~ 2018.08)
 ### 1. 서비스 내용
 - **Bpdiary App 내의 질병 예측 메뉴 중 자신의 혈압 및 콜레스트롤 수치를 입력하여 향후 자신이 고혈압,당뇨,동맥경화성 질환이 걸릴 확률을 예측하는 서비스.**  
@@ -16,12 +16,14 @@ img: bpdiary.jpg # Add image post (optional)
 ---------------------------------------
 
 ### 2.담당 업무
-코호트(건강 보험 공단) 데이터를 활용하여 앞으로 흡연여부,비만,높은혈압이 지속될 경우 고혈압,당뇨,동맥경화성 질환이   
-걸릴 확률을 계산하는 알고리즘을 작성하고  단말에 결과 값을 내려주는 **API를  추가하는 업무** 
+[1. 코호트(건강 보험 공단) 데이터를 활용하여 앞으로 흡연여부,비만,높은혈압이 지속될 경우 고혈압,당뇨,동맥경화성 질환이   
+   걸릴 확률을 계산하는 Java Daemon application 개발](#1.java-daemon-application)
+2. 위 Applicatioin을 통해 가공되어진 데이터를 **Csv format** 으로 추출 하여 DB Insert
+3. 기존 Spring Server 에  **API 추가** 
 
 
+#### 1.Java Daemon application 
 #### Cohort 데이터 파싱 및 모델 정의  
-
 - cohort 데이터(2008~2015)는 txt파일로 각년도마다 **건강검진데이터**와 **진료 데이터**로 존재하였는데 , 이에 구분자 '|'를 추가하여 기준을 만듬. 
 ```java    
 ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|"I_II_TYPE"|"UN_COST"|"AMT"|"DD_MQTY_EXEC_FREQ"|"MDCN_EXEC_FREQ"|"DD_MQTY_FREQ"    
@@ -31,10 +33,9 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
 - 위 구분자가 추가된 데이터 파일을 읽어 각 라인별로 파싱하고, 미리 만들어둔 건강검진,진료 Dto에 column을 맵핑 시킨 객체를 생성 
 
 #### 질병이 걸릴 확률을 예측하는 알고리즘 설계
-
 - 모집단 추출
-    - 현재(2008) 기준으로 건강검진상에 과거 병력에 고혈압 및 당뇨가 없다고 응답한 사람
-    - 5년이전까지의 진료데이터를 검색하여 고혈압 및 당뇨 치료를 받은적이 있는 사람
+    - 현재(2008) 기준으로 **건강검진**상에 과거 병력에 고혈압 및 당뇨가 없다고 응답한 사람
+    - 5년이전까지의 **진료**데이터를 검색하여 고혈압 및 당뇨 치료를 받은적이 있는 사람
 - filter    
     - 흡연 여부
     - 비만 여부 
