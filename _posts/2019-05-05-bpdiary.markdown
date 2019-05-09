@@ -50,26 +50,32 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
         public class Statics{
             private List<String> key; // (1:5:O:X:X)
             private long sickCount;
-            private long nomarCount;
-            private long totalCount;
             ....
             ...
             
         }
-        
-        public Statics recude(){
+        Map<String,Statics> list = new HashMap<>();
+        public Map<String,Statics> recude(){
             StringBuffer newKey = new StringBuffer();
             
             for( 2008년 비환자 집단 ) {
                 if(비교군.containsKey(2008년 비환자 집단 고유 Person Key))){
+                        if(성별) key.append('남/여');
+                        if(나이) key.append('연령별');
                         if(흡연) key.append('O');
                         if(비만) key.append('O');
                         if(당뇨) key.append('O');
                         ....
                    }
+                if(list.containsKey(newKey)) // 같은 key를 가지고 있을 경우
+                    Statics stCount = list.get(newKey);
+                    ...
+                    list.put(newKey,stCount);
+                else{
+                    Statics stCount = new Stcount();
+                    list.put(newKey,stCount)
+                }
             }
-            
-            
         
   ```
   
