@@ -36,24 +36,41 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
 - 모집단 추출
     - 현재(2008) 기준으로 **건강검진**상에 과거 병력에 고혈압 및 당뇨가 없다고 응답한 사람
     - 5년이전까지의 **진료**데이터를 검색하여 고혈압 및 당뇨 치료를 받은적이 있는 사람
-- filter    
-    - 흡연 여부
-    - 비만 여부 
-    - 당뇨 여부 
-    - 콜레스테롤 수치 및 혈압 수치가 정상치를 넘거나 고혈압 및 당뇨 위험성 수치에 도달하는 대상자
-- reduce 
-    - 2008 년도 건강검진 DB 상의 비고혈압자를 ( 성별, 연령별, 당뇨여부, 흡연여부, 비만여부) 그룹별로 나눈다. 
-    - 각 그룹별로 1년,2년,3년,4년 각각 고혈압자가 얼마나 발생했는지 추적
- 한다. 
-
-  ```java       
-           public StaticCount GenerateKey(String st){
-                StaticCount key = new StringBuffer();
-                    ...
-                    ...
-                return key;
-                
-           }
+    - 2008 년도 건강검진 DB 상의 질환자를 ( 성별, 연령별, 당뇨여부, 흡연여부, 비만여부) 그룹별로 나눈다. 
+- 각 그룹별로 1년,2년,3년,4년 각각 질환자가 얼마나 발생했는지 추적  
+    - filter  
+        - 성별
+        - 연령
+        - 흡연 여부
+        - 비만 여부 
+        - 당뇨 여부 
+        
+- filtering 된 데이터를  성별,연령별,당뇨,흡연,비만의 정보를 String Key로 만들어 객체로 생성
+  ```java  
+        public class Statics{
+            private List<String> key; // (1:5:O:X:X)
+            private long sickCount;
+            private long nomarCount;
+            private long totalCount;
+            ....
+            ...
+            
+        }
+        
+        public Statics recude(){
+            StringBuffer newKey = new StringBuffer();
+            
+            for( 2008년 비환자 집단 ) {
+                if(비교군.containsKey(2008년 비환자 집단 고유 Person Key))){
+                        if(흡연) key.append('O');
+                        if(비만) key.append('O');
+                        if(당뇨) key.append('O');
+                        ....
+                   }
+            }
+            
+            
+        
   ```
   
 
