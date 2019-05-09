@@ -48,7 +48,7 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
 - filtering 된 데이터를  성별,연령별,당뇨,흡연,비만의 정보를 String Key로 만들어 객체로 생성
   ```java  
         public class Statics{
-            private List<String> key; // (1:5:O:X:X)
+            private List<String> key; // ex) 1:10:O:O:O
             private long sickCount;
             ....
             ...
@@ -77,7 +77,8 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
                 }
             }
         
-  ```
+  ```  
+  ![bp4]({{site.baseurl}}/assets/img/bp4.jpg)
   
 
 #### 결과 값을 단말에 내려주기 위한 설계
