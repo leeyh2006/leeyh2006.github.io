@@ -16,10 +16,10 @@ img: bpdiary.jpg # Add image post (optional)
 ---------------------------------------
 
 ### 2.담당 업무
-1. 코호트(건강 보험 공단) 데이터를 활용하여 앞으로 흡연여부,비만,높은혈압이 지속될 경우 고혈압,당뇨,동맥경화성 질환이   
+**1**. 코호트(건강 보험 공단) 데이터를 활용하여 앞으로 흡연여부,비만,높은혈압이 지속될 경우 고혈압,당뇨,동맥경화성 질환이   
    걸릴 확률을 계산하는 **Java Daemon application** 개발
-2. 위 Applicatioin을 통해 가공되어진 데이터를 **Csv format** 으로 추출 하여 **DB Insert**
-3. 기존 Spring Server 에  **API 추가** 
+**2**. 위 Applicatioin을 통해 가공되어진 데이터를 **Csv format** 으로 추출 하여 **DB Migration**
+**3**. 기존 Spring Server 에  **API 추가** 
 
 
 #### 2.1 Java Daemon application 
@@ -52,7 +52,6 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
             private long sickCount;
             ....
             ...
-            
         }
         Map<String,Statics> list = new HashMap<>();
         public Map<String,Statics> recude(){
@@ -80,12 +79,19 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
   ```  
   
   > 결과 샘플
-  
   ![bp4]({{site.baseurl}}/assets/img/bp4.jpg)
+  ...
+  ...
   
 #### 2.2 CSV format 추출  
-- 
-#### 결과 값을 단말에 내려주기 위한 설계
-- PredictionResult DB Table 생성
-- 파일을 읽어들여 알고리즘이 수행되는 시간이 상당히 길었기 때문에(파일 사이즈가 너무 큼) 매번 API 요청마다 알고리즘을 수행하여 결과 값을 내려주는것은 비효율적이라는 생각이 듦
+- 위 결과 Format 을 토대로 나머지 연령 및 성별 Data도 파싱하여 Csv 파일로 추출. 
+#### 2.2.1 DB Migration
+- PredictionResult DB Table 설계 
+- 추출된 csv 파일을 한줄씩 읽고 ','로 split 후 DB Insert 시킴.     
 
+#### 3.1 API 추가
+- ...
+
+#### 프로젝트를 진행 하면서 ..
+- Java Daemon 을 배포해 Application을 실행 하는중 자꾸 프로세스가 행이걸려 에러 로그도 안찍히는 현상이 계속 발생했다. 이유를 한참동안 찾아 헤메던중  
+자바 프로세스가 올라가있는 메모리가 파일을 읽어 들일수 있는 메모리가 부족하여 자꾸 프로그램이 행이 걸리는 현상을 발견하였다.
