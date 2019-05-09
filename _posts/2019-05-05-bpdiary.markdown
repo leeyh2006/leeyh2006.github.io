@@ -79,7 +79,7 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
         
   ```  
   
-  > 결과  
+  > 결과 샘플
   
   ![bp4]({{site.baseurl}}/assets/img/bp4.jpg)
   
