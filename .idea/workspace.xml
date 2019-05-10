@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f3393505-7de9-4b8c-a901-a372004117c1" name="Default" comment="카이호스트만 1 장 정리">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2019-05-05-reactRenewer.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-05-reactRenewer.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/cabbage2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/cabbage2.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-reactRenewer.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="399">
-                <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+              <first_editor relative-caret-position="456">
+                <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               </first_editor>
               <second_editor />
             </state>
@@ -233,27 +233,6 @@
               <item name="leeyh2006.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="leeyh2006.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="leeyh2006.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leeyh2006.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leeyh2006.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leeyh2006.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leeyh2006.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leeyh2006.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leeyh2006.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leeyh2006.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -264,7 +243,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557475766643" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557478525882" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -359,7 +338,7 @@
       <workItem from="1545927106312" duration="11685000" />
       <workItem from="1554783045491" duration="434000" />
       <workItem from="1557220566097" duration="30034000" />
-      <workItem from="1557362457781" duration="23535000" />
+      <workItem from="1557362457781" duration="25302000" />
     </task>
     <task id="LOCAL-00001" summary="카이호스트만 1 장 정리">
       <created>1544530017623</created>
@@ -463,7 +442,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205301000" />
+    <option name="totallyTimeSpent" value="207068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -763,8 +742,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-reactRenewer.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="399">
-            <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <first_editor relative-caret-position="456">
+            <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           </first_editor>
           <second_editor />
         </state>

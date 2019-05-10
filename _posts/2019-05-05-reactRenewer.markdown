@@ -12,14 +12,18 @@ img: react.jpg # Add image post (optional)
 
 ### 담당업무
 #### React와 node.js를 택한 이유 
-1. React
+1. Component의 재사용 
 
 2. node.js
 화상 채팅 기능 구현을 위해 
 
 ### 프로젝트 설계
-Component 분리  
-![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)
+다음은 3D 의안 Application 일부 화면이다. 각 메뉴의 페이지는 다음과 같은 페이지의 구성으로 공통적으로 사용한다.  
+이를 공통화 하기위해 PageTemplate Component를 두고 그 안에 추가기능을 넣어 구현할 수 있도록 모듈을 만들었다.
+![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
+![cabbage2]({{site.baseurl}}/assets/img/cabbage3.jpg)   
+![cabbage2]({{site.baseurl}}/assets/img/cabbage4.jpg)   
+
 
 2. 데이터 상태관리를 위한 react-redux 적용
 
