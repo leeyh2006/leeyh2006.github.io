@@ -25,7 +25,7 @@ img: react.jpg # Add image post (optional)
 
 PageTemplate.js  
  
-```typescript jsx  
+```typescript jsx    
 const PageTemplate=({children,name})=>(
     <div>
         <Header name={name}/>
@@ -38,7 +38,7 @@ const PageTemplate=({children,name})=>(
         </div>
     </div>
 );
-```   
+```     
 
 Page.js  
 ```typescript jsx     
