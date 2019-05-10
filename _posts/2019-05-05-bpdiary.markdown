@@ -16,13 +16,12 @@ img: bpdiary.jpg # Add image post (optional)
 ---------------------------------------
 
 ### 담당 업무
-#### 코호트(건강 보험 공단) 데이터를 활용하여 앞으로 흡연여부,비만,높은혈압이 지속될 경우 고혈압,당뇨,동맥경화성 질환이   
+1. 코호트(건강 보험 공단) 데이터를 활용하여 앞으로 흡연여부,비만,높은혈압이 지속될 경우 고혈압,당뇨,동맥경화성 질환이   
    걸릴 확률을 계산하는 **Java Daemon application** 개발  
-#### 위 Applicatioin을 통해 가공되어진 데이터를 **Csv format** 으로 추출 하여 **DB Migration**  
-#### 기존 Spring Server 에  **API 추가**   
+2. 위 Applicatioin을 통해 가공되어진 데이터를 **Csv format** 으로 추출 하여 **DB Migration**  
+3. 기존 Spring Server 에  **API 추가**   
 
-
-#### Java Daemon application 
+#### Java Daemon application   
 #### Cohort 데이터 파싱 및 모델 정의  
 - cohort 데이터(2008~2015)는 txt파일로 각년도마다 **건강검진데이터**와 **진료 데이터**로 존재하였는데 , 이에 구분자 '|'를 추가하여 기준을 만듬. 
 ```java    
