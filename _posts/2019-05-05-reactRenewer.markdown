@@ -8,10 +8,10 @@ img: react.jpg # Add image post (optional)
 ### Stack : ReactJs, Node.js, mysql
 ### 프로젝트 기간 (2019.04 ~ 현재)
 ### 서비스 내용
+병원에 내원하기 힘든 환자들에게 의안사와 화상채팅을 할 수 있는 환경을 조성하고 이를 통해 의안을 제작하는데 도움을 주는 Application.
 ![cabbage1]({{site.baseurl}}/assets/img/cabbage1.jpg)    
 
-#### 
-
+#### React를 적용 하는 이유
 
 
 2. node.js
@@ -23,7 +23,7 @@ img: react.jpg # Add image post (optional)
 
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
 
-```typescript jsx     
+```javascript       
 const PatientPage =()=>{
     return(
         <PageTemplate name="환자정보">
