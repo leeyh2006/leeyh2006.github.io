@@ -37,7 +37,8 @@ img: react.jpg # Add image post (optional)
             </div>
         </div>
     );
-```
+```  
+
 
 ```typescript jsx     
 const PatientPage =()=>{
