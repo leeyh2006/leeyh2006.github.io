@@ -23,23 +23,23 @@ img: react.jpg # Add image post (optional)
 
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
 
-
+PageTemplate.js 
 ```typescript jsx  
-    const PageTemplate=({children,name})=>(
-        <div>
-            <Header name={name}/>
-            <div className="container">
-                <SideMenu />
-                <SearchBar/>
-                <div className="contents_wrap">
-                    {children}
-                </div>
+const PageTemplate=({children,name})=>(
+    <div>
+        <Header name={name}/>
+        <div className="container">
+            <SideMenu />
+            <SearchBar/>
+            <div className="contents_wrap">
+                {children}
             </div>
         </div>
-    );
-```  
+    </div>
+);
+```   
 
-
+Page.js  
 ```typescript jsx     
 const PatientPage =()=>{
     return(
