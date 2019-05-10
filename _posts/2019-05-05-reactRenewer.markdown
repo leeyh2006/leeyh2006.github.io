@@ -23,7 +23,8 @@ img: react.jpg # Add image post (optional)
 
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
 
-PageTemplate.js 
+PageTemplate.js  
+ 
 ```typescript jsx  
 const PageTemplate=({children,name})=>(
     <div>
