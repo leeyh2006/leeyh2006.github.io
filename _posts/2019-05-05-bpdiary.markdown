@@ -17,9 +17,9 @@ img: bpdiary.jpg # Add image post (optional)
 
 ### 2.담당 업무
 **1**. 코호트(건강 보험 공단) 데이터를 활용하여 앞으로 흡연여부,비만,높은혈압이 지속될 경우 고혈압,당뇨,동맥경화성 질환이   
-   걸릴 확률을 계산하는 **Java Daemon application** 개발
-**2**. 위 Applicatioin을 통해 가공되어진 데이터를 **Csv format** 으로 추출 하여 **DB Migration**
-**3**. 기존 Spring Server 에  **API 추가** 
+   걸릴 확률을 계산하는 **Java Daemon application** 개발  
+**2**. 위 Applicatioin을 통해 가공되어진 데이터를 **Csv format** 으로 추출 하여 **DB Migration**  
+**3**. 기존 Spring Server 에  **API 추가**   
 
 
 #### 2.1 Java Daemon application 
@@ -85,12 +85,14 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
 - 위 결과 Format 을 토대로 나머지 연령 및 성별 Data도 파싱하여 Csv 파일로 추출. 
 #### 2.2.1 DB Migration
 - PredictionResult DB Table 설계 
-- 추출된 csv 파일을 한줄씩 읽d어서  ','로 split 후 각 정보를 DB Table에 Insert함 
+- 추출된 csv 파일을 한줄씩 읽어서  ','로 split 후 각 정보를 DB Table에 Insert함 
 #### 3.1 API 추가
 - Reuqest로 들어온 흡연 ,당뇨 ,비만 Parameter를 필터하여 DB로 부터 정보를 읽어 들인후 결과 값을 내려줌
 
 
 #### 프로젝트를 진행 하면서 ..
-- OOME Error -> 건강 보험 공단 파일의 사이즈가 컸던 만큼 Java Daemon을 실행 시킬때 메모리가 부족하여 에러가 발생하였는데 , jvm option을 줘서 해결을 하였지만 좀더 효율적으로 코드를 작성하였다면 발생하지 않았을까 ? 에 대한 아쉬움 .
-- 람다 사용 및 스트림 사용의 아쉬움 -> 각 조건에 맞춰 MaP 의 entryset을 통해 각 조건에 맞게 filter 할 경우 소스코드의 가독성이 많이 떨어 지는 아쉬움이 있었다.
+- #### OOME Error   
+건강 보험 공단 파일의 사이즈가 컸던 만큼 Java Daemon을 실행 시킬때 메모리가 부족하여 에러가 발생하였는데 , jvm option을 줘서 해결을 하였지만 좀더 효율적으로 코드를 작성하였다면 발생하지 않았을까 ? 에 대한 아쉬움 .
+- ###람다 사용 및 스트림 사용의 아쉬움 
+   각 조건에 맞춰 MaP 의 entryset을 통해 각 조건에 맞게 filter 할 경우 소스코드의 가독성이 많이 떨어 지는 아쉬움이 있었다.
 Stream을 사용하여 filter로 간결하게 정의 하였을 경우 가독성이 더 높아지지 않았을까? 라는 생각이 든다.

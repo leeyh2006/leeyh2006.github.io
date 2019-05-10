@@ -12,7 +12,8 @@ img: openclib.jpg # Add image post (optional)
 ![openclib1]({{site.baseurl}}/assets/img/openclib1.jpg)    
 
 ### 담당 업무    
-- 
+1. 화상채팅 기능 추가
+2. 
 #### 
         
 #### 
