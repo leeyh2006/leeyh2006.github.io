@@ -10,9 +10,9 @@ img: react.jpg # Add image post (optional)
 ### 서비스 내용
 ![cabbage1]({{site.baseurl}}/assets/img/cabbage1.jpg)    
 
-### 담당업무
-#### React와 node.js를 택한 이유 
-1. Component의 재사용 
+#### 
+
+
 
 2. node.js
 화상 채팅 기능 구현을 위해 
@@ -23,24 +23,6 @@ img: react.jpg # Add image post (optional)
 
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
 
-PageTemplate.js  
- 
-```typescript jsx    
-const PageTemplate=({children,name})=>(
-    <div>
-        <Header name={name}/>
-        <div className="container">
-            <SideMenu />
-            <SearchBar/>
-            <div className="contents_wrap">
-                {children}
-            </div>
-        </div>
-    </div>
-);
-```     
-
-Page.js  
 ```typescript jsx     
 const PatientPage =()=>{
     return(
