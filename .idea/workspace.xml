@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3393505-7de9-4b8c-a901-a372004117c1" name="Default" comment="카이호스트만 1 장 정리">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-05-sos-nurmi.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-05-sos-nurmi.markdown" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +18,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-reactRenewer.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="323">
-                <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+              <first_editor relative-caret-position="817">
+                <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               </first_editor>
               <second_editor />
             </state>
@@ -45,8 +45,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="183">
-                <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <first_editor relative-caret-position="380">
+                <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
               </first_editor>
               <second_editor />
             </state>
@@ -248,7 +248,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557670071219" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557671370330" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -343,7 +343,7 @@
       <workItem from="1545927106312" duration="11685000" />
       <workItem from="1554783045491" duration="434000" />
       <workItem from="1557220566097" duration="30034000" />
-      <workItem from="1557362457781" duration="49657000" />
+      <workItem from="1557362457781" duration="50958000" />
     </task>
     <task id="LOCAL-00001" summary="카이호스트만 1 장 정리">
       <created>1544530017623</created>
@@ -447,7 +447,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231423000" />
+    <option name="totallyTimeSpent" value="232724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -735,8 +735,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-reactRenewer.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="323">
-            <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          <first_editor relative-caret-position="817">
+            <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           </first_editor>
           <second_editor />
         </state>
@@ -745,8 +745,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="183">
-            <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <first_editor relative-caret-position="380">
+            <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
           </first_editor>
           <second_editor />
         </state>

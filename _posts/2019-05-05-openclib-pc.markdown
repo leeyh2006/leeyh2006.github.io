@@ -12,14 +12,12 @@ img: openclib.jpg # Add image post (optional)
 ![openclib1]({{site.baseurl}}/assets/img/openclib1.jpg)    
 
 ### 담당 업무    
-1. 화상채팅 기능 추가
-2. Openclib 기존 메뉴 기능 추가
-3. 
+기존 사내 SNS Application은 web 서비스로 되어 있었고 이를 데스크톱 앱으로 새롭게 리뉴얼 하는 업무.    
+1. 기존 openclib 메뉴 UI 개발
+2. 화상채팅 기능 추가  
 
-#### 프로젝트 설계 
-#### node.js 를 선택 한 이유
-채팅 기능을 구현 하기 위해 
-
+### 프로젝트 설계 
+ㄴ
 #### 마치며..
 AngularJs에 대한 learning curve 가 기간에 비해 너무 부족 하여 Code 를 효율적으로 작성하지 못한 점이 너무 아쉽다 .
 
