@@ -2,8 +2,17 @@
 layout: post
 title: SOS 누르미
 date: 2019-05-05 00:00:00 +0300
-description:  sos 누르미 프로젝트  # Add post description (optional)
+description:  sos 누르미 Application  # Add post description (optional)
 img: sos.jpg # Add image post (optional)
 ---
+### Stack : Spring3, mybatis
+### 프로젝트 기간 (2018.08 ~ 2018.10)
+### 서비스 내용
+#### SOS 구조요청  
+여성 안심 귀가 서비스로 긴급 상황에 SOS 요청을 할 수 있도록 도와주는 Application.  
+![sos3]({{site.baseurl}}/assets/img/sos3.jpg)    
+### 담당업무  
+- 기존 Spring 서버에 현재 날씨정보 API 기능 추가
 
-####
+#### API 요청 횟수 제한 
+공공 데이터 포털 Open API를 활용하여 날씨 데이터를 받아오는
