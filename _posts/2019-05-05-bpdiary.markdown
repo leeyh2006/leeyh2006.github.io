@@ -95,5 +95,5 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
 - #### OOME Error   
 건강 보험 공단 파일의 사이즈가 컸던 만큼 Java Daemon을 실행 시킬때 메모리가 부족하여 에러가 발생하였는데 , jvm option을 줘서 해결을 하였지만 좀더 효율적으로 코드를 작성하였다면 발생하지 않았을까 ? 에 대한 아쉬움 .
 - #### 람다 사용 및 스트림 사용의 아쉬움 
-   각 조건에 맞춰 MaP 의 entryset을 통해 각 조건에 맞게 filter 할 경우 소스코드의 가독성이 많이 떨어 지는 아쉬움이 있었다.
+   각 조건에 맞춰 Map의 entrySet을 통해 각 조건에 맞게 filter 할 경우 소스코드의 가독성이 많이 떨어 지는 아쉬움이 있었다.
 Stream을 사용하여 filter로 간결하게 정의 하였을 경우 가독성이 더 높아지지 않았을까? 라는 생각이 든다.
