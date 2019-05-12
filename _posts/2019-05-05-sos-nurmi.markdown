@@ -84,6 +84,5 @@ parsing 된 Json String 을 ObjectMapper 를 사용하여 각 모델에 데이�
 	</task:scheduled-tasks>
 ```  
 
-## 마치며..
 
  

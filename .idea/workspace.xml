@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3393505-7de9-4b8c-a901-a372004117c1" name="Default" comment="카이호스트만 1 장 정리">
+      <change beforePath="$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2019-05-05-sos-nurmi.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-05-sos-nurmi.markdown" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,8 +18,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-reactRenewer.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="190">
-                <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+              <first_editor relative-caret-position="323">
+                <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
               </first_editor>
               <second_editor />
             </state>
@@ -40,12 +41,12 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="342">
-                <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <first_editor relative-caret-position="183">
+                <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               </first_editor>
               <second_editor />
             </state>
@@ -73,12 +74,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-sos-nurmi.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="247">
-                <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <first_editor relative-caret-position="316">
+                <caret line="86" selection-start-line="86" selection-end-line="86" />
               </first_editor>
               <second_editor />
             </state>
@@ -177,10 +178,10 @@
         <option value="$PROJECT_DIR$/assets/css/scss/_syntax.scss" />
         <option value="$PROJECT_DIR$/_posts/2019-05-05-openclib.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-05-sktTangoD.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-05-reactRenewer.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-05-sos-nurmi.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown" />
       </list>
     </option>
   </component>
@@ -247,7 +248,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557669944151" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557670071219" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -342,7 +343,7 @@
       <workItem from="1545927106312" duration="11685000" />
       <workItem from="1554783045491" duration="434000" />
       <workItem from="1557220566097" duration="30034000" />
-      <workItem from="1557362457781" duration="49547000" />
+      <workItem from="1557362457781" duration="49657000" />
     </task>
     <task id="LOCAL-00001" summary="카이호스트만 1 장 정리">
       <created>1544530017623</created>
@@ -446,13 +447,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231313000" />
+    <option name="totallyTimeSpent" value="231423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18864097" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18864097" />
       <window_info id="Structure" order="1" weight="0.24973147" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -468,7 +469,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32846716" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4969574" visible="true" weight="0.17450683" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4969574" visible="true" weight="0.17450683" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5030426" side_tool="true" weight="0.13657056" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -711,26 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-reactRenewer.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="190">
-            <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="342">
-            <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -744,8 +725,28 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-sos-nurmi.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="247">
-            <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <first_editor relative-caret-position="316">
+            <caret line="86" selection-start-line="86" selection-end-line="86" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-reactRenewer.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="323">
+            <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="183">
+            <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           </first_editor>
           <second_editor />
         </state>
