@@ -13,21 +13,21 @@ img: openclib.jpg # Add image post (optional)
 
 ### 담당 업무    
 기존 사내 SNS Application은 web 서비스로 되어 있었고 이를 데스크톱 앱으로 새롭게 리뉴얼 하는 업무.    
-1. 기존 openclib 메뉴 UI 개발
+1. 기존 SNS 채팅 기능 개발
 2. 화상채팅 기능 추가  
 
 ### 프로젝트 설계
 
+#### Framework 선정
+
+  
 #### 화상채팅 구현
 다음은 openclib-pc 버전 화상채팅 기능 일부 화면이다.
 ![openclib3]({{site.baseurl}}/assets/img/openclib3.jpg)
-
 
 #### webRtc library 선정
 
 #### 
 
 
-#### 마치며..
-AngularJs에 대한 learning curve 가 기간에 비해 너무 부족 하여 Code 를 효율적으로 작성하지 못한 점이 너무 아쉽다 .
-
+#### 마치며

@@ -27,7 +27,7 @@ Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필�
 코드 작성의 생산성도 높이고 오직 View 에만 집중하여 개발을 할 수 있다는 점이 제일 끌렸던 이유 인것 같다.
 
 ### 프로젝트 설계
-다음은 3D 의안 Application 일부 화면이다. 
+다음은 3D 의안 Application 일부 화면이다. 화면의 기능들을 각각 Component화 하고 나누었다.
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
 
 #### 페이지 공통 모듈화   
