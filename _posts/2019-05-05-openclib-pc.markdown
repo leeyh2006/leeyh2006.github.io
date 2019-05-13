@@ -19,9 +19,10 @@ img: openclib.jpg # Add image post (optional)
 ### 프로젝트 설계
 
 ### Framework 선정
-#### node.js
-Server로  node.js를 택하게 된 이유는 채팅 기능을 socket.io libary 를 사용하여 쉽게 기능을 구현할 수 있다는 장점과   
-프로젝트 목적에 맞게 데스크 톱 앱을 따로 
+#### node.js  
+javascript 기반으로 개발 구조가 매우 단순 했던 점과 ,
+프로젝트에 주 목적은 채팅기능과 화상채팅 기능 이였는데 이를 socket.io 모듈을 통해 쉽게 기능을 구현할 수 있다는 점에 택 하게 되었다.
+또한 데스크톱 앱 배포를 위해서 알아보던 중에 Electron 
 #### angularJs
 #### electron
 
