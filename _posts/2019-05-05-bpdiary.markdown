@@ -21,15 +21,18 @@ img: bpdiary.jpg # Add image post (optional)
 2. 위 Applicatioin을 통해 가공되어진 데이터를 **Csv format** 으로 추출 하여 **DB Migration**  
 3. 기존 Spring Server 에  **API 추가**   
 
-#### Java Daemon application?
-Cohort 데이터 파일을 전달 받았을때 
+#### Java Daemon application ?
+처음 코호트 데이터를 전달 받았을 때 데이터의 사이즈는 **엄청 컸고** 이 파일을 읽어 들이는 시간도 상당히 오래 걸렸다.  
+이를 Spring 서버에 올려 매번 단말에서 요청이 올때마다 값을 계산하여 내려주는것은 응답 시간도 오래걸리고 비효율적이며 서비스에 영향도 미칠것이라고 판단이 되었다.  
+또한 통계적으로 계산한 **결과값만** 필요했기 때문에 불필요하게 service layer에 알고리즘 logic을 작성하지 않고 Java Daemon 을 만들어 결과 값을 만들어주는 Application 을 제작하였다.  
+**개발 과정은 다음과 같다.**
+
 #### Cohort 데이터 파싱 및 모델 정의  
 - cohort 데이터(2008~2015)는 txt파일로 각년도마다 **건강검진데이터**와 **진료 데이터**로 존재하였는데 , 이에 구분자 '|'를 추가하여 기준을 만듬. 
 ```java    
 ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|"I_II_TYPE"|"UN_COST"|"AMT"|"DD_MQTY_EXEC_FREQ"|"MDCN_EXEC_FREQ"|"DD_MQTY_FREQ"    
     200500000001|1|20051206|01|01|1|AA154|1|10740|10740|1|1|
 ```  
-
 - 위 구분자가 추가된 데이터 파일을 읽어 각 라인별로 파싱하고, 미리 만들어둔 건강검진,진료 Dto에 column을 맵핑 시킨 객체를 생성 
 
 #### 질병이 걸릴 확률을 예측하는 알고리즘 설계
@@ -45,7 +48,10 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
         - 비만 여부 
         - 당뇨 여부 
         
-- filtering 된 데이터를  성별,연령별,당뇨,흡연,비만의 정보를 String Key로 만들어 객체로 생성
+- **Data 그룹화**   
+    위에서 filtering 된 데이터를 그룹화 하는 과정이 필요했다. 각 필터 조건에 맞게 Group 화 할수 있는 Key가 필요했고, 이를 위해  **String key filed를 포함하고 있는 통계 Class** 를 만들었다.
+
+
   ```java  
         public class Statics{
             private List<String> key; // ex) 1:10:O:O:O
