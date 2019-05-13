@@ -17,12 +17,14 @@ img: openclib.jpg # Add image post (optional)
 2. 화상채팅 기능 추가  
 
 ### 프로젝트 설계
+
 ### Framework 선정
 ### node.js  
 - javascript 기반으로 개발 구조가 매우 단순하여 Learning curve 에 대한 적은 비용 
 - 현 프로젝트에 주 목적은 채팅기능과 화상채팅 기능 이였는데 이를 socket.io 모듈을 통해 쉽게 기능을 구현할 수 있다는 장점
 - 데스크톱 앱 배포를 위해서 조사를 하던 중 Electron 을 접하게 되었는데 이 또한 node.js를 사용하여 Application을 제작할 수 있는 이점
-당시 사내에서도 node.js 와 FE 프레임워크 들에 대한 관심도가 높았었다. (수정 필요)  
+당시 사내에서도 node.js 와 FE 프레임워크 들에 대한 관심도가 높았었다. (수정 필요)   
+ 
 
 ### angularJs
 왜 썻는가 ?
