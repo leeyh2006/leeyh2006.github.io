@@ -85,7 +85,7 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
 
 #### DB Migration
 - PredictionResult DB Table 설계 
-- 추출된 csv 파일을 한줄씩 읽어서  ','로 split 후 각 정보를 DB Table에 Insert함   
+- 추출된 csv 파일을 한줄씩 읽어서  ','로 split 후 각 정보를 DB Table에 Insert 
 
 #### API 추가
 - Request로 들어온 흡연 ,당뇨 ,비만 Parameter를 필터하여 DB로 부터 정보를 읽어 들인후 결과 값을 내려줌

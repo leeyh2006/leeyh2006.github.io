@@ -18,9 +18,10 @@ img: openclib.jpg # Add image post (optional)
 
 ### 프로젝트 설계
 
-#### 화상채팅 
+#### 화상채팅 구현
+다음은 openclib-pc 버전 화상채팅 기능 일부 화면이다.
 ![openclib3]({{site.baseurl}}/assets/img/openclib3.jpg)
-#### node.js를 택한 이유
+
 
 #### webRtc library 선정
 
