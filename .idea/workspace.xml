@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f3393505-7de9-4b8c-a901-a372004117c1" name="Default" comment="카이호스트만 1 장 정리">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-05-05-sos-nurmi.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-05-sos-nurmi.markdown" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,20 +20,20 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-reactRenewer.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="107">
-                <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+              <first_editor relative-caret-position="589">
+                <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="294">
-                <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <first_editor relative-caret-position="209">
+                <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
               </first_editor>
               <second_editor />
             </state>
@@ -60,8 +62,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-sos-nurmi.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="126">
-                <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+              <first_editor relative-caret-position="494">
+                <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               </first_editor>
               <second_editor />
             </state>
@@ -89,12 +91,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="222">
-                <caret line="93" column="20" lean-forward="true" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+              <first_editor relative-caret-position="76">
+                <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
               </first_editor>
               <second_editor />
             </state>
@@ -191,13 +193,13 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/_posts/2019-05-05-openclib.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2019-05-05-sos-nurmi.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-05-sktTangoD.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-05-reactRenewer.markdown" />
         <option value="$PROJECT_DIR$/assets/css/scss/_syntax.scss" />
         <option value="$PROJECT_DIR$/assets/css/scss/main.scss" />
+        <option value="$PROJECT_DIR$/_posts/2019-05-05-sos-nurmi.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown" />
       </list>
     </option>
   </component>
@@ -259,45 +261,6 @@
               <item name="leeyh2006.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="leeyh2006.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leeyh2006.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leeyh2006.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leeyh2006.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leeyh2006.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leeyh2006.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leeyh2006.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leeyh2006.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leeyh2006.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leeyh2006.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-              <item name="font-awesome" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leeyh2006.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leeyh2006.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-              <item name="font-awesome" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -308,7 +271,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557747555294" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557751432136" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -403,7 +366,7 @@
       <workItem from="1545927106312" duration="11685000" />
       <workItem from="1554783045491" duration="434000" />
       <workItem from="1557220566097" duration="30034000" />
-      <workItem from="1557362457781" duration="72368000" />
+      <workItem from="1557362457781" duration="76102000" />
     </task>
     <task id="LOCAL-00001" summary="카이호스트만 1 장 정리">
       <created>1544530017623</created>
@@ -507,13 +470,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254134000" />
+    <option name="totallyTimeSpent" value="257868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="83" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18864097" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18864097" />
       <window_info id="Structure" order="1" weight="0.24973147" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -529,7 +492,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32846716" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4969574" visible="true" weight="0.17905918" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4969574" visible="true" weight="0.17905918" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5030426" side_tool="true" weight="0.13657056" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -766,11 +729,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="222">
-            <caret line="93" column="20" lean-forward="true" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+          <first_editor relative-caret-position="209">
+            <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
           </first_editor>
           <second_editor />
         </state>
@@ -779,8 +742,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-reactRenewer.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="107">
-            <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <first_editor relative-caret-position="589">
+            <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           </first_editor>
           <second_editor />
         </state>
@@ -799,18 +762,18 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-sos-nurmi.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="126">
-            <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <first_editor relative-caret-position="494">
+            <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-openclib-pc.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-05-bpdiary.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="294">
-            <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <first_editor relative-caret-position="76">
+            <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           </first_editor>
           <second_editor />
         </state>
