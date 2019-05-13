@@ -8,8 +8,7 @@ img: react.jpg # Add image post (optional)
 ### Stack : ReactJs, Node.js, mysql
 ### 프로젝트 기간 (2019.04 ~ 현재)
 ### 서비스 내용
-병원에 내원하기 힘든 환자들에게 의안사와 화상채팅을 할 수 있는 환경을 조성하고   
-이를 통해  의안에 대한 데이터 모델을 정의 하고 제작 표안을 만드는 Application.
+병원에 내원하기 힘든 환자들에게 의안사와 화상채팅을 할 수 있는 환경을 조성하고 이를 통해  의안에 대한 데이터 모델을 정의 하고 제작 표안을 만드는 Application.
 ![cabbage1]({{site.baseurl}}/assets/img/cabbage1.jpg)    
 
 ### React 적용 이유
