@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 혈압 다이어리 질병 예측 Application API 서버 개발
-date: 2019-05-05 00:00:00 +0300
+date: 2019-04-10 00:00:00 +0300
 description: bpdiary project# Add post description (optional)
 img: bpdiary.jpg # Add image post (optional)
 --- 
