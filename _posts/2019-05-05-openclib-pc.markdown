@@ -17,16 +17,12 @@ img: openclib.jpg # Add image post (optional)
 2. 화상채팅 기능 추가  
 
 ### 프로젝트 설계
-
 ### Framework 선정
 #### node.js  
-javascript 기반으로 개발 구조가 매우 단순 했던 점과 ,
-프로젝트에 주 목적은 채팅기능과 화상채팅 기능 이였는데 이를 socket.io 모듈을 통해 쉽게 기능을 구현할 수 있다는 점에 택 하게 되었다.
-또한 데스크톱 앱 배포를 위해서 알아보던 중에 Electron 
+javascript 기반으로 개발 구조가 매우 단순 했던 점과, 현 프로젝트에 주 목적은 채팅기능과 화상채팅 기능 이였는데 이를 socket.io 모듈을 통해 쉽게 기능을 구현할 수 있다는 점에 택 하게 되었다.
+또한 데스크톱 앱 배포를 위해서 조사를 하던 중 Electron 을 접하게 되었는데 이 또한 node.js를 사용하여 application을 제작할 수 있는 이점이 있었다.
 #### angularJs
-#### electron
 
-  
 #### 화상채팅 구현
 다음은 openclib-pc 버전 화상채팅 기능 일부 화면이다.
 ![openclib3]({{site.baseurl}}/assets/img/openclib3.jpg)
