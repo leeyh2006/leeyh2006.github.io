@@ -37,6 +37,7 @@ PageTemplate Component를 두고 그 안에 추가기능을 넣어 구현할 수
 이렇게 공통 페이지 Component를 만들고 페이지를 렌더링 할때 각 페이지에서 컴포넌트를 불러와 사용.
 ![cabbage4]({{stie.baseurl}}/assets/img/cabbage4.jpg)
 
-
 2. 데이터 상태관리를 위한 react-redux 적용
+
+
 

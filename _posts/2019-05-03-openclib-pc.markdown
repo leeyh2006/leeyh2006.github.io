@@ -33,8 +33,6 @@ img: openclib.jpg # Add image post (optional)
 다음은 openclib-pc 버전 화상채팅 기능 일부 화면이다.
 ![openclib3]({{site.baseurl}}/assets/img/openclib3.jpg)
  
-
- 
 #### WebRtc 서버
 
 #### 마치며
