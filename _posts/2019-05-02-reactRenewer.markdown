@@ -6,7 +6,7 @@ description:  React renewer # Add post description (optional)
 img: react.jpg # Add image post (optional)
 ---
 ### Stack : ReactJs, Node.js, mysql
-### 프로젝트 기간 (2019.04 ~ 현재)
+### 프로젝트 기간 (2019.04 ~ 진행중)
 ### 서비스 내용
 병원에 내원하기 힘든 환자들에게 의안사와 화상채팅을 할 수 있는 환경을 조성하고 이를 통해  의안에 대한 데이터 모델을 정의 하고 제작 표안을 만드는 Application.
 ![cabbage1]({{site.baseurl}}/assets/img/cabbage1.jpg)    
@@ -22,13 +22,13 @@ Spring 과 Jsp 로 구성되어 있는 기존 프로젝트를 앞단과 뒷단�
 
 위 장점을 토대로 기존 Spring Jsp 로 구성된 프로젝트와 비교해 봤을때, 기존 프로젝트에서 새로운 기능을 추가하려면
 Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필요하게 중복적인 코드들이 작성되어야 한다는 단점이 있었다.  
-
 코드 작성의 생산성도 높이고 오직 View 에만 집중하여 개발을 할 수 있다는 점이 제일 끌렸던 이유 인것 같다.
 
+** 아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하여 개인적으로 진행하였습니다. **
 ### 프로젝트 설계
-
-### react-redux 도입 여부 
-
+![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)
+### state 관리
+- react-redux ? ContextAPI ?  
 
 #### ducks 구조 format
 
