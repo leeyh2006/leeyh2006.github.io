@@ -24,13 +24,19 @@ Spring 과 Jsp 로 구성되어 있는 기존 프로젝트를 앞단과 뒷단�
 Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필요하게 중복적인 코드들이 작성되어야 한다는 단점이 있었다.  
 코드 작성의 생산성도 높이고 오직 View 에만 집중하여 개발을 할 수 있다는 점이 제일 끌렸던 이유 인것 같다.
 
-** 아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하여 개인적으로 진행하였습니다. **
+**아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하여 개인적으로 진행하였다.**
 ### 프로젝트 설계
-![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)
-### state 관리
+
+### state 관리를 위한 설계 
+- Component Depth 로 인한 상태 전달의 비효율성  
+프로젝트 진행중 Component 를 재사용 하면서 상태값을 넘겨 줄때 depth 가 깊은 Component들 간의 상태 값 전달은 비효율 적이고 코드의 효율성도 떨어졌다.  
+이를 좀더 효율적으로 state 를 관리 할 수 있는 방법에 대해 모색하던 중 react-redux 와 ContextAPI 모듈을 찾았다.  
 - react-redux ? ContextAPI ?  
 
 #### ducks 구조 format
+
+#### 최종 구조 
+![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)
 
 다음은 3D 의안 Application 일부 화면이다. 화면의 기능들을 각각 Component화 하고 나누었다.
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
