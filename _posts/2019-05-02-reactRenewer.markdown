@@ -36,7 +36,7 @@ Jsp 파일과 그 와 관련된 js 파일을 **모두 수정**해야 되고 불 
 #### DUCKS 파일 구조로 간편화
 redux를 사용하기 위해선 액션 타입,액션 생성 함수,리듀서 3가지 파일을 작성해야 했는데 이를 간편화 하기 위해 위 3가지를 한 파일에서 모듈화 시켰다.
 ex) **module.js**  
-```typescript jsx  
+```java  
     import {createAction,handleActions} from 'redux-actions';
     import * as api from '../../lib/api';
     ..

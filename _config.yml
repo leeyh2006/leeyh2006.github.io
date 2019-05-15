@@ -12,7 +12,12 @@ site-twitter: #if your site has a twitter account, enter it here
 author: Lee Yong Hee # add your name
 author-img: LeeYongHee.jpg # add your photo
 about-author: (주)오픈잇 서비스 개발팀(2017.11.01~ 현재)
-about-desc : 안녕하세요 개발을 사랑하는 개발자 이용희입니다.
+about-desc : 안녕하세요 개발을 사랑하는 이용희입니다.
+about-desc1 : 사내 jenkins infra 구축
+about-desc2 : 사내 SNS openclib 운영
+about-desc3 : 3D 의안 과제 Application 개발
+about-desc4 : SOS 누르미 API 서버 개발
+about-desc5 : 혈압 다이어리 서버 개발
 # add description
 social-twitter: # add your Twitter handle
 social-facebook: "facebook.com/yonghee.lee.9843" # add your Facebook handle
