@@ -64,7 +64,21 @@ ex) **module.js**
 ```   
 
 #### 최종 구조 
-![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)
+![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)  
+
+```
+src  
+│
+└─── components -- presentation component ( service 로직 없이 ui component만 관리)    
+└─── containers -- cotainer component ( redux store와 연결 component)
+└─── lib  -- ( 공통 모듈 및 api 모듈)
+└─── pages  -- (page)
+└─── store -- (redux store)
+└─── styles 
+| Root.js
+| index.js
+
+```
 
 다음은 3D 의안 Application 일부 화면이다. 화면의 기능들을 각각 Component화 하고 나누었다.
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
