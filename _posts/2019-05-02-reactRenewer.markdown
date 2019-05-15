@@ -32,10 +32,10 @@ Jsp 파일과 그 와 관련된 js 파일을 **모두 수정**해야 되고 불 
 ### 프로젝트 설계
 ### state 관리
 - **Component Depth**  
-    - 프로젝트 진행중 Component 를 재사용 하면서 상태값을 넘겨 줄때 depth 가 깊은 Component들 간의 상태 값 전달은 비효율 적이고 코드의 효율성도 떨어졌다. 이를 좀더 효율적으로 state 를 관리 할 수 있는 방법에 대해 모색하던 중 **react-redux** 와 **ContextAPI** 모듈을 찾았다.  
-- **react-redux 선택**
+프로젝트 진행중 Component 를 재사용 하면서 상태값을 넘겨 줄때 depth 가 깊은 Component들 간의 상태 값 전달은 비효율 적이고 코드의 효율성도 떨어졌다. 이를 좀더 효율적으로 state 를 관리 할 수 있는 방법에 대해 모색하던 중   **react-redux** 와 **ContextAPI** 모듈을 찾았다.  
+- **react-redux 선택**  
 위 두개의 모듈 다 글로벌 상태를 관리한다는 요점은 같았지만, react-router 등의 미들웨어와 같이 사용되고, Redux dev tool 을 이용하여 액션의 흐름도 관찰 할 수있는 강점 들이 있었다.
-단, 러닝커브가 조금 있을거라고 예상은 됬지만 react-redux 도 ContextAPI 기반으로 구현이 되었고 ,추후 관리 포인트를 위해 도입하게 되었다.
+단, 러닝커브가 조금 있을거라고 예상은 됬지만 react-redux 도 contextAPI 기반으로 구현이 되었고 ,추후 관리 포인트를 위해 도입하게 되었다.
 
 #### Duck Structure
 redux를 사용하기 위해선 액션 타입,액션 생성 함수,리듀서 3가지 파일을 작성해야 했는데 이를 간편화 하기 위해 위 3가지를 한 파일에서 모듈화 시켰다.  

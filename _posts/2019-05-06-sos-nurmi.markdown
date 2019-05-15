@@ -25,9 +25,9 @@ img: sos.jpg # Add image post (optional)
 단말에서 직접 공공 데이터 포털 쪽으로 날씨 API 를 요청 할 경우 API Throttling 이 발생하는 현상이 생겼다.  
 이를 해결하기 위해 서버에서 API 를 요청하고 DB에 저장하는 방식으로 바꾸고 단말에서 날씨 API 요청이 있을때마다 데이터를 내려주기로 설계 하였다.
 
-
+### 개발 과정
 #### 데이터 parsing 및 bind
-- parsing  
+- Parsing  
 
 날씨 데이터는 각 날씨 정보 마다 JSON 형식으로 내려왔고, 이를 서버에선 org.json.simple library 를 사용해 파싱 하였다.    
    
@@ -61,7 +61,7 @@ public JSONObject requestDataOrg(String sUrl) {
 	}
 ```  
 
-- bind  
+- Bind
 parsing 된 Json String 을 ObjectMapper 를 사용하여 각 모델에 데이터를 bind 시킴.  
 
 ```java  
