@@ -12,6 +12,7 @@ img: react.jpg # Add image post (optional)
 ![cabbage1]({{site.baseurl}}/assets/img/cabbage1.jpg)    
 
 ### 서비스 일부 화면
+![cabbage6]({{site.baseurl}}/assets/img/cabbage6.jpg)    
 
 
 ### React 적용 이유
