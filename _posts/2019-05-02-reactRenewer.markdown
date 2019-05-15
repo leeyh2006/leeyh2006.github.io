@@ -73,7 +73,7 @@ redux의 액션 타입,액션 생성 함수,리듀서 는 modules의 한 파일�
 ![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)    
 
 ### 화면 구성
-다음은 3D 의안 Application 일부 화면이다. 화면의 기능들을 각각 Component화 하고 나누었다.
+다음은 3D 의안 Application 일부 화면이다. 화면의 기능을 분리하기 위해 먼저 요소별로 Component화 할 대상을 설계 하였다.
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
 
 ### Route Path
@@ -89,8 +89,12 @@ state에 대한 관리 point도 적어지고 , 코드의 양도 줄어들어 좀
 ```xml  
 const SideMenu =() => (
     <div className='gnb_block'>
-        <NavLink to="/video"  className='gnb_menu ico_cam' activeClassName="gnb_menu ico_cam selected" ><span className='gnb_txt'>화상상담</span></NavLink>
-        <NavLink to="/patient" className='gnb_menu ico_chart' activeClassName='gnb_menu ico_chart selected'><span className='gnb_txt'>환자 정보</span></NavLink>
+        <NavLink to="/video"  className='gnb_menu ico_cam' activeClassName="gnb_menu ico_cam selected" >
+            <span className='gnb_txt'>화상상담</span>
+        </NavLink>
+        <NavLink to="/patient" className='gnb_menu ico_chart' activeClassName='gnb_menu ico_chart selected'>
+            <span className='gnb_txt'>환자 정보</span>
+        </NavLink>
         ..
         ..
         ..
