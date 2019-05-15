@@ -12,7 +12,7 @@ img: react.jpg # Add image post (optional)
 ![cabbage1]({{site.baseurl}}/assets/img/cabbage1.jpg)    
 
 ### 서비스 일부 화면
-![cabbage6]({{site.baseurl}}/assets/img/cabbage6.jpg)    
+![cabbageMain]({{site.baseurl}}/assets/img/cabbageMain.jpg)    
 
 
 ### React 적용 이유
@@ -67,7 +67,8 @@ ex) **module.js**
     
 ```   
 
-#### 최종 구조 
+#### Ducks Structure 를 반영한 최종구조
+redux의 액션 타입,액션 생성 함수,리듀서 는 modules의 한 파일에서 관리 되었고 , 
 ![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)    
 
 ### 화면 구성
@@ -76,15 +77,12 @@ ex) **module.js**
 
 ### Route Path
 
-
-
 ### 공통 기능 모듈화 작업
 #### 1.Page
-
-각 메뉴의 페이지는 다음과 같은 페이지의 구성으로 공통적으로 사용한다.
-PageTemplate Component를 두고 그 안에 추가기능을 넣어 구현할 수 있도록 모듈을 만들었다.      
-
-ex) **PageTemplate.js**  
+각 메뉴의 페이지는 다음과 같은 페이지의 구성으로 공통적으로 사용한다. 공통적으로 사용하지 않는 SearchBar 같은 경우 
+PageTemplate Component를 두고 그 안에 추가기능을 넣어 구현할 수 있도록 모듈을 만들었다.    
+  
+**PageTemplate.js**  
 ```xml      
 const PageTemplate = ({ children ,match}) => (
     <div>
@@ -103,7 +101,7 @@ const PageTemplate = ({ children ,match}) => (
 
 ```
 공통 페이지 Template을 만들고 페이지를 렌더링 할때 각 페이지에서 컴포넌트를 불러와 재사용.  
-ex) **Page.js**  
+**Page.js**  
 ```xml      
 const PatientPage =()=>{
     return(
@@ -119,6 +117,8 @@ const PatientPage =()=>{
 ```
 
 #### 2.Button 
+다음과 같이 버튼을 작성 할 때 마다 <Link> 컴포넌트를 만들어 일일히 작성해 주어야 했다. 
+![cabbage6]({{site.baseurl}}/assets/img/cabbage6.jpg)    
 
 
 
