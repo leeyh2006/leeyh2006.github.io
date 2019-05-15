@@ -30,15 +30,16 @@ Jsp 파일과 그 와 관련된 js 파일을 **모두 수정**해야 되고 불 
 
 **아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하여 개인적으로 진행하였다.**
 ### 프로젝트 설계
-
 ### state 관리
-- Component Depth 로 인한 상태 전달의 비효율성  
+- **Component Depth**  
     - 프로젝트 진행중 Component 를 재사용 하면서 상태값을 넘겨 줄때 depth 가 깊은 Component들 간의 상태 값 전달은 비효율 적이고 코드의 효율성도 떨어졌다. 이를 좀더 효율적으로 state 를 관리 할 수 있는 방법에 대해 모색하던 중 **react-redux** 와 **ContextAPI** 모듈을 찾았다.  
-- **react-redux ?** **ContextAPI ?**
+- **react-redux 선택**
+위 두개의 모듈 다 글로벌 상태를 관리한다는 요점은 같았지만, react-router 등의 미들웨어와 같이 사용되고, Redux dev tool 을 이용하여 액션의 흐름도 관찰 할 수있는 강점 들이 있었다.
+단, 러닝커브가 조금 있을거라고 예상은 됬지만 react-redux 도 ContextAPI 기반으로 구현이 되었고 ,추후 관리 포인트를 위해 도입하게 되었다.
 
 #### Duck Structure
 redux를 사용하기 위해선 액션 타입,액션 생성 함수,리듀서 3가지 파일을 작성해야 했는데 이를 간편화 하기 위해 위 3가지를 한 파일에서 모듈화 시켰다.  
-ex) **module.js**   
+**module.js**   
 ```javascript    
     import {createAction,handleActions} from 'redux-actions';
     import * as api from '../../lib/api';
@@ -67,8 +68,8 @@ ex) **module.js**
     
 ```   
 
-#### Ducks Structure 를 반영한 최종구조
-redux의 액션 타입,액션 생성 함수,리듀서 는 modules의 한 파일에서 관리 되었고 , 
+#### 최종 구조 
+redux의 액션 타입,액션 생성 함수,리듀서 는 modules의 한 파일에서 관리 되었다.
 ![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)    
 
 ### 화면 구성
@@ -76,9 +77,27 @@ redux의 액션 타입,액션 생성 함수,리듀서 는 modules의 한 파일�
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
 
 ### Route Path
-![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
-
-
+아래와 같이 SideMenu에 각각의 Route Path 를 적용하는 도중 페이지를 이동 할때마다 Css가 적용이 안되는 현상이 있었다.
+![cabbage6]({{site.baseurl}}/assets/img/cabbage6.jpg)  
+#### 위 현상에 대한 해결점   
+- store 에 페이지에 대한 상태값 저장
+처음엔 당연히 페이지마다 각 페이지에대한 상태값을 가지고 있어야 된다고 생각하여 **store**에 페이지에 따른 상태값을 저장하고 이를 읽어와 분기를 태워 css를 적용하였다.  
+하지만 이렇게 했을 경우 페이지가 늘어날 때마다 상태값 관리 포인트도 늘어나고 코드도 지저 분해지고 비효율적이라고 생각이 들었다.
+- **NavLink 로 해결**
+좀 더 효율적인 방법이 없을까 해서 검색해본 결과 Link 의 사용법은 알고 NavLink 사용법은 몰랐던 것이다.   NavLink를 사용하면 Path에 따른 스타일을 activeClassName 속성으로 관리 할수 있다는 것이었다.
+state에 대한 관리 point도 적어지고 , 코드의 양도 줄어들어 좀 더 효율적이었다.  
+```xml  
+const SideMenu =() => (
+    <div className='gnb_block'>
+        <NavLink to="/video"  className='gnb_menu ico_cam' activeClassName="gnb_menu ico_cam selected" ><span className='gnb_txt'>화상상담</span></NavLink>
+        <NavLink to="/patient" className='gnb_menu ico_chart' activeClassName='gnb_menu ico_chart selected'><span className='gnb_txt'>환자 정보</span></NavLink>
+        ..
+        ..
+        ..
+              
+    </div>
+);
+```
 
 ### 공통 기능 모듈화 작업
 #### 1. Page
@@ -120,7 +139,6 @@ const PatientPage =()=>{
 ```
 
 #### 2. Button 
-버튼을 작성 할 때 마다 <Link> 컴포넌트를 일일히 import 
 ![cabbageButton]({{site.baseurl}}/assets/img/cabbageButton.jpg)    
 이에 대해 반복적인 작업을 최소화 하기 위해 Button Component를 생성. 
 ```xml  
@@ -142,4 +160,10 @@ const PatientPage =()=>{
 ```
 
 
-
+### 앞으로의 방향
+아직 프로젝트가 진행 중이다. React를 사용하면서 컴포넌트별로 관리하다보니 기존 Spring3,Jsp 환경으로 구성되어있는 프로젝트보다 코딩이 좀 더 효율적으로 되었다.  
+효율성을 극대화 하기 위해 아래 사항을 고려하여 프로젝트를 개발해 나갈 예정이다.
+- 렌더링 최적화
+- Chunk 파일을 통한 모듈 파일 관리
+- 라우트 코드 스플리팅 
+- SSR 렌더링 
