@@ -171,6 +171,17 @@ small {
   font-size: 80%;
 }
 
+
+.skills ul {
+  margin:0 0 15px 0;
+  color:#74808a;
+  font-size:0.9em
+}
+
+.skills li{
+  display:inline-block
+}
+
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
