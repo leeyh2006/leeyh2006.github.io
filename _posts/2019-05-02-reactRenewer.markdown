@@ -150,7 +150,7 @@ const PatientPage =()=>{
 
 #### 2. Button 
 ![cabbageButton]({{site.baseurl}}/assets/img/cabbageButton.jpg)    
-이에 대해 반복적인 작업을 최소화 하기 위해 Button Component를 생성. 
+반복적인 작업을 최소화 하기 위해 Button Component를 생성. 
 ```xml  
     const Div =({children,...rest})=><div {...rest}>{children}</div>
     
