@@ -60,9 +60,9 @@ ex) **module.js**
         })
         ..
         
-    },initialState)
+    },initialState);
     
-```
+```   
 
 #### 최종 구조 
 ![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)
