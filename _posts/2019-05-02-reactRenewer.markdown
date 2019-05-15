@@ -27,7 +27,7 @@ Jsp 파일과 그 와 관련된 js 파일을 **모두 수정**해야 되고 불 
 **아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하여 개인적으로 진행하였다.**
 ### 프로젝트 설계
 
-### state 관리를 위한 설계 
+### state 관리
 - Component Depth 로 인한 상태 전달의 비효율성  
     프로젝트 진행중 Component 를 재사용 하면서 상태값을 넘겨 줄때 depth 가 깊은 Component들 간의 상태 값 전달은 비효율 적이고 코드의 효율성도 떨어졌다.  
 이를 좀더 효율적으로 state 를 관리 할 수 있는 방법에 대해 모색하던 중 react-redux 와 ContextAPI 모듈을 찾았다.  
@@ -35,8 +35,7 @@ Jsp 파일과 그 와 관련된 js 파일을 **모두 수정**해야 되고 불 
 
 #### DUCKS 파일 구조로 간편화
 redux를 사용하기 위해선 액션 타입,액션 생성 함수,리듀서 3가지 파일을 작성해야 했는데 이를 간편화 하기 위해 위 3가지를 한 파일에서 모듈화 시켰다.
-일일히 3가지의 파일을 생성해서 작성하지 않고 
-ex) **module.js**
+ex) **module.js**  
 ```typescript jsx  
     import {createAction,handleActions} from 'redux-actions';
     import * as api from '../../lib/api';
