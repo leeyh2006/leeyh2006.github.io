@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f3393505-7de9-4b8c-a901-a372004117c1" name="Default" comment="카이호스트만 1 장 정리">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,8 +44,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-sktTangoD.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="215">
-                <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <first_editor relative-caret-position="266">
+                <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               </first_editor>
               <second_editor />
             </state>
@@ -53,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+            <state relative-caret-position="228">
+              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding>
                 <element signature="e#268#274#0" expanded="true" />
               </folding>
@@ -74,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+            <state relative-caret-position="57">
+              <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
               <folding>
                 <element signature="e#1707#1713#0" expanded="true" />
               </folding>
@@ -86,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="266">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -116,8 +118,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="725" lean-forward="true" selection-start-line="725" selection-end-line="725" />
+            <state relative-caret-position="391">
+              <caret line="370" column="1" selection-start-line="370" selection-start-column="1" selection-end-line="370" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -152,10 +154,10 @@
       <find>u</find>
       <find>ul</find>
       <find>page-tag</find>
-      <find>.tags</find>
       <find>skills</find>
       <find>li</find>
       <find>skil</find>
+      <find>.tags</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -205,8 +207,8 @@
         <option value="$PROJECT_DIR$/assets/css/scss/_syntax.scss" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2019-05-02-reactRenewer.markdown" />
-        <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/_layouts/main.html" />
+        <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
       </list>
     </option>
@@ -325,7 +327,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557896978884" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557897186252" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../leeyh2006.github.io - 복사본 (3)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -422,7 +424,7 @@
       <workItem from="1554783045491" duration="434000" />
       <workItem from="1557220566097" duration="30034000" />
       <workItem from="1557362457781" duration="84436000" />
-      <workItem from="1557818903348" duration="25695000" />
+      <workItem from="1557818903348" duration="25916000" />
     </task>
     <task id="LOCAL-00001" summary="카이호스트만 1 장 정리">
       <created>1544530017623</created>
@@ -526,13 +528,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291897000" />
+    <option name="totallyTimeSpent" value="292118000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="83" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19041188" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19041188" />
       <window_info id="Structure" order="1" weight="0.24973147" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -561,7 +563,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info active="true" anchor="right" id="Maven" order="9" visible="true" weight="0.32950708" />
+      <window_info anchor="right" id="Maven" order="9" weight="0.32950708" />
       <window_info anchor="right" id="Key Promoter X" order="10" />
     </layout>
   </component>
@@ -823,21 +825,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-sktTangoD.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="215">
-            <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-06-sos-nurmi.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="266">
             <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-sktTangoD.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="266">
+            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           </first_editor>
           <second_editor />
         </state>
@@ -855,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        <state relative-caret-position="228">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
             <element signature="e#268#274#0" expanded="true" />
           </folding>
@@ -865,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+        <state relative-caret-position="57">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
           <folding>
             <element signature="e#1707#1713#0" expanded="true" />
           </folding>
@@ -875,15 +877,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="725" lean-forward="true" selection-start-line="725" selection-end-line="725" />
+        <state relative-caret-position="391">
+          <caret line="370" column="1" selection-start-line="370" selection-start-column="1" selection-end-line="370" selection-end-column="1" />
         </state>
       </provider>
     </entry>
