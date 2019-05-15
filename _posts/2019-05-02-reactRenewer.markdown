@@ -14,7 +14,6 @@ img: react.jpg # Add image post (optional)
 ### 서비스 일부 화면
 ![cabbageMain]({{site.baseurl}}/assets/img/cabbageMain.jpg)    
 
-
 ### React 적용 이유
 Spring 과 Jsp 로 구성되어 있는 기존 프로젝트를 앞단과 뒷단으로 분리하여 관리하고 싶은 욕심이 있었다. 
 이를 위해 FE FrameWork를 모색하던중 다음과 같은 React의 장점이 끌렸다.
@@ -30,14 +29,19 @@ Jsp 파일과 그 와 관련된 js 파일을 **모두 수정**해야 되고 불 
 
 **아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하여 개인적으로 진행하였다.**
 ### 프로젝트 설계
-### state 관리
-- **Component Depth**  
-프로젝트 진행중 Component 를 재사용 하면서 상태값을 넘겨 줄때 depth 가 깊은 Component들 간의 상태 값 전달은 비효율 적이고 코드의 효율성도 떨어졌다. 이를 좀더 효율적으로 state 를 관리 할 수 있는 방법에 대해 모색하던 중   **react-redux** 와 **ContextAPI** 모듈을 찾았다.  
-- **react-redux 선택**  
-위 두개의 모듈 다 글로벌 상태를 관리한다는 요점은 같았지만, react-router 등의 미들웨어와 같이 사용되고, Redux dev tool 을 이용하여 액션의 흐름도 관찰 할 수있는 강점 들이 있었다.
-단, 러닝커브가 조금 있을거라고 예상은 됬지만 react-redux 도 contextAPI 기반으로 구현이 되었고 ,추후 관리 포인트를 위해 도입하게 되었다.
 
-#### Duck Structure
+### 화면 구성
+다음은 3D 의안 Application 일부 화면이다.   
+먼저 화면의 기능을 분리하기 위해 먼저 요소별로 Component화 할 대상을 설계 하였다.  
+![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
+
+
+#### 프로젝트 구조 
+redux의 액션 타입,액션 생성 함수,리듀서 는 modules의 한 파일에서 관리 되었다.
+![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)    
+
+
+#### Duck 구조 
 redux를 사용하기 위해선 액션 타입,액션 생성 함수,리듀서 3가지 파일을 작성해야 했는데 이를 간편화 하기 위해 위 3가지를 한 파일에서 모듈화 시켰다.  
 **module.js**   
 ```javascript    
@@ -68,13 +72,15 @@ redux를 사용하기 위해선 액션 타입,액션 생성 함수,리듀서 3�
     
 ```   
 
-#### 최종 구조 
-redux의 액션 타입,액션 생성 함수,리듀서 는 modules의 한 파일에서 관리 되었다.
-![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)    
 
-### 화면 구성
-다음은 3D 의안 Application 일부 화면이다. 화면의 기능을 분리하기 위해 먼저 요소별로 Component화 할 대상을 설계 하였다.
-![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
+### state 관리
+- **Component Depth**  
+프로젝트 진행중 Component 를 재사용 하면서 상태값을 넘겨 줄때 depth 가 깊은 Component들 간의 상태 값 전달은 비효율 적이고 코드의 효율성도 떨어졌다. 이를 좀더 효율적으로 state 를 관리 할 수 있는 방법에 대해 모색하던 중   **react-redux** 와 **ContextAPI** 모듈을 찾았다.  
+- **react-redux 선택**  
+위 두개의 모듈 다 글로벌 상태를 관리한다는 요점은 같았지만, react-router 등의 미들웨어와 같이 사용되고, Redux dev tool 을 이용하여 액션의 흐름도 관찰 할 수있는 강점 들이 있었다.
+단, 러닝커브가 조금 있을거라고 예상은 됬지만 react-redux 도 contextAPI 기반으로 구현이 되었고 ,추후 관리 포인트를 위해 도입하게 되었다.
+
+
 
 ### Route Path
 아래와 같이 SideMenu에 각각의 Route Path 를 적용하는 도중 페이지를 이동 할때마다 Css가 적용이 안되는 현상이 있었다.
