@@ -79,6 +79,7 @@ redux의 액션 타입,액션 생성 함수,리듀서 는 modules의 한 파일�
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
 
 
+
 ### 공통 기능 모듈화 작업
 #### 1. Page
 각 메뉴의 페이지는 다음과 같은 페이지의 구성으로 공통적으로 사용한다. 공통적으로 사용하지 않는 SearchBar 같은 경우 
@@ -119,7 +120,7 @@ const PatientPage =()=>{
 ```
 
 #### 2. Button 
-다음과 같이 버튼을 작성 할 때 마다 <Link> 컴포넌트를 만들어 일일히 만들어야 하는 경우가 많았다.
+버튼을 작성 할 때 마다 <Link> 컴포넌트를 일일히 import 
 ![cabbageButton]({{site.baseurl}}/assets/img/cabbageButton.jpg)    
 이에 대해 반복적인 작업을 최소화 하기 위해 Button Component를 생성. 
 ```xml  
