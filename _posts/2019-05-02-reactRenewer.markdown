@@ -66,12 +66,15 @@ ex) **module.js**
 #### 최종 구조 
 ![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)    
 
+### 화면 구성
 다음은 3D 의안 Application 일부 화면이다. 화면의 기능들을 각각 Component화 하고 나누었다.
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
 
 #### 페이지 공통 모듈화   
 각 메뉴의 페이지는 다음과 같은 페이지의 구성으로 공통적으로 사용한다.
-PageTemplate Component를 두고 그 안에 추가기능을 넣어 구현할 수 있도록 모듈을 만들었다.    
+PageTemplate Component를 두고 그 안에 추가기능을 넣어 구현할 수 있도록 모듈을 만들었다.      
+
+ex) **PageTemplate.js**  
 ```xml      
 const PageTemplate = ({ children ,match}) => (
     <div>
@@ -90,7 +93,6 @@ const PageTemplate = ({ children ,match}) => (
 
 ```
 
-### 화면 구성
 이렇게 공통 페이지 Component를 만들고 페이지를 렌더링 할때 각 페이지에서 컴포넌트를 불러와 재사용.  
 ex) **Page.js**  
 ```xml      
@@ -105,7 +107,6 @@ const PatientPage =()=>{
             </PageTemplate>
     )
 }
-
 ```
 
 
