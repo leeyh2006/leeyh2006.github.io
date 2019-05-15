@@ -12,7 +12,7 @@ img: react.jpg # Add image post (optional)
 ![cabbage1]({{site.baseurl}}/assets/img/cabbage1.jpg)    
 
 ### 서비스 일부 화면
-![cabbage8]({{site.baseurl}}/assets/img/cabbage8.jpg)  
+
 
 ### React 적용 이유
 Spring 과 Jsp 로 구성되어 있는 기존 프로젝트를 앞단과 뒷단으로 분리하여 관리하고 싶은 욕심이 있었다. 
