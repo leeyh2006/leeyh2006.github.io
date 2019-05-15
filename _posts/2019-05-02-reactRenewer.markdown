@@ -73,10 +73,40 @@ ex) **module.js**
 #### 페이지 공통 모듈화   
 각 메뉴의 페이지는 다음과 같은 페이지의 구성으로 공통적으로 사용한다.
 PageTemplate Component를 두고 그 안에 추가기능을 넣어 구현할 수 있도록 모듈을 만들었다.    
-![cabbage3]({{stie.baseurl}}/assets/img/cabbage3.jpg)
+```javascript  
+const PageTemplate = ({ children ,match}) => (
+    <div>
+        <SideMenu />
+        <div className="container">
+            {
+                match.path ==='/video/' ? ''  :  <SearchBar/>
+            }
+            <div className="contents_wrap">
+                {children}
+            </div>
+        </div>
+    </div>
+);
 
-이렇게 공통 페이지 Component를 만들고 페이지를 렌더링 할때 각 페이지에서 컴포넌트를 불러와 사용.
-![cabbage4]({{stie.baseurl}}/assets/img/cabbage4.jpg)
+
+```
+
+이렇게 공통 페이지 Component를 만들고 페이지를 렌더링 할때 각 페이지에서 컴포넌트를 불러와 재사용.  
+ex) Page.js  
+```javascript  
+const PatientPage =()=>{
+    return(
+            <PageTemplate >
+                <ListTemplate
+                    tblHeader={<PatientHeaderContainer/>}
+                    tblBody={<PatientListContainer/>}
+                    tblFooter={<PatientFooterContainer/>}
+                />
+            </PageTemplate>
+    )
+}
+
+```
 
 
 
