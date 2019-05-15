@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3393505-7de9-4b8c-a901-a372004117c1" name="Default" comment="카이호스트만 1 장 정리">
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-04-sktTangoD.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-04-sktTangoD.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-05-02-reactRenewer.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-02-reactRenewer.markdown" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,12 +13,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-02-reactRenewer.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="209">
-                <caret line="86" column="40" lean-forward="true" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
+              <first_editor relative-caret-position="57">
+                <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -37,12 +37,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-sktTangoD.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="355">
-                <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <first_editor relative-caret-position="-63">
+                <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
               </first_editor>
               <second_editor />
             </state>
@@ -205,8 +205,8 @@
         <option value="$PROJECT_DIR$/_posts/2019-05-01-bpdiary.markdown" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_layouts/main.html" />
-        <option value="$PROJECT_DIR$/_posts/2019-05-02-reactRenewer.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-04-sktTangoD.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2019-05-02-reactRenewer.markdown" />
       </list>
     </option>
   </component>
@@ -403,7 +403,7 @@
       <workItem from="1557220566097" duration="30034000" />
       <workItem from="1557362457781" duration="84436000" />
       <workItem from="1557818903348" duration="35226000" />
-      <workItem from="1557910705979" duration="4009000" />
+      <workItem from="1557910705979" duration="4057000" />
     </task>
     <task id="LOCAL-00001" summary="카이호스트만 1 장 정리">
       <created>1544530017623</created>
@@ -507,7 +507,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305437000" />
+    <option name="totallyTimeSpent" value="305485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="83" width="1550" height="838" extended-state="6" />
@@ -828,6 +828,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-sktTangoD.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-63">
+            <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-01-bpdiary.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -841,18 +851,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-02-reactRenewer.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="209">
-            <caret line="86" column="40" lean-forward="true" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-sktTangoD.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="355">
-            <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <first_editor relative-caret-position="57">
+            <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
