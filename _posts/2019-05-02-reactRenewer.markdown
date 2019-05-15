@@ -32,7 +32,7 @@ Jsp 파일과 그 와 관련된 js 파일을 **모두 수정**해야 되고 불 
     - 프로젝트 진행중 Component 를 재사용 하면서 상태값을 넘겨 줄때 depth 가 깊은 Component들 간의 상태 값 전달은 비효율 적이고 코드의 효율성도 떨어졌다. 이를 좀더 효율적으로 state 를 관리 할 수 있는 방법에 대해 모색하던 중 **react-redux** 와 **ContextAPI** 모듈을 찾았다.  
 - react-redux ? ContextAPI ?  
 
-#### DUCKS 파일 구조로 간편화
+#### Duck Structure
 redux를 사용하기 위해선 액션 타입,액션 생성 함수,리듀서 3가지 파일을 작성해야 했는데 이를 간편화 하기 위해 위 3가지를 한 파일에서 모듈화 시켰다.  
 ex) **module.js**  
 ```javascript    
@@ -64,21 +64,7 @@ ex) **module.js**
 ```   
 
 #### 최종 구조 
-![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)  
-
-```
-src  
-│
-└─── components -- presentation component ( service 로직 없이 ui component만 관리)    
-└─── containers -- cotainer component ( redux store와 연결 component)
-└─── lib  -- ( 공통 모듈 및 api 모듈)
-└─── pages  -- (page)
-└─── store -- (redux store)
-└─── styles 
-| Root.js
-| index.js
-
-```
+![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)    
 
 다음은 3D 의안 Application 일부 화면이다. 화면의 기능들을 각각 Component화 하고 나누었다.
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
