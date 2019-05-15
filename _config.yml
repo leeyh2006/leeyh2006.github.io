@@ -9,7 +9,7 @@ url: "https://leeyh2006.github.io/" # the base hostname & protocol for your site
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: Lee Yong Hee # add your name
+author: 이용희 # add your name
 author-img: LeeYongHee.jpg # add your photo
 about-author: (주)오픈잇 서비스 개발팀(2017.11.01~ 현재)
 about-desc1 : 사내 jenkins infra 구축
