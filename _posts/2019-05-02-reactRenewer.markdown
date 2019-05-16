@@ -43,25 +43,25 @@ Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필�
 
 ### 1. React (FE)
 
-### 화면 구성
+####  기능에 따른 Component 분리
 다음은 서비스 일부 화면이다.  
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)     
 
 
-### State 관리
-#### Redux 도입   
+#### State 관리
+##### Redux 도입   
 component Depth 가 깊을 수록 state 를 
 - react-router , redux-pender 등 middleWare와 호환성이 좋음
 - Redux dev tool , 액션의 흐름을 관찰하기 용이함
 - 공유 되는 state를 store 한 곳에서 관리  
  
-### 공통 기능 모듈화 작업
-#### 1. Page
+#### 공통 기능 모듈화 작업
+##### 1. Page
 각 메뉴의 페이지는 다음과 같은 페이지의 구성으로 공통적으로 사용한다. 공통적으로 사용하지 않는 SearchBar 같은 경우 
 PageTemplate Component를 두고 그 안에 추가기능을 넣어 구현할 수 있도록 모듈을 만들었다.    
   
 **PageTemplate.js**  
-```xml      
+```javascript 1.6      
 const PageTemplate = ({ children ,match}) => (
     <div>
         <SideMenu />
@@ -80,7 +80,7 @@ const PageTemplate = ({ children ,match}) => (
 ```
 공통 페이지 Template을 만들고 페이지를 렌더링 할때 각 페이지에서 컴포넌트를 불러와 재사용.  
 **Page.js**  
-```xml      
+```javascript 1.6  
 const PatientPage =()=>{
     return(
             <PageTemplate >
@@ -94,10 +94,10 @@ const PatientPage =()=>{
 }
 ```
 
-#### 2. Button 
+##### 2. Button 
 ![cabbageButton]({{site.baseurl}}/assets/img/cabbageButton.jpg)    
 반복적인 작업을 최소화 하기 위해 Button Component를 생성. 
-```xml  
+```javascript 1.6    
     const Div =({children,...rest})=><div {...rest}>{children}</div>
     
     const Button =({
@@ -116,7 +116,8 @@ const PatientPage =()=>{
 ```    
 
 
---------------------------------------------------------------
+--------------------------------------------------------------  
+
 ### 전환 작업중 잘못 접근 했던 점.
 #### 1. 페이지 전환에 따른 css 미적용
 아래와 같이 SideMenu에 각각의 Route Path 를 적용하는 도중 페이지를 이동 할때마다 css가 적용이 안되는 현상이 있었다.
@@ -125,7 +126,7 @@ const PatientPage =()=>{
 #### 위 상황에 대한 해결 접근 방법 
 1. redux-store 에 각 페이지 정보 저장  
 - Store를 통해 PageName 정보를 받아와서 파싱   
-```xml  
+```javascript 1.6    
 
 class SideMenu extends Component{
     render() {
@@ -161,7 +162,7 @@ export default connect(
 
 2. NavLink 로 해결
 - NavLink를 사용하면 Path에 따른 스타일을 activeClassName 속성으로 적용 할수 있는 점이 있었다.
-```xml  
+```javascript 1.6    
 const SideMenu =() => (
     <div className='gnb_block'>
         <NavLink to="/video"  className='gnb_menu ico_cam' activeClassName="gnb_menu ico_cam selected" >
