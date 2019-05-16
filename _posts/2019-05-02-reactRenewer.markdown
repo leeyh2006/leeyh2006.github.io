@@ -11,19 +11,22 @@ img: react.jpg # Add image post (optional)
 
 ### 서비스 일부 화면    
 ![cabbageMain]({{site.baseurl}}/assets/img/cabbageMain.jpg)     
---------------------------------------------------------------
 
 ### Back-end , Front-end 분리  
-기존 레거시 프로젝트는 Spring3,Jsp 환경으로 구성 되어 있다.  
-- React
-- Node.js
+기존 레거시 프로젝트는 **Spring3,Jsp** 환경으로 구성 되어 있다. 
+- React (FE)
+- Node.js (BE)
 
 ### React 를 택하게 된 이유   
-기존 프로젝트의
+### 기존 프로젝트 구조 단점
+- Jsp 안 마크업 구조가 변하면 그에 대응하는 js 파일도 수정해야됨.
+- 
+### react 장점
 - JSX (js 안에 마크업 코드 사용)
 - Component 재사용 
 - 오직 View 만을 위한 Framework
 - 빠른 Virtual Dom
+
 
 Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필요하게 중복적인 코드들이 작성되어야 한다는 단점이 있었다.
 코드 작성의 생산성도 높이고 오직 View 에만 집중하여 개발을 할 수 있다는 점이 제일 끌렸던 이유 인것 같다.
@@ -35,9 +38,8 @@ Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필�
 **아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하고 리딩중입니다.**
 
 
-
 ## 프로젝트 설계
-### 1. React (FE)
+### 1. React 접근 방법
 --------------------------------------------------------------
 ### 화면 구성
 다음은 서비스 일부 화면이다.  
@@ -45,39 +47,12 @@ Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필�
 
 
 ### State 관리
-#### Redux 도입 
+#### Redux 도입   
+component Depth 가 깊을 수록 state 를 
 - react-router , redux-pender 등 middleWare와 호환성이 좋음
 - Redux dev tool , 액션의 흐름을 관찰하기 용이함
 - 공유 되는 state를 store 한 곳에서 관리  
-
-    
-### Route Path
-아래와 같이 SideMenu에 각각의 Route Path 를 적용하는 도중 페이지를 이동 할때마다 Css가 적용이 안되는 현상이 있었다.
-![cabbage6]({{site.baseurl}}/assets/img/cabbage6.jpg)  
-#### 위 현상에 대한 해결점   
-- store 에 페이지에 대한 상태값 저장
-처음엔 당연히 페이지마다 각 페이지에대한 상태값을 가지고 있어야 된다고 생각하여 **store**에 페이지에 따른 상태값을 저장하고 이를 읽어와 분기를 태워 css를 적용하였다.  
-하지만 이렇게 했을 경우 페이지가 늘어날 때마다 상태값 관리 포인트도 늘어나고 코드도 지저 분해지고 비효율적이라고 생각이 들었다.
-- **NavLink 로 해결**
-좀 더 효율적인 방법이 없을까 해서 검색해본 결과 Link 의 사용법은 알고 NavLink 사용법은 몰랐던 것이다.   NavLink를 사용하면 Path에 따른 스타일을 activeClassName 속성으로 관리 할수 있다는 것이었다.
-state에 대한 관리 point도 적어지고 , 코드의 양도 줄어들어 좀 더 효율적이었다.  
-```xml  
-const SideMenu =() => (
-    <div className='gnb_block'>
-        <NavLink to="/video"  className='gnb_menu ico_cam' activeClassName="gnb_menu ico_cam selected" >
-            <span className='gnb_txt'>화상상담</span>
-        </NavLink>
-        <NavLink to="/patient" className='gnb_menu ico_chart' activeClassName='gnb_menu ico_chart selected'>
-            <span className='gnb_txt'>환자 정보</span>
-        </NavLink>
-        ..
-        ..
-        ..
-              
-    </div>
-);
-```
-
+ 
 ### 공통 기능 모듈화 작업
 #### 1. Page
 각 메뉴의 페이지는 다음과 같은 페이지의 구성으로 공통적으로 사용한다. 공통적으로 사용하지 않는 SearchBar 같은 경우 
@@ -137,6 +112,70 @@ const PatientPage =()=>{
         )
     }
 ```  
+
+### 전환 작업중 ..
+   
+### 페이지 전환에 따른 css 미적용
+아래와 같이 SideMenu에 각각의 Route Path 를 적용하는 도중 페이지를 이동 할때마다 css가 적용이 안되는 현상이 있었다.
+![cabbage6]({{site.baseurl}}/assets/img/cabbage6.jpg)  
+  
+#### 위 상황에 대한 접근 방법 
+1. redux-store 에 각 페이지 정보 저장  
+- Store를 통해 PageName 정보를 받아와서 파싱 
+```xml  
+class SideMenu extends Component{
+    render() {
+        const {pageName} = this.props;
+        return(
+            <div className='gnb_block'>
+                {
+                    pageName ==='viedo' ?
+                        <Link to="/video" className='gnb_menu ico_cam' >
+                            <span className='gnb_txt'>화상상담</span>
+                        </Link>
+                        :
+                        <Link to="/video"  className='gnb_menu ico_cam selected'>
+                            <span className='gnb_txt'>화상상담</span>
+                        </Link>
+                }
+                ...
+                ...
+                
+            </div>
+        )
+    }
+}
+
+export default connect(
+    (state,action) =>{
+        currentPage: state.current('pageName');
+    },
+    null
+)(SideMenu);
+
+```
+위와 같은 방법으로 코드를 작성 했을 경우 코드양도 늘어나고, 파싱 과정 중 중복적으로 Link를 사용해야됬다. 비효율적이라 생각이 들어 다른방법을 모색
+
+2. NavLink 로 해결
+- NavLink를 사용하면 Path에 따른 스타일을 activeClassName 속성으로 적용 할수 있는 점이 있었다.
+```xml  
+const SideMenu =() => (
+    <div className='gnb_block'>
+        <NavLink to="/video"  className='gnb_menu ico_cam' activeClassName="gnb_menu ico_cam selected" >
+            <span className='gnb_txt'>화상상담</span>
+        </NavLink>
+        <NavLink to="/patient" className='gnb_menu ico_chart' activeClassName='gnb_menu ico_chart selected'>
+            <span className='gnb_txt'>환자 정보</span>
+        </NavLink>
+        ..
+        ..
+        ..
+              
+    </div>
+);
+```  
+코드의 양도 확실히 줄었고, Store 에 state 관리포인트에 신경 쓸 필요가 없어 더욱더 효율적이였다.
+
 
 
 ### 2. Node.js (BE)
