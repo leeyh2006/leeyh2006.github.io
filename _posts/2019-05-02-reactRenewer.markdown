@@ -5,8 +5,6 @@ date: 2019-04-11 00:00:00 +0300
 description:  React renewer # Add post description (optional)
 img: react.jpg # Add image post (optional)
 ---
-### Stack : ReactJs, Node.js, mysql
-### 프로젝트 기간 (2019.04 ~ 진행중)
 ### 서비스 내용
 병원에 내원하기 힘든 환자들에게 의안사와 화상채팅을 할 수 있는 환경을 조성하고 이를 통해  의안에 대한 데이터 모델을 정의 하고 제작 표안을 만드는 Application.
 ![cabbage1]({{site.baseurl}}/assets/img/cabbage1.jpg)    
@@ -77,10 +75,8 @@ redux를 사용하기 위해선 액션 타입,액션 생성 함수,리듀서 3�
 - **Component Depth**  
 프로젝트 진행중 Component 를 재사용 하면서 상태값을 넘겨 줄때 depth 가 깊은 Component들 간의 상태 값 전달은 비효율 적이고 코드의 효율성도 떨어졌다. 이를 좀더 효율적으로 state 를 관리 할 수 있는 방법에 대해 모색하던 중   **react-redux** 와 **ContextAPI** 모듈을 찾았다.  
 - **react-redux 선택**  
-위 두개의 모듈 다 글로벌 상태를 관리한다는 요점은 같았지만, react-router 등의 미들웨어와 같이 사용되고, Redux dev tool 을 이용하여 액션의 흐름도 관찰 할 수있는 강점 들이 있었다.
-단, 러닝커브가 조금 있을거라고 예상은 됬지만 react-redux 도 contextAPI 기반으로 구현이 되었고 ,추후 관리 포인트를 위해 도입하게 되었다.
-
-
+- react-router , redux-pender 등 middleWare와 호환성이 좋음
+- Redux dev tool , 액션의 흐름을 관찰하기 용이함
 
 ### Route Path
 아래와 같이 SideMenu에 각각의 Route Path 를 적용하는 도중 페이지를 이동 할때마다 Css가 적용이 안되는 현상이 있었다.
@@ -176,4 +172,4 @@ const PatientPage =()=>{
 - 렌더링 최적화
 - Chunk 파일을 통한 모듈 파일 관리
 - 라우트 코드 스플리팅 
-- SSR 렌더링 
+- SSR  

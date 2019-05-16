@@ -5,14 +5,11 @@ date: 2019-04-10 00:00:00 +0300
 description: bpdiary project# Add post description (optional)
 img: bpdiary.jpg # Add image post (optional)
 --- 
-### Stack : Spring3 , mybatis   
-### 프로젝트 기간 (2018.04 ~ 2018.08)  
 ### 서비스 내용  
 - **Bpdiary App 내의 질병 예측 메뉴 중 자신의 혈압 및 콜레스트롤 수치를 입력하여 향후 자신이 고혈압,당뇨,동맥경화성 질환이 걸릴 확률을 예측하는 서비스.**  
 ![bp1]({{site.baseurl}}/assets/img/bp1.jpg)
 ![bp2]({{site.baseurl}}/assets/img/bp2.jpg)
 ![bp3]({{site.baseurl}}/assets/img/bp3.jpg)
-
 ---------------------------------------
 
 ### 담당 업무
@@ -21,7 +18,7 @@ img: bpdiary.jpg # Add image post (optional)
 2. 위 Applicatioin을 통해 가공되어진 데이터를 **Csv format** 으로 추출 하여 **DB Migration**  
 3. 기존 Spring Server 에  **API 추가**   
 
-#### Java Daemon application ?
+#### Java Daemon ?
 - Java Daemon 을 따로 구현한 이유  
     처음 코호트 데이터를 전달 받았을 때 데이터의 사이즈는 **200G를 충분히 넘었고** 이 파일을 읽어 들이는 시간도 상당히 오래 걸렸다.  
     이를 Spring 서버에 올려 매번 단말에서 요청이 올때마다 값을 계산하여 내려주는것은 응답 시간도 오래걸리고 비효율적이며 서비스에 영향도 미칠것이라고 판단이 되었다.  

@@ -5,8 +5,6 @@ date: 2019-04-05 00:00:00 +0300
 description:  sos 누르미 Application  # Add post description (optional)
 img: sos.jpg # Add image post (optional)
 ---
-### Stack : Spring3, mybatis
-### 프로젝트 기간 (2018.08 ~ 2018.10)
 ### 서비스 내용
 #### SOS 구조요청  
 여성 안심 귀가 서비스로 긴급 상황에 SOS 요청을 할 수 있도록 도와주는 Application.  
@@ -69,20 +67,6 @@ parsing 된 Json String 을 ObjectMapper 를 사용하여 각 모델에 데이�
         ObjectMapper weatherMapper = new ObjectMapper();
         realTime = weatherMapper.readValue(items.get("item").toString(),new TypeReference<List<WeatherRealTime>>(){});
 ```
-
-
-#### DB Insert
-통합 대기 환경지수 정보나 , 자외선 지수 API 같은 경우 각 시간마다 한번씩 요청해 서버에서 데이터를 저장하여 가지고 있었으면 됬었다.
-이를 quartz 스케쥴러를 사용하여 일정 시간 마다 공공 데이터 포털에 API를 요청하고 결과 값을 DB에 저장 하는 형식으로 구현 하였다.
-
-```xml  
-    <task:scheduled-tasks scheduler="scheduler">
-		<task:scheduled ref="weatherService" method="insertUltraRays"
-			cron="0 0 7 * * *" />
-		<task:scheduled ref="weatherService" method="insertAirPol"
-			cron="0 0 */6 * * *" />
-	</task:scheduled-tasks>
-```  
 
 
  
