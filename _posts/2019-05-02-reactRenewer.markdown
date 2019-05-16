@@ -11,12 +11,12 @@ img: react.jpg # Add image post (optional)
 
 ### 서비스 일부 화면
 ![cabbageMain]({{site.baseurl}}/assets/img/cabbageMain.jpg)    
+-------------------------------
 
-### React(FE) ,Node.js(BE)
-- API 서버 , 
-### React 전환 계기
-Spring 과 Jsp 로 구성되어 있는 기존 프로젝트를 앞단과 뒷단으로 분리하여 관리하고 싶은 욕심이 있었다. 
-이를 위해 FE FrameWork를 모색하던중 다음과 같은 React의 장점이 끌렸다.
+### Back-end , Front-end 분리  
+- 
+
+### React 를 택하게 된 이유 
 
 - JSX (js 안에 마크업 코드 사용)
 - Component 재사용 
