@@ -19,8 +19,7 @@ img: react.jpg # Add image post (optional)
 
 #### React 를 택하게 된 이유   
 ##### 기존 프로젝트 구조 단점
-- Jsp 안 마크업 구조가 변하면 그에 대응하는 js 파일도 수정해야됨.
-- 
+- Jsp 안 마크업 구조가 변하면 그에 대응하는 js 파일도 수정해야됨.  
 ##### React 장점  
 - JSX (js 안에 마크업 코드 사용)
 - Component 재사용 
@@ -43,25 +42,25 @@ Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필�
 
 ### 1. React (FE)
 
-####  기능에 따른 Component 분리
+####  1.1 기능에 따른 Component 분리
 다음은 서비스 일부 화면이다.  
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)     
 
 
-#### State 관리
+#### 1.2 State 관리
 ##### Redux 도입   
 component Depth 가 깊을 수록 state 를 
 - react-router , redux-pender 등 middleWare와 호환성이 좋음
 - Redux dev tool , 액션의 흐름을 관찰하기 용이함
 - 공유 되는 state를 store 한 곳에서 관리  
  
-#### 공통 기능 모듈화 작업
-##### 1. Page
+#### 1.3 공통 기능 모듈화 작업
+##### 1.3.1 Page
 각 메뉴의 페이지는 다음과 같은 페이지의 구성으로 공통적으로 사용한다. 공통적으로 사용하지 않는 SearchBar 같은 경우 
 PageTemplate Component를 두고 그 안에 추가기능을 넣어 구현할 수 있도록 모듈을 만들었다.    
   
 **PageTemplate.js**  
-```javascript       
+```xml       
 const PageTemplate = ({ children ,match}) => (
     <div>
         <SideMenu />
@@ -80,7 +79,7 @@ const PageTemplate = ({ children ,match}) => (
 ```
 공통 페이지 Template을 만들고 페이지를 렌더링 할때 각 페이지에서 컴포넌트를 불러와 재사용.  
 **Page.js**  
-```javascript   
+```xml   
 const PatientPage =()=>{
     return(
             <PageTemplate >
@@ -94,10 +93,10 @@ const PatientPage =()=>{
 }
 ```
 
-##### 2. Button 
+##### 1.3.2 Button 
 ![cabbageButton]({{site.baseurl}}/assets/img/cabbageButton.jpg)    
 반복적인 작업을 최소화 하기 위해 Button Component를 생성. 
-```javascript     
+```xml     
     const Div =({children,...rest})=><div {...rest}>{children}</div>
     
     const Button =({
@@ -124,9 +123,10 @@ const PatientPage =()=>{
 ![cabbage6]({{site.baseurl}}/assets/img/cabbage6.jpg)  
   
 #### 위 상황에 대한 해결 접근 방법 
-1. redux-store 에 각 페이지 정보 저장   
+1. redux-store 에 각 페이지 정보 저장
 - Store를 통해 PageName 정보를 받아와서 파싱    
-```javascript     
+
+```xml     
 
 class SideMenu extends Component{
     render() {
@@ -162,7 +162,7 @@ export default connect(
 
 2. NavLink 로 해결
 - NavLink를 사용하면 Path에 따른 스타일을 activeClassName 속성으로 적용 할수 있는 점이 있었다.
-```javascript    
+```xml    
 const SideMenu =() => (
     <div className='gnb_block'>
         <NavLink to="/video"  className='gnb_menu ico_cam' activeClassName="gnb_menu ico_cam selected" >
@@ -181,7 +181,7 @@ const SideMenu =() => (
 코드의 양도 확실히 줄었고, Store 에 state 관리포인트에 신경 쓸 필요가 없어 더욱더 효율적이였다.
 
 ### 2. Node.js (BE)
-#### REST API 설계
+#### 2.1 REST API 설계
 
 
 ### 앞으로의 방향
