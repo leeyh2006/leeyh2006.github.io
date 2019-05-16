@@ -119,7 +119,7 @@ const PatientPage =()=>{
 아래와 같이 SideMenu에 각각의 Route Path 를 적용하는 도중 페이지를 이동 할때마다 css가 적용이 안되는 현상이 있었다.
 ![cabbage6]({{site.baseurl}}/assets/img/cabbage6.jpg)  
   
-#### 위 상황에 대한 접근 방법 
+#### 위 상황에 대한 해결 접근 방법 
 1. redux-store 에 각 페이지 정보 저장  
 - Store를 통해 PageName 정보를 받아와서 파싱 
 ```xml  
