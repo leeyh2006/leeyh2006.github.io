@@ -12,18 +12,17 @@ img: react.jpg # Add image post (optional)
 ### 서비스 일부 화면    
 ![cabbageMain]({{site.baseurl}}/assets/img/cabbageMain.jpg)     
 
-
-### 레거시 프로젝트 전환 과정
-**아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하고 리딩중입니다.**
-
 ### Back-end , Front-end 분리  
 기존 레거시 프로젝트는 **Spring3,Jsp** 환경으로 구성 되어 있다. 
+추후에 Android,ios 버전도 출시 될 예정이 었는데 기존 Web Service 기능이 있는 서버와 통신을 하는 점에 있어, 새로운 API Server를 구현해야 됬다.
+이에 목적이 다른 서버를 또 다르게 구현 한다는 것은 불 필요하다 판단 되었고, 이에 맞게 client 영역을 분리 하기로 결정.  
+
+### FE와 BE Framework 
 - React (FE)
 - Node.js (BE)
 
 ### React 를 택하게 된 이유   
-#### 기존 프로젝트 구조 단점
-- Jsp 안 마크업 구조가 변하면 그에 대응하는 js 파일도 수정해야됨.  
+Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필요하게 중복적인 코드들이 작성되어야 한다는 단점이 있었다.  
 
 #### React 장점  
 - JSX (js 안에 마크업 코드 사용)
@@ -31,20 +30,19 @@ img: react.jpg # Add image post (optional)
 - 오직 View 만을 위한 Framework
 - 빠른 Virtual Dom
 
+컴포넌트형 개발을 통해 얻는 장점과 기존의 jquery를 통한 Dom에 대한 직접 제어가 필요 없다는 점 
 
-Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필요하게 중복적인 코드들이 작성되어야 한다는 단점이 있었다.
-코드 작성의 생산성도 높이고 오직 View 에만 집중하여 개발을 할 수 있다는 점이 제일 끌렸던 이유 인것 같다.
-
-### Node.js 전환 계기
+### Node.js(express) 전환 계기
 - javascript 만으로 서버 구축 (좀 더 쉬운 접근성)
-- 
+- npm 을 통한 module 관리의 용이성
+- socket.io를 통한 socket 서버 구현 용이 
 
+### 레거시 프로젝트 전환 과정
+**아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하고 리딩중입니다.**
 
 
 ## 프로젝트 설계
-
 ### 1. React (FE)
-
 #### 1.1 기능에 따른 Component 분리
 다음은 서비스 일부 화면이다.  
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)     
@@ -52,7 +50,7 @@ Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필�
 
 ### 1.2 State 관리
 #### Redux 도입   
-component Depth 가 깊을 수록 state 를 
+component Depth 가 깊을 수록 state,props 관리의 
 - react-router , redux-pender 등 middleWare와 호환성이 좋음
 - Redux dev tool , 액션의 흐름을 관찰하기 용이함
 - 공유 되는 state를 store 한 곳에서 관리  
@@ -183,7 +181,7 @@ const SideMenu =() => (
     </div>
 );
 ```  
-코드의 양도 확실히 줄었고, Store 에 state 관리포인트에 신경 쓸 필요가 없어 더욱더 효율적이였다.
+코드의 가독성도 올라갔고, Store 에 state 관리포인트에 신경 쓸 필요가 없어 더욱더 효율적이였다.
 
 ### 2. Node.js (BE)
 #### 2.1 REST API 설계
