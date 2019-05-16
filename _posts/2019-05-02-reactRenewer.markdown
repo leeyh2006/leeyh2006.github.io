@@ -39,6 +39,13 @@ redux의 액션 타입,액션 생성 함수,리듀서 는 modules의 한 파일�
 ![cabbage5]({{stie.baseurl}}/assets/img/cabbage5.jpg)    
 
 
+### State 관리
+--------------------------- 
+#### react-redux 선택 이유  
+- react-router , redux-pender 등 middleWare와 호환성이 좋음
+- Redux dev tool , 액션의 흐름을 관찰하기 용이함
+- 공유 되는 state를 store 한 곳에서 관리  
+
 #### Duck 구조 
 redux를 사용하기 위해선 액션 타입,액션 생성 함수,리듀서 3가지 파일을 작성해야 했는데 이를 간편화 하기 위해 위 3가지를 한 파일에서 모듈화 시켰다. 
  
@@ -71,14 +78,6 @@ redux를 사용하기 위해선 액션 타입,액션 생성 함수,리듀서 3�
     
 ```   
 
-
-### state 관리  
-
----------------------------
-- **react-redux 를 택한 이유**    
-    1. react-router , redux-pender 등 middleWare와 호환성이 좋음
-    2. Redux dev tool , 액션의 흐름을 관찰하기 용이함
-    3. 공유 되는 state를 store 한곳에서 관리하여 Component Depth는 신경 안써도 됨. 
     
 ### Route Path
 아래와 같이 SideMenu에 각각의 Route Path 를 적용하는 도중 페이지를 이동 할때마다 Css가 적용이 안되는 현상이 있었다.
