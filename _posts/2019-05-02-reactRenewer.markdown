@@ -17,11 +17,11 @@ img: react.jpg # Add image post (optional)
 - React (FE)
 - Node.js (BE)
 
-### React 를 택하게 된 이유   
-### 기존 프로젝트 구조 단점
+#### React 를 택하게 된 이유   
+##### 기존 프로젝트 구조 단점
 - Jsp 안 마크업 구조가 변하면 그에 대응하는 js 파일도 수정해야됨.
 - 
-### react 장점
+##### React 장점  
 - JSX (js 안에 마크업 코드 사용)
 - Component 재사용 
 - 오직 View 만을 위한 Framework
@@ -32,15 +32,17 @@ Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필�
 코드 작성의 생산성도 높이고 오직 View 에만 집중하여 개발을 할 수 있다는 점이 제일 끌렸던 이유 인것 같다.
 
 ### Node.js 전환 계기
-
+- javascript 만으로 서버 구축 (좀 더 쉬운 접근성)
+- 
 
 ### 레거시 프로젝트 전환 과정
 **아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하고 리딩중입니다.**
 
 
 ## 프로젝트 설계
-### 1. React 접근 방법
---------------------------------------------------------------
+
+### 1. React (FE)
+
 ### 화면 구성
 다음은 서비스 일부 화면이다.  
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)     
@@ -111,17 +113,18 @@ const PatientPage =()=>{
                 </Element>
         )
     }
-```  
+```    
 
-### 전환 작업중 ..
-   
+
+--------------------------------------------------------------
+### 전환 작업중 잘못 접근 했던 점.
 ### 페이지 전환에 따른 css 미적용
 아래와 같이 SideMenu에 각각의 Route Path 를 적용하는 도중 페이지를 이동 할때마다 css가 적용이 안되는 현상이 있었다.
 ![cabbage6]({{site.baseurl}}/assets/img/cabbage6.jpg)  
   
 #### 위 상황에 대한 해결 접근 방법 
 1. redux-store 에 각 페이지 정보 저장  
-- Store를 통해 PageName 정보를 받아와서 파싱 
+- Store를 통해 PageName 정보를 받아와서 파싱   
 ```xml  
 class SideMenu extends Component{
     render() {
