@@ -592,7 +592,7 @@ table tfoot td {
 }
 
 .wrapper {
-  max-width: 1250px;
+  max-width: 1350px;
   position: relative;
 }
 
@@ -870,7 +870,7 @@ footer .copyright {
 }
 
 .post .post-content .post-title a {
-  font-family: 'PT Serif', serif;
+  /*font-family: 'PT Serif', serif;*/
   text-decoration: none;
   color: #263959;
 }
@@ -905,6 +905,10 @@ a.newer-posts:hover {
 /* - - - - - - - - - - Post Page Styles - - - - - - - - - - */
 .wrap-content {
   padding: 20px;
+}
+
+.wrap-content img {
+  padding: 60px;
 }
 
 .header-page {

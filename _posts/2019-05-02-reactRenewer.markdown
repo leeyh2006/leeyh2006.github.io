@@ -5,19 +5,21 @@ date: 2019-04-11 00:00:00 +0300
 description:  React renewer # Add post description (optional)
 img: react.jpg # Add image post (optional)
 ---
-### 서비스 내용
+### 서비스 내용  
 병원에 내원하기 힘든 환자들에게 의안사와 화상채팅을 할 수 있는 환경을 조성하고 이를 통해 의안에 대한 데이터 모델을 정의 하고 제작 표안을 제공
 ![cabbage1]({{site.baseurl}}/assets/img/cabbage1.jpg)    
 
-### 서비스 일부 화면
-![cabbageMain]({{site.baseurl}}/assets/img/cabbageMain.jpg)    
+### 서비스 일부 화면    
+![cabbageMain]({{site.baseurl}}/assets/img/cabbageMain.jpg)     
 --------------------------------------------------------------
 
 ### Back-end , Front-end 분리  
--   
+기존 레거시 프로젝트는 Spring3,Jsp 환경으로 구성 되어 있다.  
+- React
+- Node.js
 
 ### React 를 택하게 된 이유   
-
+기존 프로젝트의
 - JSX (js 안에 마크업 코드 사용)
 - Component 재사용 
 - 오직 View 만을 위한 Framework
@@ -30,55 +32,23 @@ Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필�
 
 
 ### 레거시 프로젝트 전환 과정
-
-
 **아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하고 리딩중입니다.**
 
-### 프로젝트 설계
+
+
+## 프로젝트 설계
+### 1. React (FE)
 --------------------------------------------------------------
 ### 화면 구성
-다음은 3D 의안 Application 일부 화면이다.   
-먼저 화면의 기능을 분리하기 위해 먼저 요소별로 Component화 할 대상을 설계 하였다.  
+다음은 서비스 일부 화면이다.  
+![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)     
 
-![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)   
 
 ### State 관리
 #### Redux 도입 
 - react-router , redux-pender 등 middleWare와 호환성이 좋음
 - Redux dev tool , 액션의 흐름을 관찰하기 용이함
 - 공유 되는 state를 store 한 곳에서 관리  
-
-#### Ducks 구조 
-redux를 사용하기 위해선 액션 타입,액션 생성 함수,리듀서 3가지 파일을 작성해야 했는데 이를 간편화 하기 위해 위 3가지를 한 파일에서 모듈화 시켰다. 
- 
-**module.js**   
-```javascript    
-    import {createAction,handleActions} from 'redux-actions';
-    import * as api from '../../lib/api';
-    ..
-    ..
-    //action Types
-    const GET_PATIENT = 'patient/GET_PATIENT';
-    //action creators
-    ..
-    export const getPatient = createAction(GET_PATIENT, api.getPatient);
-    ..
-    //reducer
-    export default handleActions({
-        ..
-        
-        ...pender({
-            type:GET_PATIENT,
-            onSuccess:(state,action)=>{
-                const{ data } = action.payload;
-                return state.set('patient',fromJS(data));
-            }
-        })
-        ..
-        
-    },initialState);
-    
-```   
 
     
 ### Route Path
@@ -166,7 +136,10 @@ const PatientPage =()=>{
                 </Element>
         )
     }
-```
+```  
+
+
+### 2. Node.js (BE)
 
 
 ### 앞으로의 방향
