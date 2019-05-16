@@ -13,6 +13,7 @@ img: react.jpg # Add image post (optional)
 ![cabbageMain]({{site.baseurl}}/assets/img/cabbageMain.jpg)    
 
 ### React(FE) ,Node.js(BE)
+- API 서버 , 
 ### React 전환 계기
 Spring 과 Jsp 로 구성되어 있는 기존 프로젝트를 앞단과 뒷단으로 분리하여 관리하고 싶은 욕심이 있었다. 
 이를 위해 FE FrameWork를 모색하던중 다음과 같은 React의 장점이 끌렸다.
@@ -28,6 +29,7 @@ Spring 과 Jsp 로 구성되어 있는 기존 프로젝트를 앞단과 뒷단�
 
 
 ### 레거시 프로젝트 전환 과정
+**아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하고 리딩중입니다.**
 
 ### 프로젝트 설계
 ### 화면 구성
