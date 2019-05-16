@@ -44,13 +44,13 @@ Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필�
 ## 프로젝트 설계
 ### 1. React (FE)
 #### 1.1 기능에 따른 Component 분리
-다음은 서비스 일부 화면이다.  
+[서비스 일부 화면]
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)     
+
 
 
 ### 1.2 State 관리
 #### Redux 도입   
-component Depth 가 깊을 수록 state,props 관리의 
 - react-router , redux-pender 등 middleWare와 호환성이 좋음
 - Redux dev tool , 액션의 흐름을 관찰하기 용이함
 - 공유 되는 state를 store 한 곳에서 관리  
