@@ -61,7 +61,7 @@ component Depth 가 깊을 수록 state 를
 PageTemplate Component를 두고 그 안에 추가기능을 넣어 구현할 수 있도록 모듈을 만들었다.    
   
 **PageTemplate.js**  
-```javascript 1.6      
+```javascript       
 const PageTemplate = ({ children ,match}) => (
     <div>
         <SideMenu />
@@ -80,7 +80,7 @@ const PageTemplate = ({ children ,match}) => (
 ```
 공통 페이지 Template을 만들고 페이지를 렌더링 할때 각 페이지에서 컴포넌트를 불러와 재사용.  
 **Page.js**  
-```javascript 1.6  
+```javascript   
 const PatientPage =()=>{
     return(
             <PageTemplate >
@@ -97,7 +97,7 @@ const PatientPage =()=>{
 ##### 2. Button 
 ![cabbageButton]({{site.baseurl}}/assets/img/cabbageButton.jpg)    
 반복적인 작업을 최소화 하기 위해 Button Component를 생성. 
-```javascript 1.6    
+```javascript     
     const Div =({children,...rest})=><div {...rest}>{children}</div>
     
     const Button =({
@@ -124,9 +124,9 @@ const PatientPage =()=>{
 ![cabbage6]({{site.baseurl}}/assets/img/cabbage6.jpg)  
   
 #### 위 상황에 대한 해결 접근 방법 
-1. redux-store 에 각 페이지 정보 저장  
-- Store를 통해 PageName 정보를 받아와서 파싱   
-```javascript 1.6    
+1. redux-store 에 각 페이지 정보 저장   
+- Store를 통해 PageName 정보를 받아와서 파싱    
+```javascript     
 
 class SideMenu extends Component{
     render() {
@@ -162,7 +162,7 @@ export default connect(
 
 2. NavLink 로 해결
 - NavLink를 사용하면 Path에 따른 스타일을 activeClassName 속성으로 적용 할수 있는 점이 있었다.
-```javascript 1.6    
+```javascript    
 const SideMenu =() => (
     <div className='gnb_block'>
         <NavLink to="/video"  className='gnb_menu ico_cam' activeClassName="gnb_menu ico_cam selected" >
