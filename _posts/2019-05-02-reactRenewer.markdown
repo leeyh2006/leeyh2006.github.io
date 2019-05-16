@@ -118,7 +118,7 @@ const PatientPage =()=>{
 
 --------------------------------------------------------------
 ### 전환 작업중 잘못 접근 했던 점.
-### 페이지 전환에 따른 css 미적용
+#### 1. 페이지 전환에 따른 css 미적용
 아래와 같이 SideMenu에 각각의 Route Path 를 적용하는 도중 페이지를 이동 할때마다 css가 적용이 안되는 현상이 있었다.
 ![cabbage6]({{site.baseurl}}/assets/img/cabbage6.jpg)  
   
@@ -126,6 +126,7 @@ const PatientPage =()=>{
 1. redux-store 에 각 페이지 정보 저장  
 - Store를 통해 PageName 정보를 받아와서 파싱   
 ```xml  
+
 class SideMenu extends Component{
     render() {
         const {pageName} = this.props;
@@ -155,9 +156,8 @@ export default connect(
     },
     null
 )(SideMenu);
-
-```
-위와 같은 방법으로 코드를 작성 했을 경우 코드양도 늘어나고, 파싱 과정 중 중복적으로 Link를 사용해야됬다. 비효율적이라 생각이 들어 다른방법을 모색
+```  
+위와 같은 방법으로 코드를 작성 했을 경우 코드양도 늘어나고, 파싱 과정 중 중복적으로 Link를 사용해야됬다. 비효율적이라 생각이 들어 **다른방법을 모색**  
 
 2. NavLink 로 해결
 - NavLink를 사용하면 Path에 따른 스타일을 activeClassName 속성으로 적용 할수 있는 점이 있었다.
@@ -179,9 +179,8 @@ const SideMenu =() => (
 ```  
 코드의 양도 확실히 줄었고, Store 에 state 관리포인트에 신경 쓸 필요가 없어 더욱더 효율적이였다.
 
-
-
 ### 2. Node.js (BE)
+#### REST API 설계
 
 
 ### 앞으로의 방향
