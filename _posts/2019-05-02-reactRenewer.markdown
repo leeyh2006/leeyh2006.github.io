@@ -23,12 +23,17 @@ img: react.jpg # Add image post (optional)
 
 Spring3, jsp 구조에선 Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필요하게 중복적인 코드들이 작성되어야 한다는 단점이 있었다. 이에 반해 React 의 컴포넌트형 개발을 함으로써 효율성을 극대화 시킨점이 제일 끌렸다.  
 
-
 ### 레거시 프로젝트 전환 과정
-**아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하고 리딩중입니다.**
-1. jsp 걷어내기
-2. REST API 재설계
-3. 
+**아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하고 리딩중입니다.**  
+
+#### Back-end config 설정 변경
+API Server로 만 사용될 목적으로 변경하기 위해 아래와 같은 작업 수행.
+1. Jsp file 걷어내기
+- dispatcher.xml 내 JSP가 맵핑되있는 path 및 InternalResourceViewResolver 수정
+- Controller 내 Jsp View return 기능 삭제
+2. Web static resource 를 FE server 로 이관
+
+
 ## 프로젝트 설계
 ### 1. React (FE)
 #### 1.1 Component 디자인 설계 
