@@ -13,41 +13,29 @@ img: react.jpg # Add image post (optional)
 ![cabbageMain]({{site.baseurl}}/assets/img/cabbageMain.jpg)     
 
 ### Back-end , Front-end 분리  
-기존 레거시 프로젝트는 **Spring3,Jsp** 환경으로 구성 되어 있다. 
-추후에 Android,ios 버전도 출시 될 예정이 었는데 기존 Web Service 기능이 있는 서버와 통신을 하는 점에 있어, 새로운 API Server를 구현해야 됬다.
-이에 목적이 다른 서버를 또 다르게 구현 한다는 것은 불 필요하다 판단 되었고, 이에 맞게 client 영역을 분리 하기로 결정.  
+레거시 프로젝트는 Spring3,jsp 환경으로 구성되어 있는데, 이를   
 
-### FE와 BE Framework 
-- React (FE)
-- Node.js (BE)
-
-### React 를 택하게 된 이유   
-Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필요하게 중복적인 코드들이 작성되어야 한다는 단점이 있었다.  
-
-#### React 장점  
+#### React 를 택하게 된 이유   
 - JSX (js 안에 마크업 코드 사용)
 - Component 재사용 
 - 오직 View 만을 위한 Framework
-- 빠른 Virtual Dom
+- 빠른 Virtual Dom  
 
-컴포넌트형 개발을 통해 얻는 장점과 기존의 jquery를 통한 Dom에 대한 직접 제어가 필요 없다는 점 
+Spring3, jsp 구조에선 Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필요하게 중복적인 코드들이 작성되어야 한다는 단점이 있었다. 이에 반해 React 의 컴포넌트형 개발을 함으로써 효율성을 극대화 시킨점이 제일 끌렸다.  
 
-### Node.js(express) 전환 계기
-- javascript 만으로 서버 구축 (좀 더 쉬운 접근성)
-- npm 을 통한 module 관리의 용이성
-- socket.io를 통한 socket 서버 구현 용이 
 
 ### 레거시 프로젝트 전환 과정
 **아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하고 리딩중입니다.**
-
+1. JSP 걷어내기
+Back-end 
 
 ## 프로젝트 설계
 ### 1. React (FE)
-#### 1.1 기능에 따른 Component 분리
-1. 
-
+#### 1.1 Component 디자인 설계 
+다음은 서비스 일부 화면이다. 이를 컴포넌트화 하기 위해 각각의 기능을 다음과 같은 기준으로 분리하였다.  
+1. presentational component , container component 기준으로 분리 
+2. 각 페이지의 제일 큰 단위 -> 작은 단위 별로 분리
 ![cabbage2]({{site.baseurl}}/assets/img/cabbage2.jpg)     
-
 
 ### 1.2 State 관리
 #### Redux 적용 이유    
@@ -123,7 +111,7 @@ const PatientPage =()=>{
 아래와 같이 SideMenu에 각각의 Route Path 를 적용하는 도중 페이지를 이동 할때마다 css가 적용이 안되는 현상이 있었다.
 ![cabbage6]({{site.baseurl}}/assets/img/cabbage6.jpg)  
   
-#### 위 상황에 대한 해결 접근 방법  
+#### 위 상황에 대한 해결 접근 방법 
 1. redux-store 에 각 페이지 정보 저장  
 Store를 통해 PageName 정보를 받아와서 파싱    
 
@@ -159,10 +147,9 @@ export default connect(
     null
 )(SideMenu);
 ```  
-위와 같은 방법으로 코드를 작성 했을 경우 코드양도 늘어나고, 파싱 과정 중 중복적으로 Link를 사용해야됬다. 비효율적이라 생각이 들어 **다른방법을 모색**  
-2. NavLink 로 해결  
+위와 같은 방법으로 코드를 작성 했을 경우 코드양도 늘어나고, 파싱 과정 중 중복적으로 Link를 사용해야됬다. 비효율적이라 생각이 들어 **다른방법을 모색**    
+- **NavLink** 로 해결  
 NavLink를 사용하면 Path에 따른 스타일을 activeClassName 속성으로 적용 할수 있는 점이 있었다.  
-
 
 ```xml    
 const SideMenu =() => (
@@ -181,10 +168,6 @@ const SideMenu =() => (
 );
 ```  
 코드의 가독성도 올라갔고, Store 에 state 관리포인트에 신경 쓸 필요가 없어 더욱더 효율적이였다.
-
-### 2. Node.js (BE)
-#### 2.1 REST API 설계  
-
 
 ### 앞으로의 방향
 아직 프로젝트가 진행 중이다. React를 사용하면서 컴포넌트별로 관리하다보니 기존 Spring3,Jsp 환경으로 구성되어있는 프로젝트보다 코딩이 좀 더 효율적으로 되었다.  
