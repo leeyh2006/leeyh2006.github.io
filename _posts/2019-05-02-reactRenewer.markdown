@@ -12,10 +12,24 @@ img: react.jpg # Add image post (optional)
 ### 서비스 일부 화면    
 ![cabbageMain]({{site.baseurl}}/assets/img/cabbageMain.jpg)     
 
-### Back-end , Front-end 분리  
-레거시 프로젝트는 Spring3,jsp 환경으로 구성되어 있는데, 이를   
+### Back-end , Front-end 분리
+레거시 프로젝트 환경 (Spring3,jsp)  
+- 추후 출시될 ios,android 버전을 고려하여 Back-end, Front-end 분리
+- 기능 목적에 따른 관리포인트 분리
+기존 레거시프로젝트는 **Spring3, Jsp** 환경으로 구성되어 있었다. 웹 서비스의 기능까지 포함하고 있는 기존프로젝트를 앞으로의 확장성을 고려하여 기능을 분리하기로 결정 하였다.  
 
-#### React 를 택하게 된 이유   
+
+### 레거시 프로젝트 전환 과정
+
+#### Back-end config 설정 변경
+API Server로 만 사용될 목적으로 변경하기 위해 아래와 같은 작업 수행.
+1. **jsp 걷어내기**
+- dispatcher.xml 내 JSP가 맵핑되있는 path 및 InternalResourceViewResolver 수정
+- Controller 내 Jsp View return 기능 삭제
+2. **Web static resource 를 FE server 로 이관**  
+
+
+#### React (FE) 선택   
 - JSX (js 안에 마크업 코드 사용)
 - Component 재사용 
 - 오직 View 만을 위한 Framework
@@ -23,16 +37,7 @@ img: react.jpg # Add image post (optional)
 
 Spring3, jsp 구조에선 Jsp 파일과 그 와 관련된 js 파일을 모두 수정해야 되고 불 필요하게 중복적인 코드들이 작성되어야 한다는 단점이 있었다. 이에 반해 React 의 컴포넌트형 개발을 함으로써 효율성을 극대화 시킨점이 제일 끌렸다.  
 
-### 레거시 프로젝트 전환 과정
 **아직 프로젝트는 진행중이고 ReactJs를 사내 FE 프레임워크에 적용하자고 어필을 하고 리딩중입니다.**  
-
-#### Back-end config 설정 변경
-API Server로 만 사용될 목적으로 변경하기 위해 아래와 같은 작업 수행.
-1. Jsp file 걷어내기
-- dispatcher.xml 내 JSP가 맵핑되있는 path 및 InternalResourceViewResolver 수정
-- Controller 내 Jsp View return 기능 삭제
-2. Web static resource 를 FE server 로 이관
-
 
 ## 프로젝트 설계
 ### 1. React (FE)
@@ -44,7 +49,7 @@ API Server로 만 사용될 목적으로 변경하기 위해 아래와 같은 �
 
 ### 1.2 State 관리
 #### Redux 적용 이유    
-- react-router , redux-pender 등 middleWare와 호환성이 좋음
+- react-router , redux-pender 등 middleware와 호환성이 좋음
 - Redux dev tool , 액션의 흐름을 관찰하기 용이함
 - 공유 되는 state를 store 한 곳에서 관리  
  
@@ -174,10 +179,10 @@ const SideMenu =() => (
 ```  
 코드의 가독성도 올라갔고, Store 에 state 관리포인트에 신경 쓸 필요가 없어 더욱더 효율적이였다.
 
-### 앞으로의 방향
-아직 프로젝트가 진행 중이다. React를 사용하면서 컴포넌트별로 관리하다보니 기존 Spring3,Jsp 환경으로 구성되어있는 프로젝트보다 코딩이 좀 더 효율적으로 되었다.  
-효율성을 극대화 하기 위해 아래 사항을 고려하여 프로젝트를 개발해 나갈 예정이다.
+### 앞으로의 방향  
+React를 사용하면서 컴포넌트별로 관리하다보니 기존 jsp 보다 중복으로 코드를 작성하는 경우는 줄어 들었고, input type="hidden" 을 사용하여 data의 상태를 관리했던 점을 redux 를 사용하여 관리하다 보니 좀더 가시성이 뛰어났다.
+아직 프로젝트는 진행중이고, 아래 다음 사항을 고려하여 개발을 진행해 나갈 예정이다.
 - 렌더링 최적화
 - Chunk 파일을 통한 모듈 파일 관리
 - 라우트 코드 스플리팅 
-- SSR  
+- SSR 고려
