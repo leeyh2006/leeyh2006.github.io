@@ -14,8 +14,8 @@ img: bpdiary.jpg # Add image post (optional)
 
 ### 담당 업무
 1. 코호트(건강 보험 공단) 데이터를 활용하여 앞으로 흡연여부,비만,높은혈압이 지속될 경우 고혈압,당뇨,동맥경화성 질환이   
-   걸릴 확률을 계산하는 **Java Daemon application** 개발  
-2. 위 Applicatioin을 통해 가공되어진 데이터를 **Csv format** 으로 추출 하여 **DB Migration**  
+   걸릴 확률을 계산하는 **Java Daemon** 개발  
+2. 위 Daemon 을 통해 가공되어진 데이터를 **Csv format** 으로 추출 하여 **DB Migration**  
 3. 기존 Spring Server 에  **API 추가**   
 
 #### Java Daemon ?
