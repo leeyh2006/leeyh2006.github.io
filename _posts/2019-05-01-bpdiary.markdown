@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 혈압 다이어리 질병 예측 Application API 서버 개발
+title: 혈압 다이어리 질병 예측 Application 개발
 date: 2019-04-10 00:00:00 +0300
 description: bpdiary project# Add post description (optional)
 img: bpdiary.jpg # Add image post (optional)
 --- 
 ### 서비스 내용  
-- **Bpdiary App 내의 질병 예측 메뉴 중 자신의 혈압 및 콜레스트롤 수치를 입력하여 향후 자신이 고혈압,당뇨,동맥경화성 질환이 걸릴 확률을 예측하는 서비스.**  
+- **자신의 혈압 및 콜레스트롤 수치를 입력하여 향후 자신이 고혈압,당뇨,동맥경화성 질환이 걸릴 확률을 예측하는 서비스.**  
 ![bp1]({{site.baseurl}}/assets/img/bp1.jpg)
 ![bp2]({{site.baseurl}}/assets/img/bp2.jpg)
 ![bp3]({{site.baseurl}}/assets/img/bp3.jpg)
@@ -14,21 +14,14 @@ img: bpdiary.jpg # Add image post (optional)
 
 ### 담당 업무
 1. 코호트(건강 보험 공단) 데이터를 활용하여 앞으로 흡연여부,비만,높은혈압이 지속될 경우 고혈압,당뇨,동맥경화성 질환이   
-   걸릴 확률을 계산하는 **Java Daemon** 개발  
-2. 위 Daemon 을 통해 가공되어진 데이터를 **Csv format** 으로 추출 하여 **DB Migration**  
-3. 기존 Spring Server 에  **API 추가**   
-
-#### Java Daemon ?
-- Java Daemon 을 따로 구현한 이유  
-    처음 코호트 데이터를 전달 받았을 때 데이터의 사이즈는 **200G를 충분히 넘었고** 이 파일을 읽어 들이는 시간도 상당히 오래 걸렸다.  
-    이를 Spring 서버에 올려 매번 단말에서 요청이 올때마다 값을 계산하여 내려주는것은 응답 시간도 오래걸리고 비효율적이며 서비스에 영향도 미칠것이라고 판단이 되었다.  
-- 일회성 데이터  
-통계적으로 계산한 **결과값만** 필요했기 때문에 불필요하게 service layer에 알고리즘 logic을 작성하지 않고 Java Daemon 을 만들어 결과 값을 Csv 포맷으로 만들어주는 Application 을 제작하였다.    
+   걸릴 확률을 계산하는 **Java Application** 개발  
+2. 위 Application 을 통해 가공되어진 데이터를 **csv file** 로 추출 하고 또한 그 데이터를 DB 스키마에 맞게 변환하여 저장   
+3. Server가 부팅될 때 DB에서 특정 테이블을 full scan 후 , 아래 있는 알고리즘을 통해 추출된 데이터를 API를 통해 서빙.
 
   
-**개발 과정은 다음과 같다.**
+### **Core logic**
 
-#### Cohort 데이터 파싱 및 모델 정의  
+#### Cohort 데이터 파싱   
 - cohort 데이터(2008~2015)는 txt파일로 각년도마다 **건강검진데이터**와 **진료 데이터**로 존재하였는데 , 이에 구분자 '|'를 추가하여 기준을 만듬. 
 ```java    
 ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|"I_II_TYPE"|"UN_COST"|"AMT"|"DD_MQTY_EXEC_FREQ"|"MDCN_EXEC_FREQ"|"DD_MQTY_FREQ"    
@@ -36,7 +29,7 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
 ```  
 - 위 구분자가 추가된 데이터 파일을 읽어 각 라인별로 파싱하고, 미리 만들어둔 건강검진,진료 Dto에 column을 맵핑 시킨 객체를 생성 
 
-#### 질병이 걸릴 확률을 예측하는 알고리즘 설계
+#### Cohort 데이터 저장
 - 모집단 추출
     - 현재(2008) 기준으로 **건강검진**상에 과거 병력에 고혈압 및 당뇨가 없다고 응답한 사람
     - 5년이전까지의 **진료**데이터를 검색하여 고혈압 및 당뇨 치료를 받은적이 있는 사람
@@ -61,7 +54,7 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
             ...
         }
         Map<String,Statics> list = new HashMap<>();
-        public Map<String,Statics> recude(){
+        public Map<String,Statics> reduce(){
             StringBuffer newKey = new StringBuffer();
             
             for( 2008년 비환자 집단 ) {
@@ -88,25 +81,5 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
   ![bp4]({{site.baseurl}}/assets/img/bp4.jpg)     
   결과 샘플
 
-
-### 데이타가 없는 경우 
+### Cohort 데이터 추출
  
- 
- 
-#### CSV format 추출  
-- 위 결과 Format 을 토대로 나머지 연령 및 성별 Data도 파싱하여 Csv 파일로 추출.   
-
-#### DB Migration
-- PredictionResult DB Table 설계 
-- 추출된 csv 파일을 한줄씩 읽어서  ','로 split 후 각 정보를 DB Table에 Insert 
-
-#### API 추가
-- Request로 들어온 흡연 ,당뇨 ,비만 Parameter를 필터하여 DB로 부터 정보를 읽어 들인후 결과 값을 내려줌
-
-
-#### 프로젝트를 진행 하면서 ..
-- #### OOME Error   
-건강 보험 공단 파일의 사이즈가 컸던 만큼 Java Daemon을 실행 시킬때 메모리가 부족하여 에러가 발생하였는데 , jvm option을 줘서 해결을 하였지만 좀더 효율적으로 코드를 작성하였다면 발생하지 않았을까 ? 에 대한 아쉬움 .
-- #### 람다 사용 및 스트림 사용의 아쉬움 
-   각 조건에 맞춰 Map의 entrySet을 통해 각 조건에 맞게 filter 할 경우 소스코드의 가독성이 많이 떨어 지는 아쉬움이 있었다.
-Stream을 사용하여 filter로 간결하게 정의 하였을 경우 가독성이 더 높아지지 않았을까? 라는 생각이 든다.
