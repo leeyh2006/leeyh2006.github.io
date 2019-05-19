@@ -48,7 +48,7 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
 
   ```text  
         public class Statics{
-            private List<String> key; // ex) 1:10:O:O:O
+            private List<String> key; // ex) 1:10:O:O:O (남성:30대:흡연O:비만O:당뇨O)
             private long sickCount;
             ....
             ...
@@ -81,5 +81,23 @@ ex)"KEY_SEQ"|"SEQ_NO"|"RECU_FR_DT"|"CLAUSE_CD"|"ITEM_CD"|"DIV_TYPE_CD"|"DIV_CD"|
   ![bp4]({{site.baseurl}}/assets/img/bp4.jpg)     
   결과 샘플
 
-### Cohort 데이터 추출
- 
+### Cohort 데이터 추출  
+DB로부터 저장된 데이터를 Full scan 후 메모리에 올려 API를 통해 서빙.
+- 모집단 데이터가 충분한 경우  
+ex) 20~30대 데이터
+기존 있는 데이터를 가지고 서빙
+- 모집단 데이터가 소수 인 경우  
+ex) 70~80대 데이터는 모수가 부족했다.   
+이에 실제 데이터(DB에 저장된)를 메모리에 올리고 아래 알고리즘을 통해 **예측데이터**를 만들어 서빙.  
+
+
+1. X축(연령) Y축(발병확률)을 기준으로 그래프를 도식화
+2. 원점을 지나는 0~90도의 기울기를 가진 직선들을 표시
+3. 표시 되어있는 점(확률)과 직선들 사이의 거리를 계산해 제일 거리가 가까운 직선 선택
+4. 없는 데이터 예측
+
+예측 과정  
+![bp5]({{site.baseurl}}/assets/img/bpdiaryPredict3.jpg)     
+  
+
+
