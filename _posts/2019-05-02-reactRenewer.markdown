@@ -13,7 +13,7 @@ img: react.jpg # Add image post (optional)
 ![cabbageMain]({{site.baseurl}}/assets/img/cabbageMain.jpg)     
 
 ### Back-end , Front-end 분리
-레거시 프로젝트 환경 (Spring3,jsp)  
+레거시 프로젝트 환경 (Spring3,jsp) 
 - 추후 출시될 ios,android 버전을 고려하여 Back-end, Front-end 분리
 - 기능 목적에 따른 관리포인트 분리
 기존 레거시프로젝트는 **Spring3, Jsp** 환경으로 구성되어 있었다. 웹 서비스의 기능까지 포함하고 있는 기존프로젝트를 앞으로의 확장성을 고려하여 기능을 분리하기로 결정 하였다.  

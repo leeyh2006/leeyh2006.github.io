@@ -12,6 +12,10 @@ layout: main
     <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
     <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
     <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
+    <img src="https://img.shields.io/badge/JAVA-1.8-green.svg">
+    <img src="https://img.shields.io/badge/mysql-%20-%20.svg">
+    <img src="https://img.shields.io/badge/mybatis-%20-%20.svg">
+
   </div>
 </article>
 {% endfor %}
