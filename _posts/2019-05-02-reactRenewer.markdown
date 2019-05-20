@@ -51,8 +51,8 @@ Spring3, jsp 구조에선 Jsp 파일과 그 와 관련된 js 파일을 모두 �
  
 ### 1.3 공통 기능 모듈화 작업
 #### 1.3.1 Page
-각 메뉴의 페이지는 다음과 같은 페이지의 구성으로 공통적으로 사용한다. 공통적으로 사용하지 않는 SearchBar 같은 경우 
-PageTemplate Component를 두고 그 안에 추가기능을 넣어 구현할 수 있도록 모듈을 만들었다.    
+각 메뉴의 페이지는 게시판 구조로 공통적으로 사용한다. 
+공통적으로 사용하지 않는 SearchBar 같은 경우 PageTemplate Component를 두고 그 안에 추가기능을 넣어 구현할 수 있도록 모듈을 만들었다.    
   
 **PageTemplate.js**  
 ```xml       
