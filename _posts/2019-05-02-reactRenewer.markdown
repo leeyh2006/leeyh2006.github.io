@@ -13,9 +13,7 @@ img: react.jpg # Add image post (optional)
 ![cabbageMain]({{site.baseurl}}/assets/img/cabbageMain.jpg)     
 
 ### Back-end , Front-end 분리
-- 기능 목적에 따른 관리포인트 분리
-기존 레거시프로젝트는 **Spring3, Jsp** 환경으로 구성되어 있었다.  front-end의 목적, Back-end의 목적에 맞게 확장성을 고려하여 기능을 분리하기로 결정 하였다.  
-
+- 앞단과 뒷단의 관리포인트를 줄이고 SPOF를 없애기 위해 분리
 
 ### 레거시 프로젝트 전환 과정
 
